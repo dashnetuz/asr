@@ -1,4 +1,5 @@
 .env
+.env-local
 
 # docker
 /docker/mysql/db
