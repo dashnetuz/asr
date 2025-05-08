@@ -9,9 +9,6 @@
 #/yii
 #/yii_test
 #/yii_test.bat
-
-
-
 # composer vendor dir
 /vendor
 
