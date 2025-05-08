@@ -1,0 +1,17 @@
+.env
+
+# docker
+/docker/mysql/db
+/docker/nginx/logs
+/docker/php/bash_history
+
+# yii console commands
+#/yii
+#/yii_test
+#/yii_test.bat
+
+
+
+# composer vendor dir
+/vendor
+
