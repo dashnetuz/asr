@@ -154,7 +154,7 @@ AppAsset::register($this);
                             <a href="#search1" class="mt_search">
                                 <i class="fa fa-search fa-lg me-5 text-white"></i>
                             </a>
-                            <a class="btn btn3" href="#">Login<i class="fa fa-long-arrow-right ms-4"></i></a>
+                            <a class="btn btn3" href="#">Login with INHA<i class="fa fa-long-arrow-right ms-4"></i></a>
                         </div>
                     </div>
                     <div id="slicknav-mobile"></div>
