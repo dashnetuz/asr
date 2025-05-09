@@ -91,7 +91,7 @@ AppAsset::register($this);
                             <img src="<?= $setting->logo_bottom ?>" alt="Logo" class="w-100">
                         </div>
                     </div>
-                    <div class="col-lg-9 col-md-6 ">
+                    <div class="col-lg-7 col-md-6 ">
                         <div class="collapse navbar-collapse justify-content-center" id="bs-example-navbar-collapse-1">
                             <ul class="navbar-nav align-items-center" id="responsive-menu">
                                 <li class="nav-item ">
