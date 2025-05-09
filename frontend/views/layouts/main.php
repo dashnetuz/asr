@@ -86,11 +86,11 @@ AppAsset::register($this);
         <div class="container">
             <nav class="navbar navbar-expand-lg py-2">
                 <div class="row">
-<!--                    <div class="col-lg-2 col-md-6">-->
-<!--                        <div class="navbar-brand m-0">-->
+                    <div class="col-lg-2 col-md-6">
+                        <div class="navbar-brand m-0">
 <!--                            <img src="--><?php //= $setting->logo ?><!--" alt="Logo" class="w-25">-->
-<!--                        </div>-->
-<!--                    </div>-->
+                        </div>
+                    </div>
                     <div class="col-lg-9 col-md-6 ">
                         <div class="collapse navbar-collapse justify-content-center" id="bs-example-navbar-collapse-1">
                             <ul class="navbar-nav align-items-center" id="responsive-menu">
