@@ -314,7 +314,7 @@ AppAsset::register($this);
                                         <img class="mb-2 w-100 rounded" src="/app/images/group/1.jpg" alt="group-image">
                                     </div>
                                     <div class="img-left-2">
-                                        <img src="/app/images/group/2.jpg" alt="group-image" class="w-100 rounded">
+                                        <img src="/app/images/group/8.jpg" alt="group-image" class="w-100 rounded">
                                     </div>
                                 </div>
                             </div>
