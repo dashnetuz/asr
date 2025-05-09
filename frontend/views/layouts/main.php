@@ -86,12 +86,12 @@ AppAsset::register($this);
         <div class="container">
             <nav class="navbar navbar-expand-lg py-2">
                 <div class="row">
-                    <div class="col-lg-2 col-md-6">
-                        <div class="navbar-brand m-0">
-                            <img src="<?= $setting->logo ?>" alt="Logo" class="w-25">
-                        </div>
-                    </div>
-                    <div class="col-lg-7 col-md-6 ">
+<!--                    <div class="col-lg-2 col-md-6">-->
+<!--                        <div class="navbar-brand m-0">-->
+<!--                            <img src="--><?php //= $setting->logo ?><!--" alt="Logo" class="w-25">-->
+<!--                        </div>-->
+<!--                    </div>-->
+                    <div class="col-lg-9 col-md-6 ">
                         <div class="collapse navbar-collapse justify-content-center" id="bs-example-navbar-collapse-1">
                             <ul class="navbar-nav align-items-center" id="responsive-menu">
                                 <li class="nav-item ">
@@ -151,7 +151,7 @@ AppAsset::register($this);
                             <a href="#search1" class="mt_search">
                                 <i class="fa fa-search fa-lg me-5 text-white"></i>
                             </a>
-                            <a class="btn btn3" href="#">Buy Ticket<i class="fa fa-long-arrow-right ms-4"></i></a>
+                            <a class="btn btn3" href="#">Login<i class="fa fa-long-arrow-right ms-4"></i></a>
                         </div>
                     </div>
                     <div id="slicknav-mobile"></div>
@@ -181,7 +181,7 @@ AppAsset::register($this);
                 <div class="col-lg-6 order-2 order-lg-1">
                     <div class="banner-left text-center pb-lg-5 p-md-0">
                         <div class="banner-image">
-                            <img src="/app/images/team/4.png" alt="banner-image" class="w-50"><br>
+                            <img src="<?= $setting->logo ?>" alt="banner-image" class="w-50"><br>
                         </div>
                         <div class="countdown">
                             <div id="countdown"
