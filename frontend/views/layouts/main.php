@@ -143,6 +143,9 @@ AppAsset::register($this);
                                 <li class="nav-item">
                                     <a class="nav-link px-2 my-4 py-0 text-white" href="#">Contact</a>
                                 </li>
+                                <li class="nav-item">
+                                    <a class="nav-link px-2 my-4 py-0 text-white" href="#">Other views</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
