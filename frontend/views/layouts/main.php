@@ -88,7 +88,7 @@ AppAsset::register($this);
                 <div class="row">
                     <div class="col-lg-2 col-md-6">
                         <div class="navbar-brand m-0">
-                            <img src="<?= $setting->logo_bottom ?>" alt="Logo" class="w-100">
+                            <img src="<?= $setting->logo_bottom ?>" alt="Logo" class="w-150">
                         </div>
                     </div>
                     <div class="col-lg-7 col-md-6 ">
@@ -212,8 +212,8 @@ AppAsset::register($this);
                 <div class="col-lg-6 order-1 order-lg-2">
                     <div class="banner-right  ms-2 text-center text-lg-start pb-8">
                         <div class="banner-title pb-3">
-                            <h4 class="text-white pb-3">UPCOMING NEW <span class="pink">EVENT</span> 2023</h4>
-                            <h1 class="text-white">STARTUP <span class="pink">GLOBAL</span> CONFERENCE</h1>
+                            <h4 class="text-white pb-3">UPCOMING NEW <span class="pink">EVENT</span> 2025</h4>
+                            <h1 class="text-white">STARTUP <span class="pink">GLOBAL</span> SITE</h1>
                         </div>
                         <div class="banner-event-info pb-3">
                             <ul class="m-0 ps-0 d-sm-flex justify-content-center justify-content-lg-start list-unstyled">
@@ -230,10 +230,10 @@ AppAsset::register($this);
                             <div class="banner-button">
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6">
-                                        <a class="btn me-3 my-1 w-100" href="#">PURCHASE TICKET</a>
+                                        <a class="btn me-3 my-1 w-100" href="#">LOG IN with INHA</a>
                                     </div>
                                     <div class="col-lg-6 col-md-6">
-                                        <a class="btn btn2 my-1 w-100" href="#">VIEW SCHEDULE</a>
+                                        <a class="btn btn2 my-1 w-100" href="#">VIEW</a>
                                     </div>
                                 </div>
                             </div>
