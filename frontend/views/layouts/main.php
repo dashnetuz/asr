@@ -266,7 +266,7 @@ AppAsset::register($this);
                     <div class="overview-left text-center text-lg-start">
                         <div class="overview-title pb-4">
                             <p class="mb-1 pink">OVERVIEW</p>
-                            <h2 class="mb-2">GET THE LATEST INFO ABOUT <span class="pink">ASR.GOV.UZ</span></h2>
+                            <h2 class="mb-2">GET THE LATEST INFO ABOUT <span class="pink">IQAC.ASR.GOV.UZ</span></h2>
                             <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                                 et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                                 aliquip ex ea commodo consequat.</P>
@@ -283,7 +283,7 @@ AppAsset::register($this);
                                             </div>
                                             <div class="location-info">
                                                 <h5 class="mb-1">WHERE</h5>
-                                                <small>Birmingham City Park Hall, London, UK</small>
+                                                <small>Tashkent, Uzbekistan</small>
                                             </div>
                                         </div>
                                     </a>
@@ -296,7 +296,7 @@ AppAsset::register($this);
                                             </div>
                                             <div class="time-info">
                                                 <h5 class="mb-1">WHEN</h5>
-                                                <small>Wednesday To Thursday <br> Apr, 21-25, 2024</small>
+                                                <small>Wednesday To Thursday <br> May, 21-25, 2025</small>
                                             </div>
                                         </div>
                                     </a>
@@ -339,8 +339,7 @@ AppAsset::register($this);
             <div class="partner-title text-center pb-6 w-lg-60 m-auto">
                 <p class="mb-1 pink">OUR PARTNERS</p>
                 <h2 class="mb-1">SPONSERS AND <span class="pink">PARTNERS</span></h2>
-                <p class="m-0">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-                    id est laborum.</p>
+                <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusamus adipisci atque, deserunt dicta dolorum et eveniet illum impedit ipsum, pariatur, perferendis qui quia quisquam sequi tenetur. Commodi, qui!</p>
             </div>
             <div class="partner-img pb-6">
                 <div class="row row-cols-1 row-cols-lg-5 row-cols-md-5 ">
@@ -541,15 +540,14 @@ AppAsset::register($this);
                 <div class="row align-items-center ">
                     <div class="col-lg-6">
                         <div class="title-content  text-lg-start mb-2">
-                            <p class="mb-1 pink">EVENT SPEAKERS</p>
-                            <h2 class="mb-1">MEET OUR <span class="pink">SPEAKERS</span></h2>
-                            <p class="m-0">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                                anim id est laborum.</p>
+                            <p class="mb-1 pink">EVENT TEAM</p>
+                            <h2 class="mb-1">MEET OUR <span class="pink">TEAM</span></h2>
+                            <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dolor dolores, ducimus ex fugiat ipsam magnam nesciunt, odit omnis praesentium quas quasi quis quos recusandae saepe sed tenetur ullam unde.</p>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="speaker-button text-lg-end">
-                            <a class="btn my-2" href="#">VIEW MORE SPEAKERS</a>
+                            <a class="btn my-2" href="#">VIEW MORE TEAM</a>
                         </div>
                     </div>
                 </div>
@@ -679,9 +677,9 @@ AppAsset::register($this);
                         <div class="col-lg-3 col-md-4">
                             <div class="schedule-day text-center text-sm-start py-6 position-relative ps-2 z-1">
                                 <h4 class="pink mb-2">1ST DAY</h4>
-                                <h6 class="mb-2">APRIL 23, 2024</h6>
-                                <P>William Mathew Theater<br>
-                                    2390 NW 2nd Ave, Miami, FL 33127</P>
+                                <h6 class="mb-2">May 1, 2025</h6>
+                                <P>INHA university<br>
+                                    Tashkent, Uzbekistan</P>
                             </div>
                         </div>
                         <div class="col-lg-9 col-md-8">
@@ -745,9 +743,9 @@ AppAsset::register($this);
                         <div class="col-lg-3 col-md-4">
                             <div class="schedule-day text-center position-relative text-sm-start py-6 ps-2 z-1">
                                 <h4 class=" pink mb-2">2ND DAY</h4>
-                                <h6 class="mb-2">APRIL 24, 2024</h6>
-                                <P>William Mathew Theater<br>
-                                    2390 NW 2nd Ave, Miami, FL 33127</P>
+                                <h6 class="mb-2">May 2, 2025</h6>
+                                <P>Strategik islohotlar agentligi<br>
+                                    Tashkent, Uzbekistan</P>
                             </div>
                         </div>
                         <div class="col-lg-9 col-md-8">
@@ -1005,7 +1003,7 @@ AppAsset::register($this);
     <div class="container">
         <div class="section-title w-lg-60 m-auto text-center pb-5">
             <p class="mb-1  pink">OUR TESTIMONIALS</p>
-            <h2 class="mb-1">WHAT PEOPLES'S SAYS ABOUT <span class="pink">ASR.GOV.UZ</span></h2>
+            <h2 class="mb-1">WHAT PEOPLES'S SAYS ABOUT <span class="pink">IQAC.ASR.GOV.UZ</span></h2>
             <p class="m-0">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
                 est laborum.
             </p>
@@ -1185,8 +1183,10 @@ AppAsset::register($this);
                         </div>
                     </div>
                     <div class="col-lg-7 col-md-7 px-1 py-2">
-                        <iframe height="400" class="rounded w-100"
-                                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=+(mangal%20bazar)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                        <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11982.431688025947!2d69.33061234536684!3d41.339138396787504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef48a8ed4d0e9%3A0x3772abeffc72e7b8!2z0KPQvdC40LLQtdGA0YHQuNGC0LXRgiDQmNC90YXQsA!5e0!3m2!1sru!2s!4v1746785724542!5m2!1sru!2s"
+                                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
                     </div>
                 </div>
             </div>
