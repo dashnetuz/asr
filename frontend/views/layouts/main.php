@@ -88,7 +88,7 @@ AppAsset::register($this);
                 <div class="row">
                     <div class="col-lg-2 col-md-6">
                         <div class="navbar-brand m-0">
-                            <img src="<?= $setting->logo_bottom ?>" alt="Logo" class="w-25">
+                            <img src="<?= $setting->logo_bottom ?>" alt="Logo" class="w-100">
                         </div>
                     </div>
                     <div class="col-lg-9 col-md-6 ">
