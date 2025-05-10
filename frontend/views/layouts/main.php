@@ -36,18 +36,10 @@ AppAsset::register($this);
         <div class="animation-preloader">
             <div class="spinner"></div>
             <div class="txt-loading">
-                <span data-text-preloader="U" class="letters-loading">U</span>
-                <span data-text-preloader="N" class="letters-loading">N</span>
-                <span data-text-preloader="I" class="letters-loading">I</span><br>
-                <span data-text-preloader="E" class="letters-loading">E</span>
-                <span data-text-preloader="D" class="letters-loading">D</span>
-                <span data-text-preloader="U" class="letters-loading">U</span>
-                <span data-text-preloader="C" class="letters-loading">C</span>
-                <span data-text-preloader="A" class="letters-loading">A</span>
-                <span data-text-preloader="T" class="letters-loading">T</span>
                 <span data-text-preloader="I" class="letters-loading">I</span>
-                <span data-text-preloader="O" class="letters-loading">O</span>
-                <span data-text-preloader="N" class="letters-loading">N</span>
+                <span data-text-preloader="Q" class="letters-loading">Q</span>
+                <span data-text-preloader="A" class="letters-loading">A</span><br>
+                <span data-text-preloader="C" class="letters-loading">C</span>
             </div>
         </div>
         <div class="loader">
@@ -79,7 +71,7 @@ AppAsset::register($this);
 
     <header id="masthead" itemscope="itemscope" itemtype="https://schema.org/WPHeader">
         <p class="main-title bhf-hidden" itemprop="headline"><a href="<?= Url::to(['/'])?>"
-                                                                title="Unieducation &#8211; Business Consulting" rel="home">Unieducation &#8211;
+                                                                title="IQAC &#8211; Business Consulting" rel="home">IQAC &#8211;
                 Business
                 Consulting</a></p>
         <div data-elementor-type="wp-post" data-elementor-id="28" class="elementor elementor-28">
@@ -103,7 +95,7 @@ AppAsset::register($this);
                                             <i class="fa fa-bars"></i>
                                         </button>
                                         <a class="navbar-brand" href="<?= Url::to(['/'])?>">
-                                            <img src="/backend/web/uploads/<?= $setting->getLogoTranslate()?>" class="logo"
+                                            <img src="<?= $setting->logo?>" class="logo"
                                                  alt="Logo">
                                         </a>
                                     </div>
