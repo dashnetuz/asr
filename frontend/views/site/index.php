@@ -52,11 +52,11 @@ JS
                                                      alt="Image not found">
                                             </div>
 
-                                            <h2 class="wow fadeInUp" data-wow-delay="500ms"data-wow-duration="400ms">
-                                                <?=Yii::t('app', '<strong>Britaniya Ta`lim Standartlari O`zbekistonda</strong>')?>
-                                            </h2>
+                                            <h4 class="wow fadeInUp" data-wow-delay="500ms"data-wow-duration="400ms">
+                                                <?=Yii::t('app', '<strong>Britaniya</strong> Ta`lim Standartlari O`zbekistonda')?>
+                                            </h4>
                                             <p class="wow fadeInUp" data-wow-delay="500ms"data-wow-duration="400ms">
-                                                <?=Yii::t('app', 'Endi Britaniya universiteti diplomini O`zbekistonda qo`lga kiriting')?>
+                                                <?=Yii::t('app', '<strong>Endi Britaniya universiteti diplomini O`zbekistonda qo`lga kiriting</strong>')?>
                                                 <br>
                                                 <?=Yii::t('app', 'Yangi tashkil etilgan Xalqaro Malakalar va Baholash Markazi (IQAC) orqali jahon darajasidagi ta`lim endi yanada yaqinroq bo`ldi')?>
                                             </p>
