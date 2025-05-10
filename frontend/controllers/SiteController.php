@@ -2,6 +2,13 @@
 
 namespace frontend\controllers;
 
+use common\models\Chair;
+use common\models\Faculty;
+use common\models\Major;
+use common\models\Page;
+use common\models\Pages;
+use common\models\Setting;
+use common\models\Visit;
 use frontend\models\ResendVerificationEmailForm;
 use frontend\models\VerifyEmailForm;
 use Yii;
@@ -15,6 +22,7 @@ use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
 use frontend\models\ContactForm;
+use yii\web\NotFoundHttpException;
 
 /**
  * Site controller
@@ -75,7 +83,113 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        $setting = Setting::findOne(1);
+
+        $seo = Pages::findOne(1);
+        $page = Page::findOne(1);
+
+        $this->view->registerMetaTag([
+            'name' => 'description',
+            'content' => $seo->getMetaTitleTranslate(),
+        ]);
+
+        Yii::$app->params['og_title']['content'] = $seo->getMetaTitleTranslate();
+        Yii::$app->params['og_description']['content'] = $seo->getMetaDescriptionTranslate();
+        Yii::$app->params['og_image']['content'] = Yii::$app->request->hostInfo . '/backend/web/uploads/'.$setting->open_graph_photo;
+
+        $faculty_count = Faculty::find()->count('id');
+        $chair_count = Chair::find()->count('id');
+        $major_count = Major::find()->count('id');
+        $teacher_count = User::find()->where(['not', ['chair_id' => null]])->count('id');
+
+        $check = Visit::findOne(['ip' => '']);
+        if ($check === null){
+            $click = new Visit();
+            $click->ip = Yii::$app->request->userIP;
+            $click->date = time();
+            $click->url = '/site/index';
+            $click->save(false);
+        }else{
+            $check->date = time();
+            $check->save(false);
+        }
+
+        return $this->render('index',[
+            'faculty_count' => $faculty_count,
+            'chair_count' => $chair_count,
+            'major_count' => $major_count,
+            'teacher_count' => $teacher_count,
+            'page' => $page,
+            'seo' => $seo,
+            'setting' => $setting,
+
+        ]);
+    }
+
+    public function actionPage($url)
+    {
+        $check = Visit::findOne(['ip' => '']);
+        if ($check === null){
+            $click = new Visit();
+            $click->ip = Yii::$app->request->userIP;
+            $click->date = time();
+            $click->url = $url;
+            $click->save(false);
+        }else{
+            $check->date = time();
+            $check->save(false);
+        }
+
+        $pageOne = Page::find()->where(['url' => $url])->orWhere(['url_ru' => $url])->orWhere(['url_en' => $url])->one();
+
+        if($pageOne == null){
+            throw new NotFoundHttpException('The requested page does not exist.');
+        }
+
+        $this->view->registerMetaTag([
+            'name' => 'description',
+            'content' => $pageOne->titleTranslate,
+        ]);
+
+        Yii::$app->params['og_title']['content'] = $pageOne->titleTranslate;
+        Yii::$app->params['og_description']['content'] = $pageOne->titleTranslate;
+        Yii::$app->params['og_language_uz']['content'] = '/uz/'.$pageOne->url;
+        Yii::$app->params['og_language_ru']['content'] = '/ru/'.$pageOne->url_ru;
+        Yii::$app->params['og_language_en']['content'] = '/en/'.$pageOne->url_en;
+        Yii::$app->params['og_url']['content'] = Yii::$app->request->hostInfo.'/'.$pageOne->id;
+        Yii::$app->params['og_type']['content'] = 'page';
+        Yii::$app->params['og_image']['content'] = Yii::$app->request->hostInfo.'/backend/web/uploads/page/icon/'.$pageOne->filename;
+
+
+        $query = Page::find()->where(['pages_id' => $pageOne->id, 'status' => 10])->orderBy(['id' => SORT_DESC]);
+
+        if ($pageOne->id == 23){
+            return $this->render('majors',[
+                'counts' => $query->count(),
+                'pageOne' => $pageOne,
+            ]);
+        }
+        elseif ($pageOne->id == 10){
+            return $this->render('majors',[
+                'counts' => $query->count(),
+                'pageOne' => $pageOne,
+            ]);
+        }
+        elseif ($pageOne->id == 10000){
+            return $this->render('news',[
+                'counts' => $query->count(),
+                'pageOne' => $pageOne,
+            ]);
+        }
+        else{
+            return $this->render('page',[
+                'counts' => $query->count(),
+                'pageOne' => $pageOne,
+            ]);
+        }
+
+
+
     }
 
     /**
