@@ -73,7 +73,7 @@ JS
                                     <div class="banner-one-thumb col-xl-6 col-lg-5 pl-60 pl-md-15 pl-xs-15">
                                         <div class="thumb">
                                             <img style="border-radius: 50%;" decoding="async"
-                                                 src="/unieducation/wp-content/uploads/123.jpg"
+                                                 src="/unieducation/wp-content/uploads/baholash_markazi.jpg"
                                                  alt="Image not found">
 
                                         </div>
