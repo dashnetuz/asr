@@ -191,16 +191,16 @@ $this->beginBody() ?>
                                         </ul>
                                     </div>
 
-                                    <!--<div class="attr-right">-->
-                                    <!--    <div class="attr-nav">-->
-                                    <!--        <ul>-->
-                                    <!--            <li class="button">-->
-                                    <!--                <a href="<?= Url::to(['/']) ?>">-->
-                                    <!--                    Get consultant </a>-->
-                                    <!--            </li>-->
-                                    <!--        </ul>-->
-                                    <!--    </div>-->
-                                    <!--</div>-->
+                                    <div class="attr-right">
+                                        <div class="attr-nav">
+                                            <ul>
+                                                <li class="button">
+                                                    <a href="<?= Url::to(['/']) ?>">
+                                                        Login with INHA </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                     </div>
 
                                     <!-- Overlay screen for menu -->
