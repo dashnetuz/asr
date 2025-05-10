@@ -381,7 +381,7 @@ $this->beginBody() ?>
                                 <div class="footer-bottom">
                                     <div class="row">
                                         <div class="col-lg-6">
-                                            &copy; Copyright 2024. All Rights Reserved by <a
+                                            &copy; Copyright 2025. All Rights Reserved by <a
                                                     href="https://t.me/adsh97">adsh</a>
                                         </div>
                                         <div class="col-lg-6 text-end">
