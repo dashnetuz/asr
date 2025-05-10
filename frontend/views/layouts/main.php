@@ -45,7 +45,7 @@ $this->beginBody() ?>
             <div class="txt-loading">
                 <span data-text-preloader="I" class="letters-loading">I</span>
                 <span data-text-preloader="Q" class="letters-loading">Q</span>
-                <span data-text-preloader="A" class="letters-loading">A</span><br>
+                <span data-text-preloader="A" class="letters-loading">A</span>
                 <span data-text-preloader="C" class="letters-loading">C</span>
             </div>
         </div>
@@ -200,9 +200,7 @@ $this->beginBody() ?>
                                     <!--            </li>-->
                                     <!--        </ul>-->
                                     <!--    </div>-->
-
-
-                                                </div>
+                                    <!--</div>-->
                                     </div>
 
                                     <!-- Overlay screen for menu -->
