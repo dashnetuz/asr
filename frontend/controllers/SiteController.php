@@ -100,7 +100,6 @@ class SiteController extends Controller
         $faculty_count = Faculty::find()->count('id');
         $chair_count = Chair::find()->count('id');
         $major_count = Major::find()->count('id');
-        $teacher_count = User::find()->where(['not', ['chair_id' => null]])->count('id');
 
         $check = Visit::findOne(['ip' => '']);
         if ($check === null){
@@ -118,7 +117,6 @@ class SiteController extends Controller
             'faculty_count' => $faculty_count,
             'chair_count' => $chair_count,
             'major_count' => $major_count,
-            'teacher_count' => $teacher_count,
             'page' => $page,
             'seo' => $seo,
             'setting' => $setting,
