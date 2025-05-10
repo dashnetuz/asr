@@ -108,7 +108,7 @@ JS
                                                             <img
                                                                 style="width: 100%; height: 500px; object-fit: cover; border-radius: 10px;"
                                                                 decoding="async"
-                                                                src="/backend/web/uploads/page/icon/<?= $testimonial->filename ?>"
+                                                                src="/uploads/page/icon/<?= $testimonial->filename ?>"
                                                                 alt="Image">
                                                             <div class="icon">
                                                                 <img decoding="async" src="/unieducation/wp-content/themes/gixus/assets/img/quote.png" alt="Quote Icon">
