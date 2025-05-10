@@ -5,6 +5,14 @@ use yii\helpers\Html;
 use frontend\assets\AppAsset;
 use common\models\Setting;
 use yii\helpers\Url;
+use common\models\Visit;
+use common\models\Pages;
+use common\models\Page;
+
+use common\models\Symbol;
+use common\models\Faculty;
+use common\models\Chair;
+use common\models\User;
 
 $setting = Setting::findOne(1);
 
