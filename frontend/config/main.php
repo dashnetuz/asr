@@ -61,6 +61,8 @@ return [
             'showScriptName' => false,
             'enableDefaultLanguageUrlCode' => true,
             'rules' => [
+                '/<url:[a-zA-Z0-9-]+>/'=>'site/page',
+                'page' => 'site/page',
                 'dashboard/<type:(category|course|lesson|part)>/<action:(index|create|update|delete)>' => 'dashboard/<type><action>',
                 # role:
                 'dashboard/admin-user/manage-roles/<id:\d+>' => 'dashboard/admin-user-manage-roles',
