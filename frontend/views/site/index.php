@@ -71,7 +71,7 @@ JS
                                     </div>
 
                                     <div class="col-xl-6 col-lg-5 pl-60 pl-md-15 pl-xs-15">
-                                        <div class="thumb">
+                                        <div>
                                             <img style="border-radius: 10%;" decoding="async"
                                                  src="/unieducation/wp-content/uploads/baholash_markazi.jpg"
                                                  alt="Image not found">
