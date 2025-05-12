@@ -59,6 +59,32 @@ JS
                                                 <?=Yii::t('app', '<strong>Endi Britaniya universiteti diplomini O`zbekistonda qo`lga kiriting</strong>')?>
                                                 <br>
                                                 <?=Yii::t('app', 'Yangi tashkil etilgan Xalqaro Malakalar va Baholash Markazi (IQAC) orqali jahon darajasidagi ta`lim endi yanada yaqinroq bo`ldi')?>
+                                                <br>
+                                                <?=Yii::t('app', '<strong>Biz haqimizda</strong>')?>
+                                                <br>
+                                                <?=Yii::t('app', 'O`zbekiston Respublikasi Prezident huzuridagi Strategik islohotlar agentligi tashabbusi bilan, Oliy ta`lim, fan va innovatsiyalar vazirligi hamkorligida, O`zbekiston Respublikasi Vazirlar Mahkamasining qaroriga asosan IQAC tashkil etildi. Markazning asosiy maqsadi - xalqaro mezonlarga moslashtirilgan ta`lim dasturlarini mahalliy miqyosda taqdim etish.')?>
+                                                <br>
+                                                <?=Yii::t('app', '<strong>Xalqaro standartlar, mahalliy ahamiyat</strong>')?>
+                                                <br>
+                                                <?=Yii::t('app', 'IQAC tomonidan taklif etilayotgan 3, 4, 5, 6 va 7-darajadagi (professional akademik) malakalar Angliya OFQUAL tomonidan tasdiqlangan RQF (Regulated Qualifications Framework) standartlariga mos ravishda ishlab chiqilgan. Shu bilan birga, ular O`zbekistonning milliy ta`lim tizimi bilan uyg`unlashtirilgan.
+
+                                                IQAC 3-7 darajadagi RQF asosidagi dasturlarni ishlab chiqadi va akkreditatsiyadan o`tkazadi. Ushbu dasturlar quyidagi yetakchi O`zbekiston universitetlarida hamkorlikda amalga oshiriladi:
+- Toshkentdagi INHA Universiteti
+                                                - Toshkent Arxitektura va Qurilish Universiteti
+                                                - Toshkent Davlat Sharqshunoslik Universiteti
+
+Mazkur dasturlar xalqaro miqyosda tan olinadi. Bu Chartered Management Institute (CMI) hamda quyidagi nufuzli Britaniya universitetlari bilan hamkorlikda ta`minlanadi:
+- Gloucestershire Universiteti
+- Hertfordshire Universiteti
+- QA Higher Education
+- Northumbria Universiteti
+- Ulster Universiteti
+- West London Universiteti
+- Central Lancashire Universiteti
+- Wolverhampton Universiteti
+- va boshqalar.
+')?>
+                                                <br>
                                             </p>
 
                                             <div class="button mt-40 wow fadeInUp" data-wow-delay="1200ms"
