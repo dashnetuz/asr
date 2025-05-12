@@ -93,11 +93,11 @@ $this->beginBody() ?>
                                                 data-target="#navbar-menu">
                                             <i class="fa fa-bars"></i>
                                         </button>
-                                        <a class="navbar-brand" href="<?= Url::to(['/']) ?>">
-                                            <img src="<?= $setting->logo ?>"
-                                                 class="logo"
-                                                 alt="Logo">
-                                        </a>
+<!--                                        <a class="navbar-brand" href="--><?php //= Url::to(['/']) ?><!--">-->
+<!--                                            <img src="--><?php //= $setting->logo ?><!--"-->
+<!--                                                 class="logo"-->
+<!--                                                 alt="Logo">-->
+<!--                                        </a>-->
                                     </div>
                                     <!-- End Header Navigation -->
 
@@ -191,16 +191,16 @@ $this->beginBody() ?>
                                         </ul>
                                     </div>
 
-                                    <div class="attr-right">
-                                        <div class="attr-nav">
-                                            <ul>
-                                                <li class="button">
-                                                    <a href="<?= Url::to(['/']) ?>">
-                                                        Login with INHA </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
+<!--                                    <div class="attr-right">-->
+<!--                                        <div class="attr-nav">-->
+<!--                                            <ul>-->
+<!--                                                <li class="button">-->
+<!--                                                    <a href="--><?php //= Url::to(['/']) ?><!--">-->
+<!--                                                        Login with INHA </a>-->
+<!--                                                </li>-->
+<!--                                            </ul>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
                                     </div>
 
                                     <!-- Overlay screen for menu -->
@@ -249,7 +249,7 @@ $this->beginBody() ?>
                                                         <p>Call us anytime</p>
                                                         <h4>
                                                             <i class="fas fa-solid fa-phone"></i>
-                                                            <a href="tel:+998931639922">+998 93 163 99 22</a>
+                                                            <a href="tel:+998000000000">+998 00 000 00 00</a>
                                                         </h4>
                                                     </li>
                                                     <li>
@@ -359,14 +359,14 @@ $this->beginBody() ?>
                                                         </div>
                                                         <span class="wpcf7-form-control-wrap"
                                                               data-name="email1"><input size="40"
-                                                                                        maxlength="400"
-                                                                                        class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email form-control"
-                                                                                        id="email1" aria-required="true"
-                                                                                        aria-invalid="false"
-                                                                                        placeholder="Your Email"
-                                                                                        value=""
-                                                                                        type="email"
-                                                                                        name="email1"/></span>
+                                                                maxlength="400"
+                                                                class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email form-control"
+                                                                id="email1" aria-required="true"
+                                                                aria-invalid="false"
+                                                                placeholder="Your Email"
+                                                                value=""
+                                                                type="email"
+                                                                name="email1"/></span>
                                                         <button type="submit"><i
                                                                     class="fa fa-paper-plane"></i></button>
                                                         <div class="wpcf7-response-output"
