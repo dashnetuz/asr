@@ -11711,30 +11711,45 @@ ul.link-list li a {
 	align-items: start;
 }
 
-#iqac-wrapper .iqac-image img {
+/* CHAP: matn */
+#iqac-wrapper .iqac-content {
+	min-width: 0;
+}
+
+/* O‘NG: rasm + button */
+#iqac-wrapper .iqac-side {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	max-width: 480px;
+}
+
+/* Rasm */
+#iqac-wrapper .iqac-side img {
 	width: 100%;
 	height: auto;
 	border-radius: 10px;
-	display: block;
 	object-fit: cover;
 	margin-top: 30px;
 }
 
+/* Elementor uchun tozalash */
 .banner-style-one-area,
 .elementor-widget-container {
 	overflow: visible !important;
 	height: auto !important;
 }
 
+/* 📱 Mobil */
 @media (max-width: 991px) {
 	#iqac-wrapper {
 		grid-template-columns: 1fr;
 	}
 
-	#iqac-wrapper .iqac-image {
+	#iqac-wrapper .iqac-side {
 		order: -1;
-		margin-bottom: 20px;
+		margin-bottom: 30px;
 	}
 }
+
 

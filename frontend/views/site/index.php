@@ -85,18 +85,18 @@ JS
                                             <li><?= Yii::t('app', 'va boshqalar.') ?></li>
                                         </ul>
                                     </div>
+                                </div>
+
+                                <!-- O‘NG TOMON: RASM + BUTTON -->
+                                <div class="iqac-side">
+                                    <img decoding="async" src="/unieducation/wp-content/uploads/baholash_markazi.jpg"
+                                         alt="IQAC rasmi">
 
                                     <div class="button mt-40 wow fadeInUp" data-wow-delay="1200ms" data-wow-duration="400ms">
                                         <a class="btn btn-md circle btn-gradient animation"
                                            href="#"><?= Yii::t('app', 'Men o`qishni hohlayman') ?>
                                         </a>
                                     </div>
-                                </div>
-
-                                <!-- O‘NG TOMON: RASM -->
-                                <div class="iqac-image">
-                                    <img decoding="async" src="/unieducation/wp-content/uploads/baholash_markazi.jpg"
-                                         alt="IQAC rasmi">
                                 </div>
 
                             </div> <!-- /#iqac-wrapper -->
@@ -106,6 +106,7 @@ JS
             </div>
         </div>
     </div>
+
 
 
 
