@@ -11704,6 +11704,7 @@ ul.link-list li a {
 /*IQAC WRAPPER UCHUN CSS*/
 #iqac-wrapper {
 	margin-top: 100px;
+	margin-bottom: 100px;
 	display: flex;
 	flex-wrap: wrap;
 	gap: 40px;
@@ -11715,6 +11716,7 @@ ul.link-list li a {
 	flex-grow: 1;
 	flex-basis: 0;
 	min-width: 300px;
+	min-height: 100%;
 }
 
 #iqac-wrapper .iqac-image {
@@ -11729,6 +11731,12 @@ ul.link-list li a {
 	border-radius: 10px;
 	display: block;
 	object-fit: cover;
+}
+
+.banner-style-one-area,
+.elementor-widget-container {
+	overflow: visible !important;
+	height: auto !important;
 }
 
 /* Mobil uchun */
@@ -11747,3 +11755,4 @@ ul.link-list li a {
 		margin-bottom: 20px;
 	}
 }
+
