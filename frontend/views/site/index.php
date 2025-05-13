@@ -91,7 +91,7 @@ JS
                                 <div class="iqac-side">
                                     <img decoding="async" src="/unieducation/wp-content/uploads/baholash_markazi.jpg"
                                          alt="IQAC rasmi">
-                                    <h4>Men o`qishni hohlayman:</h4>
+                                    <h4>Men o`qishni xohlayman:</h4>
 
                                     <div class="button wow fadeInUp" data-wow-delay="1200ms" data-wow-duration="400ms">
                                         <a class="btn btn-md circle btn-gradient animation"
