@@ -3280,7 +3280,8 @@ p {
 }
 
 .banner-style-one-area div {
-	height: 100%;
+	margin-bottom: 10px;
+	/*height: 100%;*/
 }
 
 .banner-style-one .row div {
