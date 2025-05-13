@@ -11703,6 +11703,7 @@ ul.link-list li a {
 
 /*IQAC WRAPPER UCHUN CSS*/
 #iqac-wrapper {
+	margin-top: 100px;
 	display: flex;
 	flex-wrap: wrap;
 	gap: 40px;
@@ -11711,12 +11712,14 @@ ul.link-list li a {
 }
 
 #iqac-wrapper .iqac-content {
-	flex: 1 1 55%;
+	flex-grow: 1;
+	flex-basis: 0;
 	min-width: 300px;
 }
 
 #iqac-wrapper .iqac-image {
-	flex: 1 1 40%;
+	flex-shrink: 0;
+	flex-basis: auto;
 	max-width: 480px;
 }
 
@@ -11728,7 +11731,7 @@ ul.link-list li a {
 	object-fit: cover;
 }
 
-/* Mobilga moslashtirish */
+/* Mobil uchun */
 @media (max-width: 991px) {
 	#iqac-wrapper {
 		flex-direction: column-reverse;
