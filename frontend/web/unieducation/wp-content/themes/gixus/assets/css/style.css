@@ -11708,7 +11708,6 @@ ul.link-list li a {
 	grid-template-columns: minmax(0, 1fr) auto;
 	column-gap: 40px;
 	margin-top: 100px;
-	margin-bottom: 100px;
 	align-items: start;
 }
 
