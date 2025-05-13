@@ -11711,8 +11711,15 @@ ul.link-list li a {
 	align-items: start;
 }
 
+/* Matn birinchi qismda, keyin grid ustunlarni egallab ketadi */
 #iqac-wrapper .iqac-content {
-	min-width: 0;
+	grid-column: 1 / -1; /* matn to‘liq kengayadi */
+}
+
+/* Rasm faqat yuqorida, o‘ngda joylashadi */
+#iqac-wrapper .iqac-image {
+	grid-column: 2 / 3;
+	grid-row: 1;
 }
 
 #iqac-wrapper .iqac-image img {
@@ -11725,6 +11732,7 @@ ul.link-list li a {
 	margin-top: 30px;
 }
 
+/* Elementor va banner uchun fix */
 .banner-style-one-area,
 .elementor-widget-container {
 	overflow: visible !important;
@@ -11738,9 +11746,12 @@ ul.link-list li a {
 	}
 
 	#iqac-wrapper .iqac-image {
+		grid-column: auto;
 		order: -1;
 		margin-bottom: 20px;
 	}
+
+	#iqac-wrapper .iqac-content {
+		grid-column: auto;
+	}
 }
-
-
