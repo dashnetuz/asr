@@ -11703,34 +11703,26 @@ ul.link-list li a {
 
 /*IQAC WRAPPER UCHUN CSS*/
 #iqac-wrapper {
-	margin-top: 100px;
-	display: flex;
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: 1fr auto;
 	gap: 40px;
-	align-items: flex-start;
-	justify-content: space-between;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	align-items: start;
 }
 
 #iqac-wrapper .iqac-content {
-	flex-grow: 1;
-	flex-basis: 0;
-	min-width: 300px;
-	min-height: 100%;
-}
-
-#iqac-wrapper .iqac-image {
-	flex-shrink: 0;
-	flex-basis: auto;
-	max-width: 480px;
+	min-width: 0;
 }
 
 #iqac-wrapper .iqac-image img {
-	margin-top: 30px;
+	max-width: 480px;
 	width: 100%;
 	height: auto;
 	border-radius: 10px;
 	display: block;
 	object-fit: cover;
+	margin-top: 30px;
 }
 
 .banner-style-one-area,
@@ -11739,20 +11731,16 @@ ul.link-list li a {
 	height: auto !important;
 }
 
-/* Mobil uchun */
+/* 📱 Mobil uchun */
 @media (max-width: 991px) {
 	#iqac-wrapper {
-		flex-direction: column-reverse;
-	}
-
-	#iqac-wrapper .iqac-content,
-	#iqac-wrapper .iqac-image {
-		flex: 1 1 100%;
-		max-width: 100%;
+		grid-template-columns: 1fr;
 	}
 
 	#iqac-wrapper .iqac-image {
+		order: -1;
 		margin-bottom: 20px;
 	}
 }
+
 
