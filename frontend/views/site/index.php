@@ -42,84 +42,71 @@ JS
                     <div class="shape-blury"></div>
                     <div class="banner-style-one">
                         <div class="container">
-                            <div class="content">
-                                <div class="row align-center">
-                                    <div class="col-xl-6 col-lg-7 pr-50 pr-md-15 pr-xs-15">
-                                        <div class="information">
-                                            <div class="animation-shape">
-                                                <img decoding="async"
-                                                     src="/unieducation/wp-content/themes/gixus/assets/img/shape/anim-2.png"
-                                                     alt="Image not found">
-                                            </div>
+                            <div id="iqac-wrapper">
 
-                                            <h4 class="wow fadeInUp" data-wow-delay="500ms" data-wow-duration="400ms">
-                                                <?= Yii::t('app', '<strong>Britaniya</strong> Ta`lim Standartlari O`zbekistonda') ?>
-                                            </h4>
+                                <!-- CHAP TOMON: MATN -->
+                                <div class="iqac-content">
+                                    <h4 class="wow fadeInUp" data-wow-delay="500ms" data-wow-duration="400ms">
+                                        <?= Yii::t('app', '<strong>Britaniya</strong> Ta`lim Standartlari O`zbekistonda') ?>
+                                    </h4>
 
-                                            <div class="wow fadeInUp" data-wow-delay="500ms" data-wow-duration="400ms">
+                                    <div class="wow fadeInUp" data-wow-delay="500ms" data-wow-duration="400ms">
+                                        <p><?= Yii::t('app', '<strong>Endi Britaniya universiteti diplomini O`zbekistonda qo`lga kiriting</strong>') ?></p>
 
-                                                <p><?= Yii::t('app', '<strong>Endi Britaniya universiteti diplomini O`zbekistonda qo`lga kiriting</strong>') ?></p>
+                                        <p><?= Yii::t('app', 'Yangi tashkil etilgan Xalqaro Malakalar va Baholash Markazi (IQAC) orqali jahon darajasidagi ta`lim endi yanada yaqinroq bo`ldi.') ?></p>
 
-                                                <p><?= Yii::t('app', 'Yangi tashkil etilgan Xalqaro Malakalar va Baholash Markazi (IQAC) orqali jahon darajasidagi ta`lim endi yanada yaqinroq bo`ldi.') ?></p>
+                                        <p><strong><?= Yii::t('app', 'Biz haqimizda') ?></strong></p>
 
-                                                <p><strong><?= Yii::t('app', 'Biz haqimizda') ?></strong></p>
+                                        <p><?= Yii::t('app', 'O`zbekiston Respublikasi Prezident huzuridagi Strategik islohotlar agentligi tashabbusi bilan, Oliy ta`lim, fan va innovatsiyalar vazirligi hamkorligida, O`zbekiston Respublikasi Vazirlar Mahkamasining qaroriga asosan IQAC tashkil etildi. Markazning asosiy maqsadi - xalqaro mezonlarga moslashtirilgan ta`lim dasturlarini mahalliy miqyosda taqdim etish.') ?></p>
 
-                                                <p><?= Yii::t('app', 'O`zbekiston Respublikasi Prezident huzuridagi Strategik islohotlar agentligi tashabbusi bilan, Oliy ta`lim, fan va innovatsiyalar vazirligi hamkorligida, O`zbekiston Respublikasi Vazirlar Mahkamasining qaroriga asosan IQAC tashkil etildi. Markazning asosiy maqsadi - xalqaro mezonlarga moslashtirilgan ta`lim dasturlarini mahalliy miqyosda taqdim etish.') ?></p>
+                                        <p><strong><?= Yii::t('app', 'Xalqaro standartlar, mahalliy ahamiyat') ?></strong></p>
 
-                                                <p><strong><?= Yii::t('app', 'Xalqaro standartlar, mahalliy ahamiyat') ?></strong></p>
+                                        <p><?= Yii::t('app', 'IQAC tomonidan taklif etilayotgan 3, 4, 5, 6 va 7-darajadagi (professional akademik) malakalar Angliya OFQUAL tomonidan tasdiqlangan RQF (Regulated Qualifications Framework) standartlariga mos ravishda ishlab chiqilgan. Shu bilan birga, ular O`zbekistonning milliy ta`lim tizimi bilan uyg`unlashtirilgan.') ?></p>
 
-                                                <p><?= Yii::t('app', 'IQAC tomonidan taklif etilayotgan 3, 4, 5, 6 va 7-darajadagi (professional akademik) malakalar Angliya OFQUAL tomonidan tasdiqlangan RQF (Regulated Qualifications Framework) standartlariga mos ravishda ishlab chiqilgan. Shu bilan birga, ular O`zbekistonning milliy ta`lim tizimi bilan uyg`unlashtirilgan.') ?></p>
+                                        <p><?= Yii::t('app', 'IQAC 3-7 darajadagi RQF asosidagi dasturlarni ishlab chiqadi va akkreditatsiyadan o`tkazadi. Ushbu dasturlar quyidagi yetakchi O`zbekiston universitetlarida hamkorlikda amalga oshiriladi:') ?></p>
 
-                                                <p><?= Yii::t('app', 'IQAC 3-7 darajadagi RQF asosidagi dasturlarni ishlab chiqadi va akkreditatsiyadan o`tkazadi. Ushbu dasturlar quyidagi yetakchi O`zbekiston universitetlarida hamkorlikda amalga oshiriladi:') ?></p>
+                                        <ul>
+                                            <li><?= Yii::t('app', 'Toshkentdagi INHA Universiteti') ?></li>
+                                            <li><?= Yii::t('app', 'Toshkent Arxitektura va Qurilish Universiteti') ?></li>
+                                            <li><?= Yii::t('app', 'Toshkent Davlat Sharqshunoslik Universiteti') ?></li>
+                                        </ul>
 
-                                                <ul>
-                                                    <li><?= Yii::t('app', 'Toshkentdagi INHA Universiteti') ?></li>
-                                                    <li><?= Yii::t('app', 'Toshkent Arxitektura va Qurilish Universiteti') ?></li>
-                                                    <li><?= Yii::t('app', 'Toshkent Davlat Sharqshunoslik Universiteti') ?></li>
-                                                </ul>
+                                        <p><?= Yii::t('app', 'Mazkur dasturlar xalqaro miqyosda tan olinadi. Bu Chartered Management Institute (CMI) hamda quyidagi nufuzli Britaniya universitetlari bilan hamkorlikda ta`minlanadi:') ?></p>
 
-                                                <p><?= Yii::t('app', 'Mazkur dasturlar xalqaro miqyosda tan olinadi. Bu Chartered Management Institute (CMI) hamda quyidagi nufuzli Britaniya universitetlari bilan hamkorlikda ta`minlanadi:') ?></p>
-
-                                                <ul>
-                                                    <li><?= Yii::t('app', 'Gloucestershire Universiteti') ?></li>
-                                                    <li><?= Yii::t('app', 'Hertfordshire Universiteti') ?></li>
-                                                    <li><?= Yii::t('app', 'QA Higher Education') ?></li>
-                                                    <li><?= Yii::t('app', 'Northumbria Universiteti') ?></li>
-                                                    <li><?= Yii::t('app', 'Ulster Universiteti') ?></li>
-                                                    <li><?= Yii::t('app', 'West London Universiteti') ?></li>
-                                                    <li><?= Yii::t('app', 'Central Lancashire Universiteti') ?></li>
-                                                    <li><?= Yii::t('app', 'Wolverhampton Universiteti') ?></li>
-                                                    <li><?= Yii::t('app', 'va boshqalar.') ?></li>
-                                                </ul>
-                                            </div>
-
-
-                                            <div class="button mt-40 wow fadeInUp" data-wow-delay="1200ms"
-                                                 data-wow-duration="400ms">
-                                                <a class="btn btn-md circle btn-gradient animation"
-                                                   href="#"><?=Yii::t('app', 'Men o`qishni hohlayman')?>
-                                                </a>
-                                            </div>
-                                        </div>
+                                        <ul>
+                                            <li><?= Yii::t('app', 'Gloucestershire Universiteti') ?></li>
+                                            <li><?= Yii::t('app', 'Hertfordshire Universiteti') ?></li>
+                                            <li><?= Yii::t('app', 'QA Higher Education') ?></li>
+                                            <li><?= Yii::t('app', 'Northumbria Universiteti') ?></li>
+                                            <li><?= Yii::t('app', 'Ulster Universiteti') ?></li>
+                                            <li><?= Yii::t('app', 'West London Universiteti') ?></li>
+                                            <li><?= Yii::t('app', 'Central Lancashire Universiteti') ?></li>
+                                            <li><?= Yii::t('app', 'Wolverhampton Universiteti') ?></li>
+                                            <li><?= Yii::t('app', 'va boshqalar.') ?></li>
+                                        </ul>
                                     </div>
 
-                                    <div class="col-xl-6 col-lg-5 pl-60 pl-md-15 pl-xs-15">
-                                        <div>
-                                            <img style="border-radius: 10%;" decoding="async"
-                                                 src="/unieducation/wp-content/uploads/baholash_markazi.jpg"
-                                                 alt="Image not found">
-
-                                        </div>
+                                    <div class="button mt-40 wow fadeInUp" data-wow-delay="1200ms" data-wow-duration="400ms">
+                                        <a class="btn btn-md circle btn-gradient animation"
+                                           href="#"><?= Yii::t('app', 'Men o`qishni hohlayman') ?>
+                                        </a>
                                     </div>
-
                                 </div>
-                            </div>
+
+                                <!-- O‘NG TOMON: RASM -->
+                                <div class="iqac-image">
+                                    <img decoding="async" src="/unieducation/wp-content/uploads/baholash_markazi.jpg"
+                                         alt="IQAC rasmi">
+                                </div>
+
+                            </div> <!-- /#iqac-wrapper -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
 
 
     <div class="elementor-element elementor-element-df0f476 e-con-full e-flex e-con e-parent e-lazyloaded" data-id="df0f476" data-element_type="container" id="testimonial">

@@ -11700,3 +11700,47 @@ ul.link-list li a {
 		transform: rotateY(0deg);
 	}
 }
+
+/*IQAC WRAPPER UCHUN CSS*/
+#iqac-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 40px;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+#iqac-wrapper .iqac-content {
+	flex: 1 1 55%;
+	min-width: 300px;
+}
+
+#iqac-wrapper .iqac-image {
+	flex: 1 1 40%;
+	max-width: 480px;
+}
+
+#iqac-wrapper .iqac-image img {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+	display: block;
+	object-fit: cover;
+}
+
+/* Mobilga moslashtirish */
+@media (max-width: 991px) {
+	#iqac-wrapper {
+		flex-direction: column-reverse;
+	}
+
+	#iqac-wrapper .iqac-content,
+	#iqac-wrapper .iqac-image {
+		flex: 1 1 100%;
+		max-width: 100%;
+	}
+
+	#iqac-wrapper .iqac-image {
+		margin-bottom: 20px;
+	}
+}
