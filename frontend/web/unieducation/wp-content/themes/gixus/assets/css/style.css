@@ -11704,7 +11704,6 @@ ul.link-list li a {
 /*IQAC WRAPPER UCHUN CSS*/
 #iqac-wrapper {
 	margin-top: 100px;
-	margin-bottom: 100px;
 	display: flex;
 	flex-wrap: wrap;
 	gap: 40px;
@@ -11726,6 +11725,7 @@ ul.link-list li a {
 }
 
 #iqac-wrapper .iqac-image img {
+	margin-top: 30px;
 	width: 100%;
 	height: auto;
 	border-radius: 10px;
