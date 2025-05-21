@@ -89,7 +89,7 @@ JS
 
                                 <!-- O‘NG TOMON: RASM + BUTTON -->
                                 <div class="iqac-side">
-                                    <img decoding="async" src="/unieducation/wp-content/uploads/baholash_markazi.jpg"
+                                    <img decoding="async" src="/unieducation/wp-content/uploads/baholash_markazi.png"
                                          alt="IQAC rasmi">
                                     <h4>Men o`qishni xohlayman:</h4>
 
