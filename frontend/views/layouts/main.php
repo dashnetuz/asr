@@ -93,11 +93,11 @@ $this->beginBody() ?>
                                                 data-target="#navbar-menu">
                                             <i class="fa fa-bars"></i>
                                         </button>
-<!--                                        <a class="navbar-brand" href="--><?php //= Url::to(['/']) ?><!--">-->
-<!--                                            <img src="--><?php //= $setting->logo ?><!--"-->
-<!--                                                 class="logo"-->
-<!--                                                 alt="Logo">-->
-<!--                                        </a>-->
+                                        <a class="navbar-brand" href="<?= Url::to(['/']) ?>">
+                                            <img src="<?= $setting->logo ?>"
+                                                 class="logo"
+                                                 alt="Logo">
+                                        </a>
                                     </div>
                                     <!-- End Header Navigation -->
 
