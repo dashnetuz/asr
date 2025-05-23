@@ -9,32 +9,27 @@ return[
     "Bizning hamkorlarimiz" => "Our partners",
 
 
-    '<strong>Britaniya</strong> Ta`lim Standartlari O`zbekistonda' => '<strong>British</strong> Education Standards in Uzbekistan',
-    '<strong>Endi Britaniya universiteti diplomini O`zbekistonda qo`lga kiriting</strong>' => '<strong>Now earn a British university diploma in Uzbekistan</strong>',
-    'Yangi tashkil etilgan Xalqaro Malakalar va Baholash Markazi (IQAC) orqali jahon darajasidagi ta`lim endi yanada yaqinroq bo`ldi.' =>
-        'With the newly established International Qualifications and Accreditation Centre (IQAC), world-class education is now closer than ever.',
-    'Biz haqimizda' => 'About Us',
-    'O`zbekiston Respublikasi Prezident huzuridagi Strategik islohotlar agentligi tashabbusi bilan...' =>
-        'IQAC was established at the initiative of the Agency for Strategic Reforms under the President of the Republic of Uzbekistan, in cooperation with the Ministry of Higher Education, Science and Innovation, and based on a decree of the Cabinet of Ministers. The goal is to deliver educational programs aligned with international standards at the local level.',
-    'Xalqaro standartlar, mahalliy ahamiyat' => 'Global Standards, Local Relevance',
-    'IQAC tomonidan taklif etilayotgan...' =>
-        'The qualifications offered by IQAC at levels 3 to 7 are aligned with the UK’s OFQUAL-accredited RQF (Regulated Qualifications Framework) standards and are integrated with Uzbekistan’s national education system.',
-    'IQAC 3-7 darajadagi RQF asosidagi dasturlarni...' =>
-        'IQAC develops and accredits programs based on RQF levels 3 to 7. These are implemented in cooperation with the following leading universities of Uzbekistan:',
-    'Toshkentdagi INHA Universiteti' => 'INHA University in Tashkent',
-    'Toshkent Arxitektura va Qurilish Universiteti' => 'Tashkent University of Architecture and Construction',
-    'Toshkent Davlat Sharqshunoslik Universiteti' => 'Tashkent State University of Oriental Studies',
-    'Mazkur dasturlar xalqaro miqyosda tan olinadi...' =>
-        'These programs are internationally recognized and implemented in collaboration with the Chartered Management Institute (CMI) and the following prestigious British universities:',
-    'Gloucestershire Universiteti' => 'University of Gloucestershire',
-    'Hertfordshire Universiteti' => 'University of Hertfordshire',
-    'QA Higher Education' => 'QA Higher Education',
-    'Northumbria Universiteti' => 'Northumbria University',
-    'Ulster Universiteti' => 'Ulster University',
-    'West London Universiteti' => 'University of West London',
-    'Central Lancashire Universiteti' => 'University of Central Lancashire',
-    'Wolverhampton Universiteti' => 'University of Wolverhampton',
-    'va boshqalar.' => 'and others.',
+    "<strong>Britaniya</strong> Ta`lim Standartlari O`zbekistonda" => "<strong>British</strong> Education Standards in Uzbekistan",
+    "<strong>Endi Britaniya universiteti diplomini O`zbekistonda qo`lga kiriting</strong>" => "<strong>Now earn a British university diploma in Uzbekistan</strong>",
+    "Yangi tashkil etilgan Xalqaro Malakalar va Baholash Markazi (IQAC) orqali jahon darajasidagi ta`lim endi yanada yaqinroq bo`ldi." => "With the newly established International Qualifications and Assessment Center (IQAC), world-class education is now closer than ever.",
+    "Biz haqimizda" => "About us",
+    "O`zbekiston Respublikasi Prezident huzuridagi Strategik islohotlar agentligi tashabbusi bilan..." => "IQAC was established at the initiative of the Strategic Reforms Agency under the President of Uzbekistan, in cooperation with the Ministry of Higher Education, Science and Innovation, and based on a resolution of the Cabinet of Ministers. The main goal of the center is to provide internationally aligned education locally.",
+    "Xalqaro standartlar, mahalliy ahamiyat" => "International standards, local relevance",
+    "IQAC tomonidan taklif etilayotgan 3, 4, 5, 6 va 7-darajadagi..." => "The 3 to 7 level qualifications offered by IQAC are developed in accordance with the UK OFQUAL-regulated RQF standards, and are adapted to the national education system of Uzbekistan.",
+    "IQAC 3-7 darajadagi RQF asosidagi dasturlarni ishlab chiqadi..." => "IQAC develops and accredits RQF level 3–7 programs, implemented in collaboration with leading universities in Uzbekistan:",
+    "Toshkentdagi INHA Universiteti" => "INHA University in Tashkent",
+    "Toshkent Arxitektura va Qurilish Universiteti" => "Tashkent Institute of Architecture and Construction",
+    "Toshkent Davlat Sharqshunoslik Universiteti" => "Tashkent State University of Oriental Studies",
+    "Mazkur dasturlar xalqaro miqyosda tan olinadi..." => "These programs are internationally recognized and are supported by the Chartered Management Institute (CMI) and the following prestigious UK universities:",
+    "Gloucestershire Universiteti" => "University of Gloucestershire",
+    "Hertfordshire Universiteti" => "University of Hertfordshire",
+    "QA Higher Education" => "QA Higher Education",
+    "Northumbria Universiteti" => "Northumbria University",
+    "Ulster Universiteti" => "Ulster University",
+    "West London Universiteti" => "University of West London",
+    "Central Lancashire Universiteti" => "University of Central Lancashire",
+    "Wolverhampton Universiteti" => "University of Wolverhampton",
+    "va boshqalar." => "and others.",
 
 
 
