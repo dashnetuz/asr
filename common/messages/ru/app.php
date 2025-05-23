@@ -7,8 +7,37 @@ return[
     "Boshlash" => "Начать",
     "Men o`qishni hohlayman" => "Я хочу учиться",
     "Bizning hamkorlarimiz" => "Наши партнеры",
-    
-    
+
+    '<strong>Britaniya</strong> Ta`lim Standartlari O`zbekistonda' => '<strong>Британские</strong> стандарты образования в Узбекистане',
+    '<strong>Endi Britaniya universiteti diplomini O`zbekistonda qo`lga kiriting</strong>' => '<strong>Получите диплом британского университета в Узбекистане</strong>',
+    'Yangi tashkil etilgan Xalqaro Malakalar va Baholash Markazi (IQAC) orqali jahon darajasidagi ta`lim endi yanada yaqinroq bo`ldi.' =>
+        'Через недавно созданный Международный центр квалификаций и аккредитации (IQAC) мировое образование стало еще ближе.',
+    'Biz haqimizda' => 'О нас',
+    'O`zbekiston Respublikasi Prezident huzuridagi Strategik islohotlar agentligi tashabbusi bilan...' =>
+        'Международный центр IQAC был создан по инициативе Агентства стратегических реформ при Президенте Республики Узбекистан в сотрудничестве с Министерством высшего образования, науки и инноваций, на основании постановления Кабинета Министров Республики Узбекистан. Цель — внедрение образовательных программ, соответствующих международным стандартам, на местном уровне.',
+    'Xalqaro standartlar, mahalliy ahamiyat' => 'Международные стандарты, локальное значение',
+    'IQAC tomonidan taklif etilayotgan...' =>
+        'Квалификации уровней 3–7, предлагаемые IQAC, разработаны в соответствии со стандартами RQF, утвержденными британским OFQUAL, и адаптированы под национальную систему образования Узбекистана.',
+    'IQAC 3-7 darajadagi RQF asosidagi dasturlarni...' =>
+        'IQAC разрабатывает и аккредитует программы, основанные на уровнях 3–7 RQF. Они реализуются в сотрудничестве с ведущими университетами Узбекистана:',
+    'Toshkentdagi INHA Universiteti' => 'Университет INHA в Ташкенте',
+    'Toshkent Arxitektura va Qurilish Universiteti' => 'Ташкентский архитектурно-строительный университет',
+    'Toshkent Davlat Sharqshunoslik Universiteti' => 'Ташкентский государственный университет востоковедения',
+    'Mazkur dasturlar xalqaro miqyosda tan olinadi...' =>
+        'Эти программы признаются на международном уровне. Реализуются в сотрудничестве с Chartered Management Institute (CMI) и следующими университетами Великобритании:',
+    'Gloucestershire Universiteti' => 'Университет Глостершира',
+    'Hertfordshire Universiteti' => 'Университет Хартфордшира',
+    'QA Higher Education' => 'QA Высшее образование',
+    'Northumbria Universiteti' => 'Университет Нортумбрии',
+    'Ulster Universiteti' => 'Университет Ольстера',
+    'West London Universiteti' => 'Университет Западного Лондона',
+    'Central Lancashire Universiteti' => 'Университет Центрального Ланкашира',
+    'Wolverhampton Universiteti' => 'Университет Вулверхэмптона',
+    'va boshqalar.' => 'и другие.',
+
+
+
+
     "Bizning loyihalarimiz" => "Наши проекты",
     "<strong>UniEducation</strong> bilan akademik sayohatingizni boshlang va yorqin kelajak sari yo‘l oching!" => "Начните свой академический путь с <strong>UniEducation</strong> и откройте двери в будущее, полное возможностей. ",
     "Universitet" => "Университет",
