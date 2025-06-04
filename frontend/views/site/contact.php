@@ -2,7 +2,7 @@
 /* @var $models common\models\Pages */
 
 use yii\widgets\LinkPager;
-use yii\bootstrap\ActiveForm;
+use yii\bootstrap5\ActiveForm;
 use yii\widgets\MaskedInput;
 use yii\helpers\Url;
 use frontend\widget\standart\StandartWidget;
