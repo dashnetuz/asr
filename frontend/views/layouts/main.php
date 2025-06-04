@@ -235,31 +235,74 @@ $this->beginBody() ?>
                                                 <ul class="contact-address">
                                                     <li>
                                                         <p>For cooperations:</p>
-
                                                         <h4>
-                                                            <i class="fas fa-solid fa-envelope"></i>
+                                                            <i class="fas fa-envelope"></i>
                                                             <a href="mailto:admin@iqac.asr.gov.uz">admin@iqac.asr.gov.uz</a>
                                                         </h4>
                                                         <h4>
-                                                            <i class="fas fa-solid fa-envelope"></i>
+                                                            <i class="fas fa-envelope"></i>
                                                             <a href="mailto:info@iqac.asr.gov.uz">info@iqac.asr.gov.uz</a>
                                                         </h4>
                                                     </li>
+
                                                     <li>
-                                                        <p>Call us anytime</p>
+                                                        <p>Call us anytime:</p>
                                                         <h4>
-                                                            <i class="fas fa-solid fa-phone"></i>
+                                                            <i class="fas fa-phone"></i>
                                                             <a href="tel:+998000000000">+998 00 000 00 00</a>
                                                         </h4>
                                                     </li>
+
                                                     <li>
-                                                        <p>Our Location</p>
+                                                        <p>Our Location:</p>
                                                         <h4>
-                                                            <i class="fas fa-solid fa-location"></i>
-                                                            <a href="#">Uzbekistan, Tashkent</a>
+                                                            <i class="fas fa-map-marker-alt"></i>
+                                                            <a href="https://www.google.com/maps/place/Davlat+Boshqaruv+Akademiyasi/@41.3106434,69.2548674,17z/data=!3m1!4b1!4m6!3m5!1s0x38ae8b1a2fd465e5:0xc78956a4447b32d1!8m2!3d41.3106434!4d69.2548674!16s%2Fg%2F11cspthzsj?entry=ttu&g_ep=EgoyMDI1MDYwMS4wIKXMDSoASAFQAw%3D%3D">
+                                                                O'zbekiston shoh ko'chasi 45, Тоshkent, Toshkent
+                                                            </a>
+                                                        </h4>
+                                                    </li>
+
+                                                    <li>
+                                                        <p>Our Channels:</p>
+                                                        <h4>
+                                                            <i class="fab fa-telegram"></i>
+                                                            <a href="https://t.me/iqacuz_bot" target="_blank">@iqacuz_bot</a>
+                                                        </h4>
+                                                        <h4>
+                                                            <i class="fab fa-telegram-plane"></i>
+                                                            <a href="https://t.me/iqac_uz" target="_blank">@iqac_uz</a>
+                                                        </h4>
+                                                        <h4>
+                                                            <i class="fab fa-instagram"></i>
+                                                            <a href="https://instagram.com/iqac.uz" target="_blank">@iqac.uz</a>
+                                                        </h4>
+                                                        <h4>
+                                                            <i class="fas fa-globe"></i>
+                                                            <a href="https://iqac.asr.gov.uz" target="_blank">iqac.asr.gov.uz</a>
+                                                        </h4>
+                                                    </li>
+
+                                                    <li>
+                                                        <p>Staff Contacts:</p>
+                                                        <h4>
+                                                            <i class="fas fa-user-tie"></i>
+                                                            Director:
+                                                            <a href="mailto:k.khomidov@iqac.asr.gov.uz">k.khomidov@iqac.asr.gov.uz</a>
+                                                        </h4>
+                                                        <h4>
+                                                            <i class="fas fa-user-graduate"></i>
+                                                            Academic Director:
+                                                            <a href="mailto:u.azizov@iqac.asr.gov.uz">u.azizov@iqac.asr.gov.uz</a>
+                                                        </h4>
+                                                        <h4>
+                                                            <i class="fas fa-user-cog"></i>
+                                                            Office Manager:
+                                                            <a href="mailto:t.abdusamadov@iqac.asr.gov.uz">t.abdusamadov@iqac.asr.gov.uz</a>
                                                         </h4>
                                                     </li>
                                                 </ul>
+
                                             </div>
                                         </div>
 
