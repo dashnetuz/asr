@@ -166,25 +166,24 @@ JS
                                         <div class="col-lg-12">
                                             <div class="form-group">
                                                 <?php
-                                                $pages = Pages::find()->andWhere(['parent_id' => null])->limit(1)->all();
-                                                $options = [];
-                                                foreach ($pages as $page) {
-                                                    $options[$page->id] = $page->TitleTranslate;
-                                                    $subPages = Page::find()->andWhere(['parent_id' => null, 'pages_id' => $page->id])->all();
-                                                    foreach ($subPages as $subPage) {
-                                                        $options[$subPage->id] = $subPage->TitleTranslate;
-                                                    }
-                                                }
+                                                $options = [
+                                                    'business' => Yii::t('app', 'Biznes boshqaruv (Business Management)'),
+                                                    'it' => Yii::t('app', 'IT (Information Technologies)'),
+                                                    'architecture' => Yii::t('app', 'Arxitektura (Architecture)'),
+                                                    'tourism' => Yii::t('app', 'Turizm va mehmonxona boshqaruvi (Tourism and Hospitality Management)'),
+                                                    'mba' => Yii::t('app', 'MBA (Master’s in Business Administration)'),
+                                                ];
 
                                                 echo $form->field($model, 'project')->dropDownList(
                                                     $options,
                                                     [
-                                                        'prompt' => Yii::t('app', 'Dastur'),
+                                                        'prompt' => Yii::t('app', 'O‘qishni istagan yo‘nalishingizni tanlang '),
                                                         'class' => 'form-control',
                                                     ]
                                                 )->label(false);
                                                 ?>
                                             </div>
+
                                         </div>
                                     </div>
                                     <div class="row">
