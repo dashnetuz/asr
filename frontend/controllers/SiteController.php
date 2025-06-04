@@ -7,6 +7,7 @@ use common\models\Faculty;
 use common\models\Major;
 use common\models\Page;
 use common\models\Pages;
+use common\models\Contact;
 use common\models\Setting;
 use common\models\Visit;
 use frontend\models\ResendVerificationEmailForm;
