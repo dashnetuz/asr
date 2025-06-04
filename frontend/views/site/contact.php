@@ -77,7 +77,6 @@ JS
 
                                         <!-- Telegram / Instagram / Web -->
                                         <li class="wow fadeInUp" data-wow-delay="300ms">
-                                            <div class="icon"><i class="fas fa-globe"></i></div>
                                             <div class="content">
                                                 <h5 class="title">
                                                     <i class="fab fa-telegram"></i>
@@ -100,7 +99,6 @@ JS
 
                                         <!-- Xodimlar -->
                                         <li class="wow fadeInUp" data-wow-delay="400ms">
-                                            <div class="icon"><i class="fas fa-users"></i></div>
                                             <div class="content">
                                                 <h5 class="title">
                                                     <i class="fas fa-user-tie"></i> Director:
