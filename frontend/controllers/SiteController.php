@@ -216,16 +216,36 @@ class SiteController extends Controller
      */
     public function actionContact()
     {
-        $model = new ContactForm();
-        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
-            if ($model->sendEmail(Yii::$app->params['adminEmail'])) {
-                Yii::$app->session->setFlash('success', 'Thank you for contacting us. We will respond to you as soon as possible.');
-            } else {
-                Yii::$app->session->setFlash('error', 'There was an error sending your message.');
-            }
+        date_default_timezone_set("Asia/Tashkent");
 
-            return $this->refresh();
+        $model = new Contact();
+
+        if ($model->load(Yii::$app->request->post()) && $model->validate() && $model->SendTelegram()) {
+
+            $model->tell = strtr($model->tell, [
+                '+998' => '',
+                '-' => '',
+                '(' => '',
+                ')' => '',
+                ' ' => ''
+            ]);
+
+            $model->status = 1;
+            $model->created_at = time();
+
+            if ($model->save(false)) {
+                \Yii::$app->getSession()->setFlash('success', "Muvaffaqqiyatli jo'natildi. Arizangiz tez orada ko'rib chiqiladi!");
+                return $this->redirect(['contact']);
+            }
         }
+
+        Yii::$app->params['og_title']['content'] = Yii::t("app", "Ariza topshirish");
+        Yii::$app->params['og_description']['content'] = Yii::t("app", "Ariza topshirish");
+        Yii::$app->params['og_language_uz']['content'] = '/uz/site/contact';
+        Yii::$app->params['og_language_ru']['content'] = '/ru/site/contact';
+        Yii::$app->params['og_language_en']['content'] = '/en/site/contact';
+        Yii::$app->params['og_url']['content'] = Yii::$app->request->hostInfo . '/site/contact';
+        Yii::$app->params['og_type']['content'] = Yii::t("app", "Ariza topshirish");
 
         return $this->render('contact', [
             'model' => $model,
