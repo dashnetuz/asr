@@ -40,7 +40,7 @@ class Contact extends \yii\db\ActiveRecord
     public function SendTelegram()
     {
         $text = '';
-        $text .= "💻 :" . Yii::$app->params['og_site_name']['content'] . " saytidan\n";
+        $text .= "💻 :" . "iqac.asr.gov.uz" . " saytidan\n";
         $text .= "🖊 FISH: " . $this->full_name . "\n";
         $text .= "🖊 Telefon raqami: " . $this->tell . "\n";
 
