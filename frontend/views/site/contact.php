@@ -45,82 +45,77 @@ JS
                                 <div class="contact-style-one-info">
                                     <h4 class="sub-title">Savollaringiz bormi?</h4>
                                     <h2>Biz bilan aloqa</h2>
-                                    <ul class="contact-address">
-
-                                        <!-- Cooperations -->
+                                    <ul>
+                                        <!-- Telefon -->
                                         <li class="wow fadeInUp" data-wow-delay="0ms">
-                                            <p>For cooperations:</p>
-                                            <h4>
-                                                <i class="fas fa-envelope"></i>
-                                                <a href="mailto:admin@iqac.asr.gov.uz">admin@iqac.asr.gov.uz</a>
-                                            </h4>
-                                            <h4>
-                                                <i class="fas fa-envelope"></i>
-                                                <a href="mailto:info@iqac.asr.gov.uz">info@iqac.asr.gov.uz</a>
-                                            </h4>
+                                            <div class="icon"><i class="fas fa-phone-alt"></i></div>
+                                            <div class="content">
+                                                <h5 class="title"><a href="tel:+998000000000">+998 00 000 00 00</a></h5>
+                                            </div>
                                         </li>
 
-                                        <!-- Phone -->
-                                        <li class="wow fadeInUp" data-wow-delay="150ms">
-                                            <p>Call us anytime:</p>
-                                            <h4>
-                                                <i class="fas fa-phone"></i>
-                                                <a href="tel:+998000000000">+998 00 000 00 00</a>
-                                            </h4>
+                                        <!-- Manzil -->
+                                        <li class="wow fadeInUp" data-wow-delay="100ms">
+                                            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                                            <div class="content">
+                                                <h5 class="title">
+                                                    <a href="https://www.google.com/maps/place/Davlat+Boshqaruv+Akademiyasi/@41.3106434,69.2548674,17z" target="_blank">
+                                                        O'zbekiston shoh ko'chasi 45, Toshkent
+                                                    </a>
+                                                </h5>
+                                            </div>
                                         </li>
 
-                                        <!-- Location -->
+                                        <!-- Email - Cooperation -->
+                                        <li class="wow fadeInUp" data-wow-delay="200ms">
+                                            <div class="icon"><i class="fas fa-envelope"></i></div>
+                                            <div class="content">
+                                                <h5 class="title"><a href="mailto:admin@iqac.asr.gov.uz">admin@iqac.asr.gov.uz</a></h5>
+                                                <h5 class="title"><a href="mailto:info@iqac.asr.gov.uz">info@iqac.asr.gov.uz</a></h5>
+                                            </div>
+                                        </li>
+
+                                        <!-- Telegram / Instagram / Web -->
                                         <li class="wow fadeInUp" data-wow-delay="300ms">
-                                            <p>Our Location:</p>
-                                            <h4>
-                                                <i class="fas fa-map-marker-alt"></i>
-                                                <a href="https://www.google.com/maps/place/Davlat+Boshqaruv+Akademiyasi/@41.3106434,69.2548674,17z/data=!3m1!4b1!4m6!3m5!1s0x38ae8b1a2fd465e5:0xc78956a4447b32d1!8m2!3d41.3106434!4d69.2548674!16s%2Fg%2F11cspthzsj?entry=ttu" target="_blank">
-                                                    O'zbekiston shoh ko'chasi 45, Тоshkent, Toshkent
-                                                </a>
-                                            </h4>
+                                            <div class="icon"><i class="fas fa-globe"></i></div>
+                                            <div class="content">
+                                                <h5 class="title">
+                                                    <i class="fab fa-telegram"></i>
+                                                    <a href="https://t.me/iqacuz_bot" target="_blank">@iqacuz_bot</a>
+                                                </h5>
+                                                <h5 class="title">
+                                                    <i class="fab fa-telegram-plane"></i>
+                                                    <a href="https://t.me/iqac_uz" target="_blank">@iqac_uz</a>
+                                                </h5>
+                                                <h5 class="title">
+                                                    <i class="fab fa-instagram"></i>
+                                                    <a href="https://instagram.com/iqac.uz" target="_blank">@iqac.uz</a>
+                                                </h5>
+                                                <h5 class="title">
+                                                    <i class="fas fa-globe"></i>
+                                                    <a href="https://iqac.asr.gov.uz" target="_blank">iqac.asr.gov.uz</a>
+                                                </h5>
+                                            </div>
                                         </li>
 
-                                        <!-- Channels -->
-                                        <li class="wow fadeInUp" data-wow-delay="450ms">
-                                            <p>Our Channels:</p>
-                                            <h4>
-                                                <i class="fab fa-telegram"></i>
-                                                <a href="https://t.me/iqacuz_bot" target="_blank">@iqacuz_bot</a>
-                                            </h4>
-                                            <h4>
-                                                <i class="fab fa-telegram-plane"></i>
-                                                <a href="https://t.me/iqac_uz" target="_blank">@iqac_uz</a>
-                                            </h4>
-                                            <h4>
-                                                <i class="fab fa-instagram"></i>
-                                                <a href="https://instagram.com/iqac.uz" target="_blank">@iqac.uz</a>
-                                            </h4>
-                                            <h4>
-                                                <i class="fas fa-globe"></i>
-                                                <a href="https://iqac.asr.gov.uz" target="_blank">iqac.asr.gov.uz</a>
-                                            </h4>
+                                        <!-- Xodimlar -->
+                                        <li class="wow fadeInUp" data-wow-delay="400ms">
+                                            <div class="icon"><i class="fas fa-users"></i></div>
+                                            <div class="content">
+                                                <h5 class="title">
+                                                    <i class="fas fa-user-tie"></i> Director:
+                                                    <a href="mailto:k.khomidov@iqac.asr.gov.uz">k.khomidov@iqac.asr.gov.uz</a>
+                                                </h5>
+                                                <h5 class="title">
+                                                    <i class="fas fa-user-graduate"></i> Academic Director:
+                                                    <a href="mailto:u.azizov@iqac.asr.gov.uz">u.azizov@iqac.asr.gov.uz</a>
+                                                </h5>
+                                                <h5 class="title">
+                                                    <i class="fas fa-user-cog"></i> Office Manager:
+                                                    <a href="mailto:t.abdusamadov@iqac.asr.gov.uz">t.abdusamadov@iqac.asr.gov.uz</a>
+                                                </h5>
+                                            </div>
                                         </li>
-
-                                        <!-- Staff -->
-                                        <li class="wow fadeInUp" data-wow-delay="600ms">
-                                            <p>Staff Contacts:</p>
-                                            <h4>
-                                                <i class="fas fa-user-tie"></i>
-                                                Director:
-                                                <a href="mailto:k.khomidov@iqac.asr.gov.uz">k.khomidov@iqac.asr.gov.uz</a>
-                                            </h4>
-                                            <h4>
-                                                <i class="fas fa-user-graduate"></i>
-                                                Academic Director:
-                                                <a href="mailto:u.azizov@iqac.asr.gov.uz">u.azizov@iqac.asr.gov.uz</a>
-                                            </h4>
-                                            <h4>
-                                                <i class="fas fa-user-cog"></i>
-                                                Office Manager:
-                                                <a href="mailto:t.abdusamadov@iqac.asr.gov.uz">t.abdusamadov@iqac.asr.gov.uz</a>
-                                            </h4>
-                                        </li>
-
                                     </ul>
                                 </div>
                             </div>
