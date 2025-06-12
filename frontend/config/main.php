@@ -61,6 +61,7 @@ return [
             'showScriptName' => false,
             'enableDefaultLanguageUrlCode' => true,
             'rules' => [
+                'contact' => 'site/contact',
                 '/<url:[a-zA-Z0-9-]+>/'=>'site/page',
                 'page' => 'site/page',
                 'dashboard/<type:(category|course|lesson|part)>/<action:(index|create|update|delete)>' => 'dashboard/<type><action>',

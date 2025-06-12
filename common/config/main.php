@@ -1,4 +1,6 @@
 <?php
+use common\components\Bot;
+
 return [
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
@@ -8,6 +10,9 @@ return [
     'components' => [
         'cache' => [
             'class' => \yii\caching\FileCache::class,
+        ],
+        'bot' => [
+            'class' => Bot::class,
         ],
         'log' => [ // ✅ log component to‘g‘ri joyda
             'traceLevel' => YII_DEBUG ? 3 : 0,
