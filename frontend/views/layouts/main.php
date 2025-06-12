@@ -249,7 +249,7 @@ $this->beginBody() ?>
                                                         <p>Call us anytime:</p>
                                                         <h4>
                                                             <i class="fas fa-phone"></i>
-                                                            <a href="tel:+998000000000">+998 00 000 00 00</a>
+                                                            <a href="tel:+998200057619">+998 20 005 76 19</a>
                                                         </h4>
                                                     </li>
 
@@ -257,8 +257,14 @@ $this->beginBody() ?>
                                                         <p>Our Location:</p>
                                                         <h4>
                                                             <i class="fas fa-map-marker-alt"></i>
-                                                            <a href="https://www.google.com/maps/place/Davlat+Boshqaruv+Akademiyasi/@41.3106434,69.2548674,17z/data=!3m1!4b1!4m6!3m5!1s0x38ae8b1a2fd465e5:0xc78956a4447b32d1!8m2!3d41.3106434!4d69.2548674!16s%2Fg%2F11cspthzsj?entry=ttu&g_ep=EgoyMDI1MDYwMS4wIKXMDSoASAFQAw%3D%3D">
-                                                                O'zbekiston shoh ko'chasi 45, Тоshkent, Toshkent
+                                                            <a href="https://maps.app.goo.gl/hRmy7SduFZyYHL6h9">
+                                                                Toshkent shahar, Yunusobod tumani, Yangishahar ko'chasi 9A-uy.
+                                                            </a>
+                                                        </h4>
+                                                        <h4>
+                                                            <i class="fas fa-map-marker-alt"></i>
+                                                            <a href="https://maps.app.goo.gl/hRmy7SduFZyYHL6h9">
+                                                                Mo'ljal: Toshkent Arxitektura-Qurilish Universiteti, Bosh bino, 703-xona
                                                             </a>
                                                         </h4>
                                                     </li>
