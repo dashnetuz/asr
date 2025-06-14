@@ -2402,12 +2402,9 @@ nav.navbar.validnavs.brand-center {
 
 @media (min-width: 1024px) {
 	nav.navbar ul.nav>li>a {
-		/*padding: 30px 15px;*/
-		/*font-weight: 500;*/
-		/*font-size: 18px;*/
-		padding: 30px 7px;
+		padding: 30px 15px;
 		font-weight: 500;
-		font-size: 14px;
+		font-size: 18px;
 	}
 
 	nav.navbar.attr-border-full ul.nav>li>a,
