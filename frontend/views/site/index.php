@@ -46,58 +46,30 @@ JS
 
                                 <div class="iqac-content">
                                     <h4 class="wow fadeInUp" data-wow-delay="500ms" data-wow-duration="400ms">
-                                        <strong><?= Yii::t("app", "Britaniya Taʼlim Standartlari Oʻzbekistonda") ?></strong>
+                                        <strong><?= Yii::t("app", "British Educational Standards in Uzbekistan") ?></strong>
                                     </h4>
 
                                     <div class="wow fadeInUp" data-wow-delay="500ms" data-wow-duration="400ms">
-                                        <p><strong><?= Yii::t("app", "Endi Britaniya universiteti diplomini Oʻzbekistonda qoʻlga kiriting") ?></strong></p>
+                                        <p><strong><?= Yii::t("app", "Now you can obtain a British university degree without leaving Uzbekistan.
+Thanks to the newly established International Qualifications and Assessment Centre (IQAC), world-class education is more accessible than ever before.
+") ?></strong></p>
 
-                                        <p><?= Yii::t("app", "Yangi tashkil etilgan Xalqaro Malakalar va Baholash Markazi (IQAC) orqali jahon darajasidagi taʼlim endi yanada yaqinroq boʻldi.") ?></p>
 
-                                        <p><strong><?= Yii::t("app", "Biz haqimizda") ?></strong></p>
-
-                                        <p><?= Yii::t("app", "Oʻzbekiston Respublikasi Prezident huzuridagi Strategik islohotlar agentligi tashabbusi bilan, Oliy taʼlim, fan va innovatsiyalar vazirligi hamkorligida, Oʻzbekiston Respublikasi Vazirlar Mahkamasining qaroriga asosan IQAC tashkil etildi. Markazning asosiy maqsadi – xalqaro mezonlarga moslashtirilgan taʼlim dasturlarini mahalliy miqyosda taqdim etish.") ?></p>
-
-                                        <p><strong><?= Yii::t("app", "Xalqaro standartlar, mahalliy ahamiyat") ?></strong></p>
-
-                                        <p><?= Yii::t("app", "IQAC tomonidan taklif etilayotgan 3, 4, 5, 6 va 7-darajadagi (professional akademik) malakalar Angliya OFQUAL tomonidan tasdiqlangan RQF (Regulated Qualifications Framework) standartlariga mos ravishda ishlab chiqilgan. Shu bilan birga, ular Oʻzbekistonning milliy taʼlim tizimi bilan uygʻunlashtirilgan.") ?></p>
-
-                                        <p><?= Yii::t("app", "IQAC 3–7 darajadagi RQF asosidagi dasturlarni ishlab chiqadi va akkreditatsiyadan oʻtkazadi. Ushbu dasturlar quyidagi yetakchi Oʻzbekiston universitetlarida hamkorlikda amalga oshiriladi:") ?></p>
-
-                                        <ul>
-                                            <li><?= Yii::t("app", "Toshkentdagi INHA Universiteti") ?></li>
-                                            <li><?= Yii::t("app", "Toshkent Arxitektura va Qurilish Universiteti") ?></li>
-                                            <li><?= Yii::t("app", "Toshkent Davlat Sharqshunoslik Universiteti") ?></li>
-                                        </ul>
-
-                                        <p><?= Yii::t("app", "Mazkur dasturlar xalqaro miqyosda tan olinadi. Bu Chartered Management Institute (CMI) hamda quyidagi nufuzli Britaniya universitetlari bilan hamkorlikda taʼminlanadi:") ?></p>
-
-                                        <ul>
-                                            <li><?= Yii::t("app", "Gloucestershire Universiteti") ?></li>
-                                            <li><?= Yii::t("app", "Hertfordshire Universiteti") ?></li>
-                                            <li><?= Yii::t("app", "QA Higher Education") ?></li>
-                                            <li><?= Yii::t("app", "Northumbria Universiteti") ?></li>
-                                            <li><?= Yii::t("app", "Ulster Universiteti") ?></li>
-                                            <li><?= Yii::t("app", "West London Universiteti") ?></li>
-                                            <li><?= Yii::t("app", "Central Lancashire Universiteti") ?></li>
-                                            <li><?= Yii::t("app", "Wolverhampton Universiteti") ?></li>
-                                            <li><?= Yii::t("app", "va boshqalar.") ?></li>
-                                        </ul>
                                     </div>
                                 </div>
 
                                 <div class="iqac-side">
                                     <img decoding="async" src="/unieducation/wp-content/uploads/baholash_markazi.png" alt="IQAC rasmi">
-                                    <h4><?= Yii::t("app", "Men oʻqishni xohlayman:") ?></h4>
+                                    <h4><?= Yii::t("app", "I want to study IQAC’s programs at:") ?></h4>
 
                                     <div class="button wow fadeInUp" data-wow-delay="1200ms" data-wow-duration="400ms">
-                                        <a class="btn btn-md circle btn-gradient animation" href="#"><?= Yii::t("app", "Toshkentdagi INHA Universiteti") ?></a>
+                                        <a class="btn btn-md circle btn-gradient animation" href="#"><?= Yii::t("app", "INHA University in Tashkent in Business Management/Information Technologies") ?></a>
                                     </div>
                                     <div class="button wow fadeInUp" data-wow-delay="1200ms" data-wow-duration="400ms">
-                                        <a class="btn btn-md circle btn-gradient animation" href="#"><?= Yii::t("app", "Toshkent Arxitektura va Qurilish Universiteti") ?></a>
+                                        <a class="btn btn-md circle btn-gradient animation" href="#"><?= Yii::t("app", "Tashkent University of Architecture and Civil Engineering in Architecture") ?></a>
                                     </div>
                                     <div class="button wow fadeInUp" data-wow-delay="1200ms" data-wow-duration="400ms">
-                                        <a class="btn btn-md circle btn-gradient animation" href="#"><?= Yii::t("app", "Toshkent Davlat Sharqshunoslik Universiteti") ?></a>
+                                        <a class="btn btn-md circle btn-gradient animation" href="#"><?= Yii::t("app", "Tashkent State University of Oriental Studies in Tourism and Hospitality") ?></a>
                                     </div>
                                 </div>
 
