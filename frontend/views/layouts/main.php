@@ -107,36 +107,36 @@ $this->beginBody() ?>
                                         <ul class="nav navbar-nav navbar-center" data-in="fadeInDown"
                                             data-out="fadeOutUp">
 
-                                            <?php
-                                            foreach (
-                                                Pages::find()->andWhere(['parent_id' => null])->limit(1)->all(
-                                                ) as $pages
-                                            ): ?>
-                                                <li class="dropdown">
-                                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                                        <?= $pages->TitleTranslate ?>
-                                                    </a>
-                                                    <ul class="dropdown-menu">
-                                                        <?php
-                                                        $subPages = Page::find()->andWhere(
-                                                            ['parent_id' => null, 'pages_id' => $pages->id]
-                                                        )->all(); ?>
-                                                        <?php
-                                                        foreach ($subPages as $subPage): ?>
-
-                                                            <li>
-                                                                <a href="<?= Url::to(
-                                                                    ['/site/page', 'url' => $subPage->url1]
-                                                                ) ?>">
-                                                                    <?= $subPage->TitleTranslate ?>
-                                                                </a>
-                                                            </li>
-                                                        <?php
-                                                        endforeach; ?>
-                                                    </ul>
-                                                </li>
-                                            <?php
-                                            endforeach; ?>
+<!--                                            --><?php
+//                                            foreach (
+//                                                Pages::find()->andWhere(['parent_id' => null])->limit(1)->all(
+//                                                ) as $pages
+//                                            ): ?>
+<!--                                                <li class="dropdown">-->
+<!--                                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">-->
+<!--                                                        --><?php //= $pages->TitleTranslate ?>
+<!--                                                    </a>-->
+<!--                                                    <ul class="dropdown-menu">-->
+<!--                                                        --><?php
+//                                                        $subPages = Page::find()->andWhere(
+//                                                            ['parent_id' => null, 'pages_id' => $pages->id]
+//                                                        )->all(); ?>
+<!--                                                        --><?php
+//                                                        foreach ($subPages as $subPage): ?>
+<!---->
+<!--                                                            <li>-->
+<!--                                                                <a href="--><?php //= Url::to(
+//                                                                    ['/site/page', 'url' => $subPage->url1]
+//                                                                ) ?><!--">-->
+<!--                                                                    --><?php //= $subPage->TitleTranslate ?>
+<!--                                                                </a>-->
+<!--                                                            </li>-->
+<!--                                                        --><?php
+//                                                        endforeach; ?>
+<!--                                                    </ul>-->
+<!--                                                </li>-->
+<!--                                            --><?php
+//                                            endforeach; ?>
                                             <?php
                                             foreach (
                                                 Pages::find()->andWhere(['parent_id' => null])->offset(1)->all(
