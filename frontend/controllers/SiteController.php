@@ -162,20 +162,14 @@ class SiteController extends Controller
 
         $query = Page::find()->where(['pages_id' => $pageOne->id, 'status' => 10])->orderBy(['id' => SORT_DESC]);
 
-        if ($pageOne->id == 23){
+        if ($pageOne->id == 1000){
             return $this->render('majors',[
                 'counts' => $query->count(),
                 'pageOne' => $pageOne,
             ]);
         }
-        elseif ($pageOne->id == 10){
+        elseif ($pageOne->id == 1001){
             return $this->render('majors',[
-                'counts' => $query->count(),
-                'pageOne' => $pageOne,
-            ]);
-        }
-        elseif ($pageOne->id == 10000){
-            return $this->render('news',[
                 'counts' => $query->count(),
                 'pageOne' => $pageOne,
             ]);
