@@ -110,7 +110,7 @@ $this->beginBody() ?>
 
                                             <?php
                                             foreach (
-                                                Pages::find()->andWhere(['parent_id' => null])->offset(1)->all(
+                                                Pages::find()->andWhere(['parent_id' => null])->limit(3)->offset(1)->all(
                                                 ) as $pages
                                             ): ?>
                                                 <?php
