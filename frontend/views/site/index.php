@@ -45,14 +45,14 @@ JS
                             <div id="iqac-wrapper">
 
                                 <div class="iqac-content">
-                                    <h4 class="wow fadeInUp" data-wow-delay="500ms" data-wow-duration="400ms">
+                                    <h1 class="wow fadeInUp" data-wow-delay="500ms" data-wow-duration="400ms">
                                         <strong><?= Yii::t("app", "British Educational Standards in Uzbekistan") ?></strong>
-                                    </h4>
+                                    </h1>
 
                                     <div class="wow fadeInUp" data-wow-delay="500ms" data-wow-duration="400ms">
-                                        <p><strong><?= Yii::t("app", "Now you can obtain a British university degree without leaving Uzbekistan.
+                                        <h4><strong><?= Yii::t("app", "Now you can obtain a British university degree without leaving Uzbekistan.
 Thanks to the newly established International Qualifications and Assessment Centre (IQAC), world-class education is more accessible than ever before.
-") ?></strong></p>
+") ?></strong></h4>
 
 
                                     </div>
