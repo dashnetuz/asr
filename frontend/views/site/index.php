@@ -44,19 +44,23 @@ JS
                         <div class="container">
                             <div id="iqac-wrapper">
 
-                                <div class="iqac-content">
-                                    <h1 class="wow fadeInUp" data-wow-delay="500ms" data-wow-duration="400ms">
-                                        <strong><?= Yii::t("app", "British Educational Standards in Uzbekistan") ?></strong>
-                                    </h1>
+                                <!-- Wrapper div added to vertically center the content -->
+                                <div class="d-flex justify-content-center align-items-center min-vh-100 text-center">
+                                    <div class="iqac-content">
+                                        <h1 class="wow fadeInUp" data-wow-delay="500ms" data-wow-duration="400ms">
+                                            <strong><?= Yii::t("app", "British Educational Standards in Uzbekistan") ?></strong>
+                                        </h1>
 
-                                    <div class="wow fadeInUp" data-wow-delay="500ms" data-wow-duration="400ms">
-                                        <h4><strong><?= Yii::t("app", "Now you can obtain a British university degree without leaving Uzbekistan.
-Thanks to the newly established International Qualifications and Assessment Centre (IQAC), world-class education is more accessible than ever before.
-") ?></strong></h4>
-
-
+                                        <div class="wow fadeInUp" data-wow-delay="500ms" data-wow-duration="400ms">
+                                            <h4>
+                                                <strong><?= Yii::t("app", "Now you can obtain a British university degree without leaving Uzbekistan.
+Thanks to the newly established International Qualifications and Assessment Centre (IQAC), world-class education is more accessible than ever before.") ?>
+                                                </strong>
+                                            </h4>
+                                        </div>
                                     </div>
                                 </div>
+
 
                                 <div class="iqac-side">
                                     <img decoding="async" src="/unieducation/wp-content/uploads/baholash_markazi.png" alt="IQAC rasmi">
