@@ -44,7 +44,6 @@ JS
                         <div class="container">
                             <div id="iqac-wrapper">
 
-                                <!-- Wrapper div added to vertically center the content -->
                                 <div class="d-flex justify-content-center align-items-center min-vh-100 text-center">
                                     <div class="iqac-content">
                                         <h1 class="wow fadeInUp" data-wow-delay="500ms" data-wow-duration="400ms">
