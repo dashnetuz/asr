@@ -259,7 +259,7 @@ $this->beginBody() ?>
                                                         <h4>
                                                             <i class="fas fa-map-marker-alt"></i>
                                                             <a href="https://maps.app.goo.gl/hRmy7SduFZyYHL6h9">
-                                                                Toshkent shahar, Yunusobod tumani, Yangishahar ko'chasi 9A-uy.
+                                                                45, Islam Karimov Street, Chilanzar Distrcit, Tashkent, Uzbekistan, 100066
                                                             </a>
                                                         </h4>
                                                         <h4>
