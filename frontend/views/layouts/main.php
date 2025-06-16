@@ -313,118 +313,37 @@ $this->beginBody() ?>
                                             </div>
                                         </div>
 
-
-                                        <?php
-                                        foreach (
-                                            Pages::find()->andWhere(['parent_id' => null])->limit(1)->all() as $pages
-                                        ): ?>
-                                            <div class="col-lg-2 col-md-6 footer-item">
-                                                <div class="f-item link">
-                                                    <h4 class="widget-title"><?= $pages->TitleTranslate ?></h4>
-                                                    <ul>
-                                                        <?php
-                                                        $subPages = Page::find()->andWhere(
-                                                            ['parent_id' => null, 'pages_id' => $pages->id]
-                                                        )->all(); ?>
-                                                        <?php
-                                                        foreach ($subPages as $subPage): ?>
-
-                                                            <li>
-                                                                <a href="<?= Url::to(
-                                                                    ['/site/page', 'url' => $subPage->url1]
-                                                                ) ?>">
-                                                                    <?= $subPage->TitleTranslate ?>
-                                                                </a>
-                                                            </li>
-                                                        <?php
-                                                        endforeach; ?>
-
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        <?php
-                                        endforeach; ?>
-
-                                        <div class="col-lg-2 col-md-6 footer-item">
+                                        <div class="col-lg-4 col-md-6 footer-item">
                                             <div class="f-item link">
+
                                                 <?php
                                                 foreach (
-                                                    Pages::find()->andWhere(['parent_id' => null])->offset(1)->all(
+                                                    Pages::find()->andWhere(['parent_id' => null])->limit(3)->offset(1)->all(
                                                     ) as $pages
                                                 ): ?>
-                                                    <ul>
-                                                        <?php
-                                                        $subPages = Page::find()->andWhere(
-                                                            ['parent_id' => null, 'pages_id' => $pages->id]
-                                                        )->all(); ?>
-                                                        <?php
-                                                        foreach ($subPages as $subPage): ?>
+                                                <ul>
+                                                    <?php
+                                                    $subPages = Page::find()->andWhere(
+                                                        ['parent_id' => null, 'pages_id' => $pages->id]
+                                                    )->all(); ?>
+                                                    <?php
+                                                    foreach ($subPages as $subPage): ?>
+                                                        <li>
+                                                            <a href="<?= Url::to(['/site/page', 'url' => $subPage->url1]
+                                                            ) ?>">
+                                                                <h5 class="widget-title"><?= $pages->TitleTranslate ?></h5>
+                                                            </a>
+                                                        </li>
+                                                    <?php
+                                                    endforeach; ?>
 
-                                                            <li>
-                                                                <a href="<?= Url::to(
-                                                                    ['/site/page', 'url' => $subPage->url1]
-                                                                ) ?>">
-                                                                    <h5 class="widget-title"><?= $pages->TitleTranslate ?></h5>
-                                                                </a>
-                                                            </li>
-                                                        <?php
-                                                        endforeach; ?>
-                                                    </ul>
+                                                </ul>
                                                 <?php
                                                 endforeach; ?>
+
                                             </div>
                                         </div>
 
-                                        <div class="col-lg-4 col-md-6 footer-item">
-                                            <div class="f-item newsletter">
-                                                <p>
-                                                    Join our subscribers list to get the latest
-                                                    news and special offers. </p>
-
-                                                <div class="wpcf7 no-js" id="wpcf7-f369-o1" lang="en-US"
-                                                     dir="ltr">
-                                                    <div class="screen-reader-response">
-                                                        <p role="status" aria-live="polite"
-                                                           aria-atomic="true"></p>
-                                                        <ul></ul>
-                                                    </div>
-                                                    <form
-                                                            action="#"
-                                                            method="post" class="wpcf7-form init"
-                                                            aria-label="Contact form" novalidate="novalidate"
-                                                            data-status="init">
-                                                        <div style="display: none;">
-                                                            <input type="hidden" name="_wpcf7"
-                                                                   value="369"/>
-                                                            <input type="hidden" name="_wpcf7_version"
-                                                                   value="5.9.8"/>
-                                                            <input type="hidden" name="_wpcf7_locale"
-                                                                   value="en_US"/>
-                                                            <input type="hidden" name="_wpcf7_unit_tag"
-                                                                   value="wpcf7-f369-o1"/>
-                                                            <input type="hidden"
-                                                                   name="_wpcf7_container_post" value="0"/>
-                                                            <input type="hidden"
-                                                                   name="_wpcf7_posted_data_hash" value=""/>
-                                                        </div>
-                                                        <span class="wpcf7-form-control-wrap"
-                                                              data-name="email1"><input size="40"
-                                                                maxlength="400"
-                                                                class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email form-control"
-                                                                id="email1" aria-required="true"
-                                                                aria-invalid="false"
-                                                                placeholder="Your Email"
-                                                                value=""
-                                                                type="email"
-                                                                name="email1"/></span>
-                                                        <button type="submit"><i
-                                                                    class="fa fa-paper-plane"></i></button>
-                                                        <div class="wpcf7-response-output"
-                                                             aria-hidden="true"></div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                                 <!-- Start Footer Bottom -->
