@@ -52,7 +52,8 @@ JS
 
                                         <div class="wow fadeInUp" data-wow-delay="500ms" data-wow-duration="400ms">
                                             <h4>
-                                                <strong><?= Yii::t("app", "Now you can obtain a British university degree without leaving Uzbekistan.
+                                                <strong>
+                                                    <?= Yii::t("app", "Now you can obtain a British university degree without leaving Uzbekistan.
 Thanks to the newly established International Qualifications and Assessment Centre (IQAC), world-class education is more accessible than ever before.") ?>
                                                 </strong>
                                             </h4>
