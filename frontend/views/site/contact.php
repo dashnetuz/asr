@@ -50,7 +50,7 @@ JS
                                         <li class="wow fadeInUp" data-wow-delay="0ms">
                                             <div class="icon"><i class="fas fa-phone-alt"></i></div>
                                             <div class="content">
-                                                <h5 class="title"><a href="tel:+998000000000">+998 00 000 00 00</a></h5>
+                                                <h5 class="title"><a href="tel:+998712002024">+998-71-200-2024</a></h5>
                                             </div>
                                         </li>
 

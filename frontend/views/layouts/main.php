@@ -250,7 +250,7 @@ $this->beginBody() ?>
                                                         <p>Call us anytime:</p>
                                                         <h4>
                                                             <i class="fas fa-phone"></i>
-                                                            <a href="tel:+998200057619">+998 20 005 76 19</a>
+                                                            <a href="tel:+998712002024">+998-71-200-2024</a>
                                                         </h4>
                                                     </li>
 
