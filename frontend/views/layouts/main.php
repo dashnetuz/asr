@@ -258,16 +258,23 @@ $this->beginBody() ?>
                                                         <p>Our Location:</p>
                                                         <h4>
                                                             <i class="fas fa-map-marker-alt"></i>
-                                                            <a href="https://maps.app.goo.gl/hRmy7SduFZyYHL6h9">
-                                                                45, Islam Karimov Street, Chilanzar Distrcit, Tashkent, Uzbekistan, 100066
+                                                            <a href="#">
+                                                                IQAC - Head Office: 45, Islam Karimov Street, Chilanzar Distrcit, Tashkent, Uzbekistan, 100066
                                                             </a>
                                                         </h4>
                                                         <h4>
                                                             <i class="fas fa-map-marker-alt"></i>
-                                                            <a href="https://maps.app.goo.gl/hRmy7SduFZyYHL6h9">
-                                                                Mo'ljal: Toshkent Arxitektura-Qurilish Universiteti, Bosh bino, 703-xona
+                                                            <a href="#">
+                                                                IQAC - TAQU Office: 9A, Yangishahar Street, Yunusabad District, Tashkent, Uzbekistan, 100206
                                                             </a>
                                                         </h4>
+                                                        <h4>
+                                                            <i class="fas fa-map-marker-alt"></i>
+                                                            <a href="#">
+                                                                IQAC - IUT (INHA) Office: 9, Ziyolilar Street, Mirzo Ulugbek District, Tashkent, Uzbekistan, 100170
+                                                            </a>
+                                                        </h4>
+
                                                     </li>
 
                                                     <li>
