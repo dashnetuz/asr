@@ -29,367 +29,381 @@ $this->beginPage() ?>
     <title><?= Html::encode($this->title) ?></title>
     <link rel="shortcut icon" href="<?= $setting && $setting->favicon ? Html::encode(
         $setting->favicon
-    ) : '/template/assets/images/logos/favicon.png' ?>" type="image/png">
+    ) : '/template/assets//iqac/images/logos/favicon.png' ?>" type="image/png">
     <?php
     $this->head() ?>
 </head>
 <body>
 <?php
 $this->beginBody() ?>
-<!-- Start Preloader
-============================================= -->
-<div id="preloader">
-    <div id="gixus-preloader" class="gixus-preloader">
-        <div class="animation-preloader">
-            <div class="spinner"></div>
-            <div class="txt-loading">
-                <span data-text-preloader="I" class="letters-loading">I</span>
-                <span data-text-preloader="Q" class="letters-loading">Q</span>
-                <span data-text-preloader="A" class="letters-loading">A</span>
-                <span data-text-preloader="C" class="letters-loading">C</span>
+<div class="page-wrapper">
+
+    <!-- Preloader -->
+    <div class="preloader"></div>
+
+    <!-- Main Header-->
+    <header class="main-header header-style-one">
+        <!-- Header Top -->
+        <div class="header-top">
+            <div class="auto-container">
+
+                <div class="top-left">
+                    <!-- Info List -->
+                    <ul class="info-list">
+                        <li><i class="fa-solid fa-envelope"></i> <a href="mailto:info@iqac.asr.gov.uz"><span class="__cf_email__" data-cfemail="#">info@iqac.asr.gov.uz</span></a>
+                        </li>
+                        <li><i class="fa-solid fa-location-dot"></i> 45, Islam Karimov Street, Chilanzar Distrcit, Tashkent, Uzbekistan, 100066</li>
+                    </ul>
+                </div>
+
+                <div class="top-right">
+                    <ul class="useful-links">
+<!--                        <li><a href="#">About</a></li>-->
+<!--                        <li><a href="#">Faqs</a></li>-->
+                        <li><a href="<?= Url::to(['/contact']) ?>">Contact</a></li>
+                    </ul>
+                    <ul class="top-social-icon">
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="loader">
-            <div class="row">
-                <div class="col-3 loader-section section-left">
-                    <div class="bg"></div>
-                </div>
-                <div class="col-3 loader-section section-left">
-                    <div class="bg"></div>
-                </div>
-                <div class="col-3 loader-section section-right">
-                    <div class="bg"></div>
-                </div>
-                <div class="col-3 loader-section section-right">
-                    <div class="bg"></div>
-                </div>
+        <!-- Header Top -->
+
+        <!-- Main box -->
+        <div class="main-box">
+            <div class="logo-box">
+                <div class="logo"><a href="<?= Url::to(['/']) ?>"><img src="<?= $setting->logo ?>" alt="" title="IQAC"></a></div>
             </div>
-        </div>
-    </div>
-</div>
-<!-- End Preloader -->
-
-<div id="page" class="hfeed site">
-
-    <header id="masthead" itemscope="itemscope">
-        <p class="main-title bhf-hidden" itemprop="headline"><a href="<?= Url::to(['/']) ?>" title="IQAC &#8211; Business Consulting" rel="home">IQAC &#8211;Business Consulting</a></p>
-        <div data-elementor-type="wp-post" data-elementor-id="28" class="elementor elementor-28">
-            <div class="elementor-element elementor-element-c980624 e-con-full e-flex e-con e-parent"
-                 data-id="c980624" data-element_type="container">
-                <div class="elementor-element elementor-element-ea0378b elementor-widget elementor-widget-gixus_header"
-                     data-id="ea0378b" data-element_type="widget" data-widget_type="gixus_header.default">
-                    <div class="elementor-widget-container">
-
-                        <!-- Header -->
-                        <header>
-                            <!-- Start Navigation -->
-                            <nav
-                                    class="navbar mobile-sidenav navbar-sticky navbar-default validnavs navbar-fixed dark no-background">
-                                <div class="container d-flex justify-content-between align-items-center">
-
-                                    <!-- Start Header Navigation -->
-                                    <div class="navbar-header">
-                                        <button type="button" class="navbar-toggle" data-toggle="collapse"
-                                                data-target="#navbar-menu">
-                                            <i class="fa fa-bars"></i>
-                                        </button>
-                                        <a class="navbar-brand" href="<?= Url::to(['/']) ?>">
-                                            <img src="<?= $setting->logo ?>"
-                                                 class="logo"
-                                                 alt="Logo">
-                                        </a>
-                                    </div>
-                                    <!-- End Header Navigation -->
-
-                                    <!-- Collect the nav links, forms, and other content for toggling -->
-                                    <div class="collapse navbar-collapse" id="navbar-menu">
-                                        <!-- MegaMenu -->
-                                        <ul class="nav navbar-nav navbar-center" data-in="fadeInDown"
-                                            data-out="fadeOutUp">
-
-
-                                            <?php
-                                            foreach (
-                                                Pages::find()->andWhere(['parent_id' => null])->limit(3)->offset(1)->all(
-                                                ) as $pages
-                                            ): ?>
-                                                <?php
-                                                $subPages = Page::find()->andWhere(
-                                                    ['parent_id' => null, 'pages_id' => $pages->id]
-                                                )->all(); ?>
-                                                <?php
-                                                foreach ($subPages as $subPage): ?>
-                                                    <li>
-                                                        <a href="<?= Url::to(['/site/page', 'url' => $subPage->url1]
-                                                        ) ?>">
-                                                            <?= $pages->TitleTranslate ?>
-                                                        </a>
-                                                    </li>
-                                                <?php
-                                                endforeach; ?>
-                                            <?php
-                                            endforeach; ?>
-
-                                            <?php
-                                            foreach (
-                                                Pages::find()->andWhere(['parent_id' => null])->andWhere(['id' => 14])->limit(1)->all(
-                                                ) as $pages
-                                            ): ?>
-                                                <li class="dropdown">
-                                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                                        <?= $pages->TitleTranslate ?>
-                                                    </a>
-                                                    <ul class="dropdown-menu">
-                                                        <?php
-                                                        $subPages = Page::find()->andWhere(
-                                                            ['parent_id' => null, 'pages_id' => $pages->id]
-                                                        )->all(); ?>
-                                                        <?php
-                                                        foreach ($subPages as $subPage): ?>
-
-                                                            <li>
-                                                                <a href="<?= Url::to(
-                                                                    ['/site/page', 'url' => $subPage->url1]
-                                                                ) ?>">
-                                                                    <?= $subPage->TitleTranslate ?>
-                                                                </a>
-                                                            </li>
-                                                        <?php
-                                                        endforeach; ?>
-                                                    </ul>
-                                                </li>
-                                            <?php
-                                            endforeach; ?>
-
-                                            <li class="dropdown">
-                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                                    <img src="/templates/img/header/<?= \Yii::$app->language ?>.png"
-                                                         class="flag" style="width: 50px">
-                                                    <?= strtoupper(\Yii::$app->language) ?>
+            <!--Nav Box-->
+            <div class="nav-outer">
+                <nav class="nav main-menu">
+                    <ul class="navigation">
+                        <?php
+                        // Asosiy menyu: parent_id = null, lekin 1 ta (id=1) elementni tashlab ketamiz
+                        $mainPages = Pages::find()->andWhere(['parent_id' => null])->limit(3)->offset(1)->all();
+                        foreach ($mainPages as $pages):
+                            $subPages = Page::find()->andWhere(['parent_id' => null, 'pages_id' => $pages->id])->all();
+                            if ($subPages): ?>
+                                <li class="dropdown">
+                                    <a href="#"><?= $pages->TitleTranslate ?></a>
+                                    <ul>
+                                        <?php foreach ($subPages as $subPage): ?>
+                                            <li>
+                                                <a href="<?= Url::to(['/site/page', 'url' => $subPage->url1]) ?>">
+                                                    <?= $subPage->TitleTranslate ?>
                                                 </a>
-                                                <ul class="dropdown-menu">
-                                                    <li>
-                                                        <a href="<?= Yii::$app->params['og_language_uz']['content'] ?>">
-                                                            <img src="/templates/img/header/uz.png" alt="uz"
-                                                                 style="width: 50px"> O'zbekcha
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="<?= Yii::$app->params['og_language_ru']['content'] ?>">
-                                                            <img src="/templates/img/header/ru.png" alt="ru"
-                                                                 style="width: 50px"> Русский
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="<?= Yii::$app->params['og_language_en']['content'] ?>">
-                                                            <img src="/templates/img/header/en.png" alt="en"
-                                                                 style="width: 50px"> English
-                                                        </a>
-                                                    </li>
-                                                </ul>
                                             </li>
+                                        <?php endforeach; ?>
+                                    </ul>
+                                </li>
+                            <?php else: ?>
+                                <li>
+                                    <a href="<?= Url::to(['/site/page', 'url' => $pages->url1]) ?>">
+                                        <?= $pages->TitleTranslate ?>
+                                    </a>
+                                </li>
+                            <?php endif;
+                        endforeach;
+                        ?>
 
-                                        </ul>
-                                    </div>
+                        <?php
+                        // Maxsus menyu: id = 14 bo'lgan sahifani alohida ko‘rsatamiz
+                        $extraPages = Pages::find()->andWhere(['parent_id' => null])->andWhere(['id' => 14])->all();
+                        foreach ($extraPages as $pages): ?>
+                            <li class="dropdown">
+                                <a href="#"><?= $pages->TitleTranslate ?></a>
+                                <ul>
+                                    <?php
+                                    $subPages = Page::find()->andWhere(['parent_id' => null, 'pages_id' => $pages->id])->all();
+                                    foreach ($subPages as $subPage): ?>
+                                        <li>
+                                            <a href="<?= Url::to(['/site/page', 'url' => $subPage->url1]) ?>">
+                                                <?= $subPage->TitleTranslate ?>
+                                            </a>
+                                        </li>
+                                    <?php endforeach; ?>
+                                </ul>
+                            </li>
+                        <?php endforeach; ?>
 
-<!--                                    <div class="attr-right">-->
-<!--                                        <div class="attr-nav">-->
-<!--                                            <ul>-->
-<!--                                                <li class="button">-->
-<!--                                                    <a href="--><?php //= Url::to(['/']) ?><!--">-->
-<!--                                                        Login with INHA </a>-->
-<!--                                                </li>-->
-<!--                                            </ul>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-                                    </div>
+                        <!-- Til tanlash menyusi -->
+                        <li class="dropdown">
+                            <a href="#">
+                                <img src="/templates/img/header/<?= \Yii::$app->language ?>.png" class="flag" style="width: 30px">
+                                <?= strtoupper(\Yii::$app->language) ?>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="<?= Yii::$app->params['og_language_uz']['content'] ?>">
+                                        <img src="/templates/img/header/uz.png" alt="uz" style="width: 30px"> O'zbekcha
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="<?= Yii::$app->params['og_language_ru']['content'] ?>">
+                                        <img src="/templates/img/header/ru.png" alt="ru" style="width: 30px"> Русский
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="<?= Yii::$app->params['og_language_en']['content'] ?>">
+                                        <img src="/templates/img/header/en.png" alt="en" style="width: 30px"> English
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
 
-                                    <!-- Overlay screen for menu -->
-                                    <div class="overlay-screen"></div>
-                                    <!-- End Overlay screen for menu -->
-                                    </nav>
-                                    <!-- End Navigation -->
-                        </header>
+                <!-- Main Menu End-->
+            </div>
+            <div class="outer-box">
+                <div class="info-box">
+                    <div class="call-info">
+                        <i class="fa-solid fa-phone ring__animation"></i>
+                        <div>
+                            <h6 class="title">Phone:</h6>
+                            <a href="tel:+998712002024">+998(71)-200-20-24</a>
+                        </div>
+                    </div>
+                    <a class="btn-two" href="<?= Url::to(['/contact']) ?>">Contact Now</a>
+                </div>
+                <div class="mobile-nav-toggler d-block d-lg-none"><i class="icon lnr-icon-bars"></i></div>
+                <!-- Mobile Nav toggler -->
+            </div>
+        </div>
+        <div class="auto-container">
+            <!-- Mobile Menu  -->
+            <div class="mobile-menu">
+                <div class="menu-backdrop"></div>
+                <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+                <nav class="menu-box">
+                    <div class="upper-box">
+                        <div class="nav-logo"><a href="<?= Url::to(['/']) ?>"><img src="/iqac/images/logo/logo-light.png" alt=""></a></div>
+                        <div class="close-btn"><i class="icon fa fa-times"></i></div>
+                    </div>
+                    <ul class="navigation clearfix d-block d-lg-none">
+                        <!--Keep This Empty / Menu will come through Javascript-->
+                    </ul>
+
+                    <ul class="contact-list-one">
+                        <li>
+                            <!-- Contact Info Box -->
+                            <div class="contact-info-box">
+                                <i class="icon lnr-icon-phone-handset"></i>
+                                <span class="title">Call Now</span>
+                                <a href="tel:+998712002024">+998(71)-200-20-24</a>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- Contact Info Box -->
+                            <div class="contact-info-box">
+                                <span class="icon lnr-icon-envelope1"></span>
+                                <span class="title">Send Email</span>
+                                <a href="mailto:info@iqac.asr.gov.uz"><span class="__cf_email__" data-cfemail="#">info@iqac.asr.gov.uz</span></a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="social-links">
+                        <li><a href="#"><i class="fab fa-x-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- End Mobile Menu -->
+
+
+            <!-- Sticky Header  -->
+            <div class="sticky-header">
+                <div class="auto-container">
+                    <div class="inner-container">
+                        <!--Logo-->
+                        <div class="logo">
+                            <a href="<?= Url::to(['/']) ?>"><img src="<?= $setting->logo ?>" alt=""></a>
+                        </div>
+                        <!--Right Col-->
+                        <div class="nav-outer">
+                            <!-- Main Menu -->
+                            <nav class="main-menu">
+                                <div class="navbar-collapse show collapse clearfix">
+                                    <ul class="navigation clearfix">
+                                        <!--Keep This Empty / Menu will come through Javascript-->
+                                    </ul>
+                                </div>
+                            </nav><!-- Main Menu End-->
+                            <!--Mobile Navigation Toggler-->
+                            <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </div><!-- End Sticky Menu -->
         </div>
     </header>
+    <!--End Main Header -->
 
-<?= $content ?>
+    <?= $content ?>
+    <!-- Footer area start here -->
+    <footer class="main-footer footer-style-one">
+        <div class="outer-box">
 
+            <div class="footer-left">
+                <button class="back-top-btn mobile-nav-toggler">
+                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="1.5" cy="1.5" r="1.5" fill="white" />
+                        <circle cx="1.5" cy="9.5" r="1.5" fill="white" />
+                        <circle cx="1.5" cy="17.5" r="1.5" fill="white" />
+                        <circle cx="9.5" cy="1.5" r="1.5" fill="white" />
+                        <circle cx="9.5" cy="9.5" r="1.5" fill="white" />
+                        <circle cx="9.5" cy="17.5" r="1.5" fill="white" />
+                        <circle cx="17.5" cy="1.5" r="1.5" fill="white" />
+                        <circle cx="17.5" cy="9.5" r="1.5" fill="white" />
+                        <circle cx="17.5" cy="17.5" r="1.5" fill="white" />
+                    </svg>
+                </button>
+            </div>
 
-<footer itemtype="https://schema.org/WPFooter" itemscope="itemscope" id="colophon" role="contentinfo">
-    <div class='footer-width-fixer'>
-        <div data-elementor-type="wp-post" data-elementor-id="352" class="elementor elementor-352">
-            <div class="elementor-element elementor-element-5d0c4d7 e-con-full e-flex e-con e-parent"
-                 data-id="5d0c4d7" data-element_type="container">
-                <div class="elementor-element elementor-element-b40ecb9 elementor-widget elementor-widget-home1_footer"
-                     data-id="b40ecb9" data-element_type="widget" data-widget_type="home1_footer.default">
-                    <div class="elementor-widget-container">
-                        <footer class="bg-dark overflow-hidden text-light">
-                            <div class="container">
-                                <div class="f-items default-padding">
-                                    <div class="row">
-                                        <div class="col-lg-4 col-md-6 footer-item pr-30 pr-md-15 pr-xs-15">
-                                            <div class="f-item address">
-                                                <ul class="contact-address">
-                                                    <li>
-                                                        <p>For cooperations:</p>
-                                                        <h4>
-                                                            <i class="fas fa-envelope"></i>
-                                                            <a href="mailto:admin@iqac.asr.gov.uz">admin@iqac.asr.gov.uz</a>
-                                                        </h4>
-                                                        <h4>
-                                                            <i class="fas fa-envelope"></i>
-                                                            <a href="mailto:info@iqac.asr.gov.uz">info@iqac.asr.gov.uz</a>
-                                                        </h4>
-                                                    </li>
+            <div class="row g-0 w-100">
+                <div class="col-xl-8 left-column order-2 order-xl-1">
 
-                                                    <li>
-                                                        <p>Call us anytime:</p>
-                                                        <h4>
-                                                            <i class="fas fa-phone"></i>
-                                                            <a href="tel:+998712002024">+998-71-200-2024</a>
-                                                        </h4>
-                                                    </li>
+                    <div class="footer-top">
+                        <div class="row g-4">
+                            <div class="col-lg-4">
+                                <div class="info-item">
+                                    <ul>
+                                        <li><i class="fa-sharp fa-solid fa-phone"></i></li>
+                                        <li>
+                                            <span>Call Us:</span>
+                                            <h5 class="title">+998(71)-200-20-24</h5>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="info-item">
+                                    <ul>
+                                        <li><i class="fa-sharp fa-solid fa-envelope"></i></li>
+                                        <li>
+                                            <span>Email Us:</span>
+                                            <h5 class="title"><a href="mailto:info@iqac.asr.gov.uz" class="__cf_email__">info@iqac.asr.gov.uz</a></h5>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="info-item">
+                                    <ul>
+                                        <li><i class="fa-sharp fa-solid fa-location-dot"></i></li>
+                                        <li>
+                                            <span>Locations:</span>
+                                            <h5 class="title">IQAC - Head Office: 45, Islam Karimov Street, Chilanzar Distrcit, Tashkent, Uzbekistan, 100066</h5>
+                                            <h5 class="title">IQAC - TAQU Office: 9A, Yangishahar Street, Yunusabad District, Tashkent, Uzbekistan, 100206</h5>
+                                            <h5 class="title">IQAC - IUT (INHA) Office: 9, Ziyolilar Street, Mirzo Ulugbek District, Tashkent, Uzbekistan, 100170</h5>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                                                    <li>
-                                                        <p>Our Location:</p>
-                                                        <h4>
-                                                            <i class="fas fa-map-marker-alt"></i>
-                                                            <a href="#">
-                                                                IQAC - Head Office: 45, Islam Karimov Street, Chilanzar Distrcit, Tashkent, Uzbekistan, 100066
-                                                            </a>
-                                                        </h4>
-                                                        <h4>
-                                                            <i class="fas fa-map-marker-alt"></i>
-                                                            <a href="#">
-                                                                IQAC - TAQU Office: 9A, Yangishahar Street, Yunusabad District, Tashkent, Uzbekistan, 100206
-                                                            </a>
-                                                        </h4>
-                                                        <h4>
-                                                            <i class="fas fa-map-marker-alt"></i>
-                                                            <a href="#">
-                                                                IQAC - IUT (INHA) Office: 9, Ziyolilar Street, Mirzo Ulugbek District, Tashkent, Uzbekistan, 100170
-                                                            </a>
-                                                        </h4>
+                    <div class="widgets-section">
 
-                                                    </li>
-
-                                                    <li>
-                                                        <p>Our Channels:</p>
-                                                        <h4>
-                                                            <i class="fab fa-telegram"></i>
-                                                            <a href="https://t.me/iqacuz_bot" target="_blank">@iqacuz_bot</a>
-                                                        </h4>
-                                                        <h4>
-                                                            <i class="fab fa-telegram-plane"></i>
-                                                            <a href="https://t.me/iqac_uz" target="_blank">@iqac_uz</a>
-                                                        </h4>
-                                                        <h4>
-                                                            <i class="fab fa-instagram"></i>
-                                                            <a href="https://instagram.com/iqac.uz" target="_blank">@iqac.uz</a>
-                                                        </h4>
-                                                        <h4>
-                                                            <i class="fas fa-globe"></i>
-                                                            <a href="https://iqac.asr.gov.uz" target="_blank">iqac.asr.gov.uz</a>
-                                                        </h4>
-                                                    </li>
-
-                                                    <li>
-                                                        <p>Staff Contacts:</p>
-                                                        <h4>
-                                                            <i class="fas fa-user-tie"></i>
-                                                            Director:
-                                                            <a href="mailto:k.khomidov@iqac.asr.gov.uz">k.khomidov@iqac.asr.gov.uz</a>
-                                                        </h4>
-                                                        <h4>
-                                                            <i class="fas fa-user-graduate"></i>
-                                                            Academic Director:
-                                                            <a href="mailto:u.azizov@iqac.asr.gov.uz">u.azizov@iqac.asr.gov.uz</a>
-                                                        </h4>
-                                                        <h4>
-                                                            <i class="fas fa-user-cog"></i>
-                                                            Office Manager:
-                                                            <a href="mailto:t.abdusamadov@iqac.asr.gov.uz">t.abdusamadov@iqac.asr.gov.uz</a>
-                                                        </h4>
-                                                    </li>
-                                                </ul>
-
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-4 col-md-6 footer-item">
-                                            <div class="f-item link">
-
-                                                <?php
-                                                foreach (
-                                                    Pages::find()->andWhere(['parent_id' => null])->offset(1)->all(
-                                                    ) as $pages
-                                                ): ?>
-                                                <ul>
-                                                    <?php
-                                                    $subPages = Page::find()->andWhere(
-                                                        ['parent_id' => null, 'pages_id' => $pages->id]
-                                                    )->all(); ?>
-                                                    <?php
-                                                    foreach ($subPages as $subPage): ?>
-                                                        <li>
-                                                            <a href="<?= Url::to(['/site/page', 'url' => $subPage->url1]
-                                                            ) ?>">
-                                                                <h5 class="widget-title"><?= $pages->TitleTranslate ?></h5>
+                        <div class="row g-4">
+                            <!-- Footer Pages -->
+                            <div class="col-lg-4 footer-column">
+                                <div class="footer-widget links-widget">
+                                    <h4 class="widget-title"><?= Yii::t('app', 'Sahifalar') ?></h4>
+                                    <div class="widget-content">
+                                        <ul class="user-links">
+                                            <?php
+                                            $footerPages = Pages::find()->andWhere(['parent_id' => null])->limit(5)->all();
+                                            foreach ($footerPages as $page):
+                                                $subPages = Page::find()->andWhere(['parent_id' => null, 'pages_id' => $page->id])->all();
+                                                if ($subPages): ?>
+                                                    <li><strong><?= $page->TitleTranslate ?></strong></li>
+                                                    <?php foreach ($subPages as $sub): ?>
+                                                        <li style="margin-left: 10px;">
+                                                            <a href="<?= Url::to(['/site/page', 'url' => $sub->url1]) ?>">
+                                                                <?= $sub->TitleTranslate ?>
                                                             </a>
                                                         </li>
-                                                    <?php
-                                                    endforeach; ?>
-
-                                                </ul>
-                                                <?php
-                                                endforeach; ?>
-
-                                            </div>
-                                        </div>
-
+                                                    <?php endforeach; ?>
+                                                <?php else: ?>
+                                                    <li>
+                                                        <a href="<?= Url::to(['/site/page', 'url' => $page->url1]) ?>">
+                                                            <?= $page->TitleTranslate ?>
+                                                        </a>
+                                                    </li>
+                                                <?php endif;
+                                            endforeach; ?>
+                                        </ul>
                                     </div>
                                 </div>
-                                <!-- Start Footer Bottom -->
-                                <div class="footer-bottom">
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            &copy; Copyright 2025. All Rights Reserved by <a
-                                                    href="https://t.me/adsh97">adsh</a>
-                                        </div>
-                                        <div class="col-lg-6 text-end">
-                                            <ul class="link-list">
-                                                <li>
-                                                    <a href="#">
-                                                        About </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        Team </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        Support </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Footer Bottom -->
                             </div>
-                        </footer>
-                        <!-- End Footer -->
+
+                            <!-- Footer Language Switch -->
+                            <div class="col-lg-4 footer-column">
+                                <div class="footer-widget links-widget">
+                                    <h4 class="widget-title"><?= Yii::t('app', 'Tilni tanlang') ?></h4>
+                                    <div class="input-feild">
+                                        <a class="btn-one-rounded mb-2 d-block" href="<?= Yii::$app->params['og_language_uz']['content'] ?>">
+                                            <img src="/templates/img/header/uz.png" style="width: 25px;"> O‘zbekcha
+                                        </a>
+                                        <a class="btn-one-rounded mb-2 d-block" href="<?= Yii::$app->params['og_language_ru']['content'] ?>">
+                                            <img src="/templates/img/header/ru.png" style="width: 25px;"> Русский
+                                        </a>
+                                        <a class="btn-one-rounded d-block" href="<?= Yii::$app->params['og_language_en']['content'] ?>">
+                                            <img src="/templates/img/header/en.png" style="width: 25px;"> English
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Footer Socials -->
+                            <div class="col-lg-4 footer-column">
+                                <div class="footer-widget links-widget">
+                                    <h4 class="widget-title"><?= Yii::t('app', 'Ijtimoiy tarmoqlar') ?></h4>
+                                    <ul class="footer-nav mt-3">
+                                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-vimeo-v"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="footer-bottom">
+                        <p class="copyright-text">© Copyright 2025. All Right by <a href="https://t.me/adsh97">adsh</a></p>
+                    </div>
+
+                </div>
+                <div class="col-xl-4 right-column order-1 order-xl-2">
+                    <div class="inner-column">
+                        <a class="circle-btn" href="<?= Url::to(['/contact']) ?>">Contact Us <i class="fa-regular fa-arrow-up-right"></i></a>
+                        <div class="mt-10">
+                            <h5 class="time">09 : 00 AM - 18 : 00 PM</h5>
+                            <h5 class="date">Monday - Saturday</h5>
+                        </div>
+                    </div>
+                    <div class="shape">
+                        <img src="/iqac/images/shape/footer-one-shape.png" alt="Image">
                     </div>
                 </div>
             </div>
+
+
         </div>
-    </div>
-</footer>
+    </footer>
+    <!-- Footer area end here -->
 
-
+</div>
 <?php
 $this->endBody() ?>
 </body>
