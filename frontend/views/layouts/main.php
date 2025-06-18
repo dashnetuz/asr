@@ -328,7 +328,7 @@ $this->beginBody() ?>
                                                 if ($subPages): ?>
                                                     <li><strong><?= $page->TitleTranslate ?></strong></li>
                                                     <?php foreach ($subPages as $sub): ?>
-                                                        <li style="margin-left: 10px;">
+                                                        <li>
                                                             <a href="<?= Url::to(['/site/page', 'url' => $sub->url1]) ?>">
                                                                 <?= $sub->TitleTranslate ?>
                                                             </a>
