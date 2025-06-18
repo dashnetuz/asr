@@ -298,7 +298,17 @@ $this->beginBody() ?>
                                     </ul>
                                 </div>
                             </div>
-
+                            <div class="col-lg-4 footer-column">
+                                <div class="footer-widget links-widget">
+                                    <h4 class="widget-title"><?= Yii::t('app', 'Ijtimoiy tarmoqlar') ?></h4>
+                                    <ul class="footer-nav mt-3">
+                                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-vimeo-v"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -306,7 +316,7 @@ $this->beginBody() ?>
 
                         <div class="row g-4">
                             <!-- Footer Pages -->
-                            <div class="col-lg-4 footer-column">
+                            <div class="col-lg-6 footer-column">
                                 <div class="footer-widget links-widget">
                                     <h4 class="widget-title"><?= Yii::t('app', 'Sahifalar') ?></h4>
                                     <div class="widget-content">
@@ -338,7 +348,7 @@ $this->beginBody() ?>
                             </div>
 
                             <!-- Footer Language Switch -->
-                            <div class="col-lg-4 footer-column">
+                            <div class="col-lg-6 footer-column">
                                 <div class="footer-widget links-widget">
                                     <h4 class="widget-title"><?= Yii::t('app', 'Manzillar') ?></h4>
                                     <div class="widget-content">
@@ -363,17 +373,7 @@ $this->beginBody() ?>
 
 
                             <!-- Footer Socials -->
-                            <div class="col-lg-4 footer-column">
-                                <div class="footer-widget links-widget">
-                                    <h4 class="widget-title"><?= Yii::t('app', 'Ijtimoiy tarmoqlar') ?></h4>
-                                    <ul class="footer-nav mt-3">
-                                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa-brands fa-vimeo-v"></i></a></li>
-                                        <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
+
                         </div>
 
 
