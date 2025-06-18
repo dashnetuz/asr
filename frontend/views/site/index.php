@@ -138,7 +138,7 @@ Thanks to the newly established International Qualifications and Assessment Cent
                     <div class="case-block">
                         <div class="inner-box">
                             <figure class="image">
-                                <img src=/unieducation/wp-content/uploads/3.JPG" alt="Image">
+                                <img src=/unieducation/wp-content/uploads/1.jpg" alt="Image">
                             </figure>
                             <div class="content-box">
                                 <span class="sub-title">Partner</span>
