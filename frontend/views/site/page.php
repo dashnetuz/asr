@@ -25,7 +25,7 @@ JS
 
 ?>
 <div class="elementor-widget-container">
-    <div class="services-style-three-area default-padding bottom-less bg-gray-secondary bg-cover" style="background-image: url(/unieducation/wp-content/themes/gixus/assets/img/shape/24.png);">
+    <div class="services-style-three-area default-padding bottom-less bg-gray-secondary bg-cover" style="background-image: url(<?= $setting->logo ?>);">
         <div class="container">
             <div class="row">
                 <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
