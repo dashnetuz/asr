@@ -336,7 +336,7 @@ $this->beginBody() ?>
 
                                                 if ($subPages): ?>
                                                     <li style="color: white;">
-                                                        <strong style="color: white;"><?= $page->TitleTranslate ?></strong>
+                                                        <strong style="color: white;"><?= $page->TitleTranslate ?>:</strong>
                                                     </li>
                                                     <?php foreach ($subPages as $sub): ?>
                                                         <li style="color: white;">
