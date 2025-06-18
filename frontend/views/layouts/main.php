@@ -322,23 +322,34 @@ $this->beginBody() ?>
                                     <div class="widget-content" style="color: white;">
                                         <ul class="user-links" style="color: white; list-style: none; padding-left: 0;">
                                             <?php
-                                            $footerPages = Pages::find()->andWhere(['parent_id' => null])->limit(5)->all();
+                                            $footerPages = Pages::find()
+                                                ->andWhere(['parent_id' => null])
+                                                ->andWhere(['not', ['id' => 1]])
+                                                ->limit(5)
+                                                ->all();
+
                                             foreach ($footerPages as $page):
-                                                $subPages = Page::find()->andWhere(['parent_id' => null, 'pages_id' => $page->id])->all();
+                                                $subPages = Page::find()
+                                                    ->andWhere(['parent_id' => null, 'pages_id' => $page->id])
+                                                    ->andWhere(['<>', 'pages_id', 1])
+                                                    ->all();
+
                                                 if ($subPages): ?>
                                                     <li style="color: white;">
                                                         <strong style="color: white;"><?= $page->TitleTranslate ?></strong>
                                                     </li>
                                                     <?php foreach ($subPages as $sub): ?>
                                                         <li style="color: white;">
-                                                            <a href="<?= Url::to(['/site/page', 'url' => $sub->url1]) ?>" style="color: white; text-decoration: none;">
+                                                            <a href="<?= Url::to(['/site/page', 'url' => $sub->url1]) ?>"
+                                                               style="color: white; text-decoration: none;">
                                                                 <?= $sub->TitleTranslate ?>
                                                             </a>
                                                         </li>
                                                     <?php endforeach; ?>
                                                 <?php else: ?>
                                                     <li style="color: white;">
-                                                        <a href="<?= Url::to(['/site/page', 'url' => $page->url1]) ?>" style="color: white; text-decoration: none;">
+                                                        <a href="<?= Url::to(['/site/page', 'url' => $page->url1]) ?>"
+                                                           style="color: white; text-decoration: none;">
                                                             <?= $page->TitleTranslate ?>
                                                         </a>
                                                     </li>
@@ -348,6 +359,7 @@ $this->beginBody() ?>
                                     </div>
                                 </div>
                             </div>
+
 
 
                             <!-- Footer Language Switch -->
