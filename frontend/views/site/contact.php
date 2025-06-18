@@ -34,11 +34,7 @@ JS
              data-widget_type="pages_pages_contact_section.default">
             <div class="elementor-widget-container">
                 <div class="contact-style-one-area overflow-hidden default-padding">
-                    <div class="contact-shape">
-                        <img decoding="async"
-                             src="/unieducation/wp-content/themes/gixus/assets/img/illustration/14.png"
-                             alt="Image Not Found">
-                    </div>
+
                     <div class="container">
                         <div class="row align-center">
                             <div class="contact-stye-one col-lg-5 mb-md-50 mb-xs-40">
