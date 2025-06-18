@@ -5030,7 +5030,7 @@ Section Title
 }
 .banner-section .content-column .inner-column .title {
   color: var(--theme-color-white);
-  text-transform: capitalize;
+  /*text-transform: capitalize;*/
   margin-bottom: 30px;
 }
 .banner-section .content-column .inner-column .title span {
