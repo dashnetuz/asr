@@ -298,19 +298,7 @@ $this->beginBody() ?>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
-                                <div class="info-item">
-                                    <ul>
-                                        <li><i class="fa-sharp fa-solid fa-location-dot"></i></li>
-                                        <li>
-                                            <span>Locations:</span>
-                                            <h5 class="title">IQAC - Head Office: 45, Islam Karimov Street, Chilanzar Distrcit, Tashkent, Uzbekistan, 100066</h5>
-                                            <h5 class="title">IQAC - TAQU Office: 9A, Yangishahar Street, Yunusabad District, Tashkent, Uzbekistan, 100206</h5>
-                                            <h5 class="title">IQAC - IUT (INHA) Office: 9, Ziyolilar Street, Mirzo Ulugbek District, Tashkent, Uzbekistan, 100170</h5>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
 
@@ -352,20 +340,27 @@ $this->beginBody() ?>
                             <!-- Footer Language Switch -->
                             <div class="col-lg-4 footer-column">
                                 <div class="footer-widget links-widget">
-                                    <h4 class="widget-title"><?= Yii::t('app', 'Tilni tanlang') ?></h4>
-                                    <div class="input-feild">
-                                        <a class="btn-one-rounded mb-2 d-block" href="<?= Yii::$app->params['og_language_uz']['content'] ?>">
-                                            <img src="/templates/img/header/uz.png" style="width: 25px;"> O‘zbekcha
-                                        </a>
-                                        <a class="btn-one-rounded mb-2 d-block" href="<?= Yii::$app->params['og_language_ru']['content'] ?>">
-                                            <img src="/templates/img/header/ru.png" style="width: 25px;"> Русский
-                                        </a>
-                                        <a class="btn-one-rounded d-block" href="<?= Yii::$app->params['og_language_en']['content'] ?>">
-                                            <img src="/templates/img/header/en.png" style="width: 25px;"> English
-                                        </a>
+                                    <h4 class="widget-title"><?= Yii::t('app', 'Manzillar') ?></h4>
+                                    <div class="widget-content">
+                                        <p class="mb-2">
+                                            <strong>IQAC - Head Office:</strong><br>
+                                            45, Islam Karimov Street,<br>
+                                            Chilanzar District, Tashkent, Uzbekistan, 100066
+                                        </p>
+                                        <p class="mb-2">
+                                            <strong>IQAC - TAQU Office:</strong><br>
+                                            9A, Yangishahar Street,<br>
+                                            Yunusabad District, Tashkent, Uzbekistan, 100206
+                                        </p>
+                                        <p class="mb-0">
+                                            <strong>IQAC - IUT (INHA) Office:</strong><br>
+                                            9, Ziyolilar Street,<br>
+                                            Mirzo Ulugbek District, Tashkent, Uzbekistan, 100170
+                                        </p>
                                     </div>
                                 </div>
                             </div>
+
 
                             <!-- Footer Socials -->
                             <div class="col-lg-4 footer-column">
