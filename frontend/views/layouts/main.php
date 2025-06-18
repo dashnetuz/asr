@@ -349,27 +349,28 @@ $this->beginBody() ?>
 
                             <!-- Footer Language Switch -->
                             <div class="col-lg-6 footer-column">
-                                <div class="footer-widget links-widget">
-                                    <h4 class="widget-title"><?= Yii::t('app', 'Manzillar') ?></h4>
-                                    <div class="widget-content">
-                                        <p class="mb-2">
-                                            <strong>IQAC - Head Office:</strong><br>
+                                <div class="footer-widget links-widget" style="color: white;">
+                                    <h4 class="widget-title" style="color: white;"><?= Yii::t('app', 'Manzillar') ?></h4>
+                                    <div class="widget-content" style="color: white;">
+                                        <p class="mb-2" style="color: white;">
+                                            <strong style="color: white;">IQAC - Head Office:</strong><br>
                                             45, Islam Karimov Street,<br>
                                             Chilanzar District, Tashkent, Uzbekistan, 100066
                                         </p>
-                                        <p class="mb-2">
-                                            <strong>IQAC - TAQU Office:</strong><br>
+                                        <p class="mb-2" style="color: white;">
+                                            <strong style="color: white;">IQAC - TAQU Office:</strong><br>
                                             9A, Yangishahar Street,<br>
                                             Yunusabad District, Tashkent, Uzbekistan, 100206
                                         </p>
-                                        <p class="mb-0">
-                                            <strong>IQAC - IUT (INHA) Office:</strong><br>
+                                        <p class="mb-0" style="color: white;">
+                                            <strong style="color: white;">IQAC - IUT (INHA) Office:</strong><br>
                                             9, Ziyolilar Street,<br>
                                             Mirzo Ulugbek District, Tashkent, Uzbekistan, 100170
                                         </p>
                                     </div>
                                 </div>
                             </div>
+
 
 
                             <!-- Footer Socials -->
