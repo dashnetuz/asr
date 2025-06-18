@@ -76,7 +76,12 @@ $this->beginBody() ?>
         <!-- Main box -->
         <div class="main-box">
             <div class="logo-box">
-                <div class="logo"><a href="<?= Url::to(['/']) ?>"><img src="<?= $setting->logo ?>" alt="" title="IQAC"></a></div>
+                <div class="logo">
+                    <a href="<?= Url::to(['/']) ?>">
+                        <img src="<?= $setting->logo ?>" alt="IQAC" title="IQAC" style="max-height: 60px; height: auto; width: auto;">
+                    </a>
+                </div>
+
             </div>
             <!--Nav Box-->
             <div class="nav-outer">
