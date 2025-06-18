@@ -228,7 +228,7 @@ $this->beginBody() ?>
                     <div class="inner-container">
                         <!--Logo-->
                         <div class="logo">
-                            <a href="<?= Url::to(['/']) ?>"><img src="<?= $setting->logo ?>" alt=""></a>
+                            <a href="<?= Url::to(['/']) ?>"><img src="<?= $setting->logo ?>" style="max-height: 60px; height: auto; width: auto;" alt=""></a>
                         </div>
                         <!--Right Col-->
                         <div class="nav-outer">
