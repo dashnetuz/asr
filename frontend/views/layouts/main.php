@@ -317,26 +317,28 @@ $this->beginBody() ?>
                         <div class="row g-4">
                             <!-- Footer Pages -->
                             <div class="col-lg-6 footer-column">
-                                <div class="footer-widget links-widget">
-                                    <h4 class="widget-title"><?= Yii::t('app', 'Sahifalar') ?></h4>
-                                    <div class="widget-content">
-                                        <ul class="user-links">
+                                <div class="footer-widget links-widget" style="color: white;">
+                                    <h4 class="widget-title" style="color: white;"><?= Yii::t('app', 'Sahifalar') ?></h4>
+                                    <div class="widget-content" style="color: white;">
+                                        <ul class="user-links" style="color: white; list-style: none; padding-left: 0;">
                                             <?php
                                             $footerPages = Pages::find()->andWhere(['parent_id' => null])->limit(5)->all();
                                             foreach ($footerPages as $page):
                                                 $subPages = Page::find()->andWhere(['parent_id' => null, 'pages_id' => $page->id])->all();
                                                 if ($subPages): ?>
-                                                    <li><strong><?= $page->TitleTranslate ?></strong></li>
+                                                    <li style="color: white;">
+                                                        <strong style="color: white;"><?= $page->TitleTranslate ?></strong>
+                                                    </li>
                                                     <?php foreach ($subPages as $sub): ?>
-                                                        <li>
-                                                            <a href="<?= Url::to(['/site/page', 'url' => $sub->url1]) ?>">
+                                                        <li style="color: white;">
+                                                            <a href="<?= Url::to(['/site/page', 'url' => $sub->url1]) ?>" style="color: white; text-decoration: none;">
                                                                 <?= $sub->TitleTranslate ?>
                                                             </a>
                                                         </li>
                                                     <?php endforeach; ?>
                                                 <?php else: ?>
-                                                    <li>
-                                                        <a href="<?= Url::to(['/site/page', 'url' => $page->url1]) ?>">
+                                                    <li style="color: white;">
+                                                        <a href="<?= Url::to(['/site/page', 'url' => $page->url1]) ?>" style="color: white; text-decoration: none;">
                                                             <?= $page->TitleTranslate ?>
                                                         </a>
                                                     </li>
@@ -346,6 +348,7 @@ $this->beginBody() ?>
                                     </div>
                                 </div>
                             </div>
+
 
                             <!-- Footer Language Switch -->
                             <div class="col-lg-6 footer-column">
