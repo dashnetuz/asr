@@ -134,11 +134,12 @@ Thanks to the newly established International Qualifications and Assessment Cent
                         </div>
                     </div>
                 </div>
+
                 <div class="swiper-slide">
                     <div class="case-block">
                         <div class="inner-box">
                             <figure class="image">
-                                <img src=/unieducation/wp-content/uploads/1.jpg" alt="Image">
+                                <img src="/unieducation/wp-content/uploads/3.jpg" alt="Image">
                             </figure>
                             <div class="content-box">
                                 <span class="sub-title">Partner</span>
@@ -152,6 +153,83 @@ Thanks to the newly established International Qualifications and Assessment Cent
                         </div>
                     </div>
                 </div>
+
+                <div class="swiper-slide">
+                    <div class="case-block">
+                        <div class="inner-box">
+                            <figure class="image">
+                                <img src="/unieducation/wp-content/uploads/4.jpg" alt="Image">
+                            </figure>
+                            <div class="content-box">
+                                <span class="sub-title">Partner</span>
+                                <h4 class="title"><a href="#">University of Gloucestershire (via IQF)</a></h4>
+                            </div>
+                            <a class="arry-btn" href="#"><i class="fa-regular fa-arrow-up-right"></i></a>
+                            <div class="hover-content">
+                                <span class="sub-title">Partner</span>
+                                <h4 class="title"><a href="#">University of Gloucestershire (via IQF)</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                    <div class="case-block">
+                        <div class="inner-box">
+                            <figure class="image">
+                                <img src="/unieducation/wp-content/uploads/1.png" alt="Image">
+                            </figure>
+                            <div class="content-box">
+                                <span class="sub-title">Partner</span>
+                                <h4 class="title"><a href="#">Integrated Qualifications Framework (IQF)</a></h4>
+                            </div>
+                            <a class="arry-btn" href="#"><i class="fa-regular fa-arrow-up-right"></i></a>
+                            <div class="hover-content">
+                                <span class="sub-title">Partner</span>
+                                <h4 class="title"><a href="#">Integrated Qualifications Framework (IQF)</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="case-block">
+                        <div class="inner-box">
+                            <figure class="image">
+                                <img src="/unieducation/wp-content/uploads/2.jpg" alt="Image">
+                            </figure>
+                            <div class="content-box">
+                                <span class="sub-title">Partner</span>
+                                <h4 class="title"><a href="#">University of West London (via IQF)</a></h4>
+                            </div>
+                            <a class="arry-btn" href="#"><i class="fa-regular fa-arrow-up-right"></i></a>
+                            <div class="hover-content">
+                                <span class="sub-title">Partner</span>
+                                <h4 class="title"><a href="#">University of West London (via IQF)</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="case-block">
+                        <div class="inner-box">
+                            <figure class="image">
+                                <img src="/unieducation/wp-content/uploads/3.jpg" alt="Image">
+                            </figure>
+                            <div class="content-box">
+                                <span class="sub-title">Partner</span>
+                                <h4 class="title"><a href="#">University of Hertfordshire (via IQF)</a></h4>
+                            </div>
+                            <a class="arry-btn" href="#"><i class="fa-regular fa-arrow-up-right"></i></a>
+                            <div class="hover-content">
+                                <span class="sub-title">Partner</span>
+                                <h4 class="title"><a href="#">University of Hertfordshire (via IQF)</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="swiper-slide">
                     <div class="case-block">
                         <div class="inner-box">
