@@ -188,7 +188,7 @@ $this->beginBody() ?>
                     <div class="upper-box">
                         <div class="nav-logo">
                             <a href="<?= Url::to(['/']) ?>">
-                                <img src="<?= $setting->logo ?>" alt="IQAC" title="IQAC" style="max-height: 60px; height: auto; width: auto;">
+                                <img src="<?= $setting->logo ?>" alt="IQAC" style="max-height: 60px; height: auto; width: auto;">
                             </a>
                         </div>
                         <div class="close-btn"><i class="icon fa fa-times"></i></div>
