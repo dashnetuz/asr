@@ -186,7 +186,11 @@ $this->beginBody() ?>
                 <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
                 <nav class="menu-box">
                     <div class="upper-box">
-                        <div class="nav-logo"><a href="<?= Url::to(['/']) ?>"><img src="/iqac/images/logo/logo-light.png" alt=""></a></div>
+                        <div class="nav-logo">
+                            <a href="<?= Url::to(['/']) ?>">
+                                <img src="<?= $setting->logo ?>" alt="IQAC" title="IQAC" style="max-height: 60px; height: auto; width: auto;">
+                            </a>
+                        </div>
                         <div class="close-btn"><i class="icon fa fa-times"></i></div>
                     </div>
                     <ul class="navigation clearfix d-block d-lg-none">
