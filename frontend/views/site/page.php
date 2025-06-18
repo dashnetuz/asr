@@ -49,7 +49,7 @@ JS
                     <div class="col-xl-12 col-lg-12 col-md-12 mb-30">
                         <div class="services-style-three-item wow fadeInRight" data-wow-delay="0ms" style="visibility: visible; animation-delay: 0ms; animation-name: fadeInRight;">
                             <div class="item-title">
-                                <img decoding="async" src="/unieducation/wp-content/themes/gixus/assets/img/icon/16.png" alt="Image Not Found">
+                                <img decoding="async" src="<?= $setting->logo ?>" alt="Image Not Found">
                                 
                                     <?php foreach (Pagetext::find()->where(['status' => 10,])->andWhere(['page_id' => $pageOne->id])->all() as $text):?>
                         				<?=$text->DescriptionTranslate?>
