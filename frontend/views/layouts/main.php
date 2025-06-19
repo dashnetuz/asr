@@ -52,7 +52,7 @@ $this->beginBody() ?>
                     <ul class="info-list">
                         <li><i class="fa-solid fa-envelope"></i> <a href="mailto:info@iqac.asr.gov.uz"><span class="__cf_email__" data-cfemail="#">info@iqac.asr.gov.uz</span></a>
                         </li>
-                        <li><i class="fa-solid fa-location-dot"></i> 45, Islam Karimov Street, Chilanzar Distrcit, Tashkent, Uzbekistan, 100066</li>
+                        <li><i class="fa-solid fa-location-dot"></i><?= Yii::t('app', '45, Islam Karimov Street, Chilanzar Distrcit, Tashkent, Uzbekistan, 100066') ?></li>
                     </ul>
                 </div>
 
@@ -60,7 +60,7 @@ $this->beginBody() ?>
                     <ul class="useful-links">
 <!--                        <li><a href="#">About</a></li>-->
 <!--                        <li><a href="#">Faqs</a></li>-->
-                        <li><a href="<?= Url::to(['/contact']) ?>">Contact</a></li>
+                        <li><a href="<?= Url::to(['/contact']) ?>"><?= Yii::t('app', 'Contact') ?></a></li>
                     </ul>
                     <ul class="top-social-icon">
                         <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -169,11 +169,11 @@ $this->beginBody() ?>
                     <div class="call-info">
                         <i class="fa-solid fa-phone ring__animation"></i>
                         <div>
-                            <h6 class="title">Phone:</h6>
+                            <h6 class="title"><?= Yii::t('app', 'Phone:') ?></h6>
                             <a href="tel:+998712002024">+998(71)-200-20-24</a>
                         </div>
                     </div>
-                    <a class="btn-two" href="<?= Url::to(['/contact']) ?>">Contact Now</a>
+                    <a class="btn-two" href="<?= Url::to(['/contact']) ?>"><?= Yii::t('app', 'Contact Now') ?></a>
                 </div>
                 <div class="mobile-nav-toggler d-block d-lg-none"><i class="icon lnr-icon-bars"></i></div>
                 <!-- Mobile Nav toggler -->
@@ -202,7 +202,7 @@ $this->beginBody() ?>
                             <!-- Contact Info Box -->
                             <div class="contact-info-box">
                                 <i class="icon lnr-icon-phone-handset"></i>
-                                <span class="title">Call Now</span>
+                                <span class="title"><?= Yii::t('app', 'Call Now') ?></span>
                                 <a href="tel:+998712002024">+998(71)-200-20-24</a>
                             </div>
                         </li>
@@ -210,7 +210,7 @@ $this->beginBody() ?>
                             <!-- Contact Info Box -->
                             <div class="contact-info-box">
                                 <span class="icon lnr-icon-envelope1"></span>
-                                <span class="title">Send Email</span>
+                                <span class="title"><?= Yii::t('app', 'Send Email') ?></span>
                                 <a href="mailto:info@iqac.asr.gov.uz"><span class="__cf_email__" data-cfemail="#">info@iqac.asr.gov.uz</span></a>
                             </div>
                         </li>
@@ -285,7 +285,7 @@ $this->beginBody() ?>
                                     <ul>
                                         <li><i class="fa-sharp fa-solid fa-phone"></i></li>
                                         <li>
-                                            <span>Call Us:</span>
+                                            <span><?= Yii::t('app', 'Call Us:') ?></span>
                                             <h5 class="title">+998(71)-200-20-24</h5>
                                         </li>
                                     </ul>
@@ -296,7 +296,7 @@ $this->beginBody() ?>
                                     <ul>
                                         <li><i class="fa-sharp fa-solid fa-envelope"></i></li>
                                         <li>
-                                            <span>Email Us:</span>
+                                            <span><?= Yii::t('app', 'Email Us:') ?></span>
                                             <h5 class="title"><a href="mailto:info@iqac.asr.gov.uz" class="__cf_email__">info@iqac.asr.gov.uz</a></h5>
                                         </li>
                                     </ul>
@@ -372,19 +372,19 @@ $this->beginBody() ?>
                                     <h4 class="widget-title" style="color: white;"><?= Yii::t('app', 'Manzillar') ?></h4>
                                     <div class="widget-content" style="color: white;">
                                         <p class="mb-2" style="color: white;">
-                                            <strong style="color: white;">IQAC - Head Office:</strong><br>
-                                            45, Islam Karimov Street,<br>
-                                            Chilanzar District, Tashkent, Uzbekistan, 100066
+                                            <strong style="color: white;"><?= Yii::t('app', 'IQAC - Head Office:') ?></strong><br>
+                                            <?= Yii::t('app', '45, Islam Karimov Street,') ?><br>
+                                            <?= Yii::t('app', 'Chilanzar District, Tashkent, Uzbekistan, 100066') ?>
                                         </p>
                                         <p class="mb-2" style="color: white;">
-                                            <strong style="color: white;">IQAC - TAQU Office:</strong><br>
-                                            9A, Yangishahar Street,<br>
-                                            Yunusabad District, Tashkent, Uzbekistan, 100206
+                                            <strong style="color: white;"><?= Yii::t('app', 'IQAC - TAQU Office:') ?></strong><br>
+                                            <?= Yii::t('app', '9A, Yangishahar Street,') ?><br>
+                                            <?= Yii::t('app', 'Yunusabad District, Tashkent, Uzbekistan, 100206') ?>
                                         </p>
                                         <p class="mb-0" style="color: white;">
-                                            <strong style="color: white;">IQAC - IUT (INHA) Office:</strong><br>
-                                            9, Ziyolilar Street,<br>
-                                            Mirzo Ulugbek District, Tashkent, Uzbekistan, 100170
+                                            <strong style="color: white;"><?= Yii::t('app', 'IQAC - IUT (INHA) Office:') ?></strong><br>
+                                            <?= Yii::t('app', '9, Ziyolilar Street,') ?><br>
+                                            <?= Yii::t('app', 'Mirzo Ulugbek District, Tashkent, Uzbekistan, 100170') ?>
                                         </p>
                                     </div>
                                 </div>
@@ -400,16 +400,16 @@ $this->beginBody() ?>
                     </div>
 
                     <div class="footer-bottom">
-                        <p class="copyright-text">© Copyright 2025. All Right by <a href="https://t.me/adsh97">adsh</a></p>
+                        <p class="copyright-text">© Copyright 2025. <?= Yii::t('app', 'All Right by') ?> <a href="https://t.me/adsh97">adsh</a></p>
                     </div>
 
                 </div>
                 <div class="col-xl-4 right-column order-1 order-xl-2">
                     <div class="inner-column">
-                        <a class="circle-btn" href="<?= Url::to(['/contact']) ?>">Contact Us <i class="fa-regular fa-arrow-up-right"></i></a>
+                        <a class="circle-btn" href="<?= Url::to(['/contact']) ?>"><?= Yii::t('app', 'Contact Us') ?> <i class="fa-regular fa-arrow-up-right"></i></a>
                         <div class="mt-10">
-                            <h5 class="time">09 : 00 AM - 18 : 00 PM</h5>
-                            <h5 class="date">Monday - Saturday</h5>
+                            <h5 class="time"><?= Yii::t('app', '09 : 00 AM - 18 : 00 PM') ?></h5>
+                            <h5 class="date"><?= Yii::t('app', 'Monday - Saturday') ?></h5>
                         </div>
                     </div>
                     <div class="shape">
