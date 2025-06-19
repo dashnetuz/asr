@@ -25,6 +25,7 @@ return[
     "9, Ziyolilar Street," => "Улица Зиёлилар, 9,",
     "Mirzo Ulugbek District, Tashkent, Uzbekistan, 100170" => "Мирзо-Улугбекский район, Ташкент, Узбекистан, 100170",
 
+
     "Uzbek" => "Узбекский",
     "Russian" => "Pусский",
     "English" => "Aнглийский",

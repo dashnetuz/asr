@@ -25,6 +25,7 @@ return array(
     "9, Ziyolilar Street," => "9, Ziyolilar ko‘chasi,",
     "Mirzo Ulugbek District, Tashkent, Uzbekistan, 100170" => "Mirzo Ulug‘bek tumani, Toshkent, O‘zbekiston, 100170",
 
+
     "Uzbek" => "O'zbekcha",
     "Russian" => "Ruscha",
     "English" => "Inglizcha",

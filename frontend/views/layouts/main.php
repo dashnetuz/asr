@@ -225,7 +225,6 @@ $this->beginBody() ?>
             </div>
             <!-- End Mobile Menu -->
 
-
             <!-- Sticky Header  -->
             <div class="sticky-header">
                 <div class="auto-container">
