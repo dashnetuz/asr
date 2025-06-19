@@ -1,5 +1,15 @@
 <?php
 return[
+    'Bizning hamkorlarimiz' => 'Our Partners',
+    'British Educational Standards in Uzbekistan' => 'British Educational Standards in Uzbekistan',
+    'INHA University in Tashkent in Business Management/Information Technologies' => 'INHA University in Tashkent in Business Management / Information Technologies',
+    'Tashkent University of Architecture and Civil Engineering in Architecture' => 'Tashkent University of Architecture and Civil Engineering in Architecture',
+    'Tashkent State University of Oriental Studies in Tourism and Hospitality' => 'Tashkent State University of Oriental Studies in Tourism and Hospitality',
+    'Now you can obtain a British university degree without leaving Uzbekistan.
+Thanks to the newly established International Qualifications and Assessment Centre (IQAC), world-class education is more accessible than ever before.' =>
+        'Now you can obtain a British university degree without leaving Uzbekistan.
+Thanks to the newly established International Qualifications and Assessment Centre (IQAC), world-class education is more accessible than ever before.',
+
     "45, Islam Karimov Street, Chilanzar Distrcit, Tashkent, Uzbekistan, 100066" => "45 Islam Karimov Street, Chilanzar District, Tashkent, Uzbekistan, 100066",
     "Contact" => "Contact",
     "Phone:" => "Phone:",
