@@ -3954,7 +3954,7 @@ Main Header
 }
 .header-style-one .main-menu .navigation > li > a, .header-style-four .main-menu .navigation > li > a, .header-style-three .main-menu .navigation > li > a, .header-style-two .main-menu .navigation > li > a {
   color: var(--headings-color);
-  text-transform: capitalize;
+  /*text-transform: capitalize;*/
   position: relative;
   font-weight: 500;
 }
