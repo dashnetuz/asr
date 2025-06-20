@@ -31,7 +31,12 @@ JS
 ?>
 <!-- Banner area start here -->
 <section class="banner-section">
-    <div class="arry"><img class="animation__arryLeftRight" src="/iqac/images/shape/banner-arry.png" alt="Image"></div>
+    <div class="arry">
+        <img class="animation__arryLeftRight"
+             src="/iqac/images/shape/banner-arry.png"
+             alt="Image"
+             style="position: absolute; z-index: 0; pointer-events: none;">
+    </div>
     <div class="sec-shape">
         <img src="/iqac/images/shape/banner-shape.png" alt="Image">
     </div>
