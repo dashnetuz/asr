@@ -31,12 +31,7 @@ JS
 ?>
 <!-- Banner area start here -->
 <section class="banner-section">
-    <div class="arry">
-        <img class="animation__arryLeftRight"
-             src="/iqac/images/shape/banner-arry.png"
-             alt="Image"
-             style="position: absolute; z-index: 0; pointer-events: none;">
-    </div>
+<!--    <div class="arry"><img class="animation__arryLeftRight" src="/iqac/images/shape/banner-arry.png" alt="Image"></div>-->
     <div class="sec-shape">
         <img src="/iqac/images/shape/banner-shape.png" alt="Image">
     </div>
@@ -67,24 +62,17 @@ JS
                                         <?= Yii::t("app", "Now you can obtain a British university degree without leaving Uzbekistan.
 Thanks to the newly established International Qualifications and Assessment Centre (IQAC), world-class education is more accessible than ever before.") ?>
                                     </h3>
-                                    <a class="btn-one" data-animation="fadeInUp" data-delay=".8s"
-                                       style="position: relative; z-index: 100;"
-                                       href="<?= Url::to(['/contact']) ?>">
+                                    <a class="btn-one" data-animation="fadeInUp" data-delay=".8s" href="<?= Url::to(['/contact']) ?>">
                                         <?= Yii::t("app", "INHA University in Tashkent in Business Management/Information Technologies") ?>
                                     </a>
 
-                                    <a class="btn-one" data-animation="fadeInUp" data-delay=".8s"
-                                       style="position: relative; z-index: 100;"
-                                       href="<?= Url::to(['/contact']) ?>">
+                                    <a class="btn-one" data-animation="fadeInUp" data-delay=".8s" href="<?= Url::to(['/contact']) ?>">
                                         <?= Yii::t("app", "Tashkent University of Architecture and Civil Engineering in Architecture") ?>
                                     </a>
 
-                                    <a class="btn-one" data-animation="fadeInUp" data-delay=".8s"
-                                       style="position: relative; z-index: 100;"
-                                       href="<?= Url::to(['/contact']) ?>">
+                                    <a class="btn-one" data-animation="fadeInUp" data-delay=".8s" href="<?= Url::to(['/contact']) ?>">
                                         <?= Yii::t("app", "Tashkent State University of Oriental Studies in Tourism and Hospitality") ?>
                                     </a>
-
                                 </div>
                             </div>
 
