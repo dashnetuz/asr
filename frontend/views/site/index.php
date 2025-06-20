@@ -31,10 +31,10 @@ JS
 ?>
 <!-- Banner area start here -->
 <section class="banner-section">
-<!--    <div class="arry"><img class="animation__arryLeftRight" src="/iqac/images/shape/banner-arry.png" alt="Image"></div>-->
-    <div class="sec-shape">
-        <img src="/iqac/images/shape/banner-shape.png" alt="Image">
-    </div>
+    <div class="arry"><img class="animation__arryLeftRight" src="/iqac/images/shape/banner-arry.png" alt="Image"></div>
+<!--    <div class="sec-shape">-->
+<!--        <img src="/iqac/images/shape/banner-shape.png" alt="Image">-->
+<!--    </div>-->
     <button class="goBottom-btn">
         <svg class="animation__arryUpDown" width="16" height="36" viewBox="0 0 16 36" fill="none"
              xmlns="http://www.w3.org/2000/svg">
