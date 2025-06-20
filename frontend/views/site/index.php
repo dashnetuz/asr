@@ -52,8 +52,8 @@ JS
                     <div class="outer-box">
                         <div class="row g-0 align-items-end">
                             <div class="col-lg-8 content-column">
-                                <div class="inner-column">
-                                    <h6 class="sub-title" data-animation="fadeInUp" data-delay=".3s">iqac.asr.gov.uz
+                                <div class="inner-column" style="position: relative; z-index: 5;">
+                                <h6 class="sub-title" data-animation="fadeInUp" data-delay=".3s">iqac.asr.gov.uz
                                     </h6>
                                     <h1 class="title" data-animation="fadeInUp" data-delay=".5s">
                                         <?= Yii::t("app", "British Educational Standards in Uzbekistan") ?>
