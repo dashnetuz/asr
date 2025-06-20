@@ -52,8 +52,8 @@ JS
                     <div class="outer-box">
                         <div class="row g-0 align-items-end">
                             <div class="col-lg-8 content-column">
-                                <div class="inner-column" style="position: relative; z-index: 5;">
-                                <h6 class="sub-title" data-animation="fadeInUp" data-delay=".3s">iqac.asr.gov.uz
+                                <div class="inner-column">
+                                    <h6 class="sub-title" data-animation="fadeInUp" data-delay=".3s">iqac.asr.gov.uz
                                     </h6>
                                     <h1 class="title" data-animation="fadeInUp" data-delay=".5s">
                                         <?= Yii::t("app", "British Educational Standards in Uzbekistan") ?>
@@ -62,17 +62,24 @@ JS
                                         <?= Yii::t("app", "Now you can obtain a British university degree without leaving Uzbekistan.
 Thanks to the newly established International Qualifications and Assessment Centre (IQAC), world-class education is more accessible than ever before.") ?>
                                     </h3>
-                                    <a class="btn-one" data-animation="fadeInUp" data-delay=".8s" href="<?= Url::to(['/contact']) ?>">
+                                    <a class="btn-one" data-animation="fadeInUp" data-delay=".8s"
+                                       style="position: relative; z-index: 100;"
+                                       href="<?= Url::to(['/contact']) ?>">
                                         <?= Yii::t("app", "INHA University in Tashkent in Business Management/Information Technologies") ?>
                                     </a>
 
-                                    <a class="btn-one" data-animation="fadeInUp" data-delay=".8s" href="<?= Url::to(['/contact']) ?>">
+                                    <a class="btn-one" data-animation="fadeInUp" data-delay=".8s"
+                                       style="position: relative; z-index: 100;"
+                                       href="<?= Url::to(['/contact']) ?>">
                                         <?= Yii::t("app", "Tashkent University of Architecture and Civil Engineering in Architecture") ?>
                                     </a>
 
-                                    <a class="btn-one" data-animation="fadeInUp" data-delay=".8s" href="<?= Url::to(['/contact']) ?>">
+                                    <a class="btn-one" data-animation="fadeInUp" data-delay=".8s"
+                                       style="position: relative; z-index: 100;"
+                                       href="<?= Url::to(['/contact']) ?>">
                                         <?= Yii::t("app", "Tashkent State University of Oriental Studies in Tourism and Hospitality") ?>
                                     </a>
+
                                 </div>
                             </div>
 
