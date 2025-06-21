@@ -5,6 +5,7 @@ namespace frontend\controllers;
 use common\models\Chair;
 use common\models\Faculty;
 use common\models\Major;
+use common\models\News;
 use common\models\Page;
 use common\models\Pages;
 use common\models\Contact;
@@ -245,6 +246,18 @@ class SiteController extends Controller
         return $this->render('contact', [
             'model' => $model,
         ]);
+    }
+
+
+
+    public function actionNews($url)
+    {
+        $news = News::findOne(['url1' => $url, 'status' => 1]);
+        if (!$news) {
+            throw new NotFoundHttpException("Yangilik topilmadi");
+        }
+
+        return $this->render('news', ['news' => $news]);
     }
 
     /**
