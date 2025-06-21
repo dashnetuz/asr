@@ -89,6 +89,60 @@ Thanks to the newly established International Qualifications and Assessment Cent
 <!-- Banner area end here -->
 
 
+
+<!-- Blog area start here -->
+<section class="blog-section pb-120">
+    <div class="container">
+        <div class="sec-title mb-50">
+            <h6 class="sub-title wow fadeInUp"><?= Yii::t('app', 'Yangiliklar') ?></h6>
+            <div class="flex-content">
+                <h2 class="title wow splt-txt" data-splitting><?= Yii::t('app', 'Oxirgi yangiliklar') ?></h2>
+                <a href="<?= Url::to(['/site/news']) ?>" class="btn-two wow fadeInUp"><?= Yii::t('app', 'Barcha yangiliklar') ?></a>
+            </div>
+        </div>
+
+        <div class="swiper blog-slider">
+            <div class="swiper-wrapper">
+                <?php foreach (\common\models\News::find()->where(['status' => 1, 'eye' => 1])->orderBy(['created_at' => SORT_DESC])->limit(6)->all() as $news): ?>
+                    <div class="swiper-slide">
+                        <div class="blog-block">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <figure class="image">
+                                        <img src="/uploads/news/<?= $news->filename ?>" alt="<?= $news->getTitleTranslate() ?>">
+                                    </figure>
+                                </div>
+                                <div class="content-box">
+                                    <ul class="info">
+                                        <li>
+                                            <svg width="19" height="19" fill="none"><circle cx="9.5" cy="9.5" r="9.5" fill="#C6D936"/></svg>
+                                            <a href="#0"><?= date('d.m.Y', strtotime($news->created_at)) ?></a>
+                                        </li>
+                                    </ul>
+                                    <h4 class="title">
+                                        <a href="<?= Url::to(['/site/news', 'url' => $news->url1]) ?>">
+                                            <?= $news->getTitleTranslate() ?>
+                                        </a>
+                                    </h4>
+                                    <div class="all-btn all-category d-flex align-items-center mt-3">
+                                        <a href="<?= Url::to(['/site/news', 'url' => $news->url1]) ?>" class="btn btn-primary">
+                                            <?= Yii::t('app', 'Ko`proq o`qish') ?>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+            <div class="swiper-dot text-center blog-pagination mt-40"></div>
+        </div>
+    </div>
+</section>
+<!-- Blog area end here -->
+
+
+
 <!-- Case area start here -->
 <section class="case-section have-combine pt-120 pb-120">
     <div class="outer-box">
