@@ -91,7 +91,7 @@ Thanks to the newly established International Qualifications and Assessment Cent
 
 
 <!-- Blog area start here -->
-<section class="blog-section pb-120">
+<section class="blog-section pb-60">
     <div class="container">
         <div class="sec-title mb-50 mt-50">
 <!--            <h6 class="sub-title wow fadeInUp">--><?php //= Yii::t('app', 'Yangiliklar') ?><!--</h6>-->
