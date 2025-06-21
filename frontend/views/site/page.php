@@ -67,7 +67,7 @@ JS
 
                                         <div class="row">
                                             <?php foreach ($pdfFiles as $pdf): ?>
-                                                <div class="col-md-6 col-lg-4 mb-3">
+                                                <div class="col-md-6 col-lg-6 mb-3">
                                                     <div class="card shadow-sm border-0 h-100">
                                                         <div class="card-body d-flex flex-column justify-content-between">
                                                             <h5 class="card-title" style="font-size: 20px;"><?= $pdf->TitleTranslate ?></h5>
