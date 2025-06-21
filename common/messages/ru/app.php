@@ -1,5 +1,6 @@
 <?php
 return[
+    'So‘nggi yangiliklar' => 'Последние новости',
     'Yangiliklar' => 'Новости',
     'Ko`proq o`qish' => 'Читать далее',
 
