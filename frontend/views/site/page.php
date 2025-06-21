@@ -54,6 +54,38 @@ JS
                                     <?php foreach (Pagetext::find()->where(['status' => 10,])->andWhere(['page_id' => $pageOne->id])->all() as $text):?>
                         				<?=$text->DescriptionTranslate?>
                                     <?php endforeach; ?>
+
+                                <!-- Bu yerda Pagepdf fayllarini chiqaramiz -->
+                                <?php
+                                $pdfFiles = \common\models\Pagepdf::find()
+                                    ->where(['status' => 10, 'page_id' => $pageOne->id])
+                                    ->orderBy(['id' => SORT_ASC])
+                                    ->all();
+
+                                if (!empty($pdfFiles)): ?>
+                                    <div class="page-pdf-section mt-5">
+                                        <h4 style="font-size: 24px; font-weight: bold; margin-bottom: 20px;">
+                                            <?= Yii::t('app', 'Yuklab olish uchun fayllar') ?>:
+                                        </h4>
+                                        <div class="row">
+                                            <?php foreach ($pdfFiles as $pdf): ?>
+                                                <div class="col-md-6 col-lg-4 mb-3">
+                                                    <div class="card shadow-sm border-0 h-100">
+                                                        <div class="card-body d-flex flex-column justify-content-between">
+                                                            <h5 class="card-title" style="font-size: 20px;"><?= $pdf->TitleTranslate ?></h5>
+                                                            <a href="/uploads/pagepdf/<?= $pdf->filename ?>"
+                                                               class="btn btn-primary mt-3"
+                                                               target="_blank"
+                                                               style="font-size: 18px;">
+                                                                <?= Yii::t('app', 'Yuklab olish') ?>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            <?php endforeach; ?>
+                                        </div>
+                                    </div>
+                                <?php endif; ?>
                                 
                             </div>
                         </div>
