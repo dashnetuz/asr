@@ -64,9 +64,7 @@ JS
 
                                 if (!empty($pdfFiles)): ?>
                                     <div class="page-pdf-section mt-5">
-                                        <h4 style="font-size: 24px; font-weight: bold; margin-bottom: 20px;">
-                                            <?= Yii::t('app', 'Yuklab olish uchun fayllar') ?>:
-                                        </h4>
+
                                         <div class="row">
                                             <?php foreach ($pdfFiles as $pdf): ?>
                                                 <div class="col-md-6 col-lg-4 mb-3">
