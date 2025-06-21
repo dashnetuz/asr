@@ -1,5 +1,8 @@
 <?php
 return[
+    'Yangiliklar' => 'Новости',
+    'Ko`proq o`qish' => 'Читать далее',
+
     'Bizning hamkorlarimiz' => 'Наши партнёры',
     'British Educational Standards in Uzbekistan' => 'Британские образовательные стандарты в Узбекистане',
     'INHA University in Tashkent in Business Management/Information Technologies' => 'Университет INHA в Ташкенте — Бизнес-менеджмент / Информационные технологии',

@@ -1,5 +1,8 @@
 <?php
 return[
+    'Yangiliklar' => 'News',
+    'Ko`proq o`qish' => 'Read More',
+
     'Bizning hamkorlarimiz' => 'Our Partners',
     'British Educational Standards in Uzbekistan' => 'British Education Standards in Uzbekistan',
     'INHA University in Tashkent in Business Management/Information Technologies' => 'INHA University in Tashkent in Business Management / Information Technologies',
@@ -42,7 +45,6 @@ Thanks to the newly established International Qualifications and Assessment Cent
     "Bizning loyihalarimiz" => "Our projects",
     "Language" => "Language",
     "Boshlash" => "Get Started",
-    "Bizning hamkorlarimiz" => "Our partners",
 
 
     'Britaniya Taʼlim Standartlari Oʻzbekistonda' => 'British Education Standards in Uzbekistan',
@@ -96,7 +98,6 @@ Thanks to the newly established International Qualifications and Assessment Cent
     
     "Universitet" => "University",
     
-    "Yangiliklar" => "News",
     "Kirish" => "Enter",
     "Home" => "Home",
     

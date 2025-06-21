@@ -121,7 +121,7 @@ Thanks to the newly established International Qualifications and Assessment Cent
                                     </ul>
                                     <h4 class="title">
                                         <a href="<?= Url::to(['/site/news', 'url' => $news->url1]) ?>">
-                                            <?= \yii\helpers\StringHelper::truncate($news->getTitleTranslate(), 80, '...') ?>
+                                            <?= \yii\helpers\StringHelper::truncate($news->getTitleTranslate(), 60, '...') ?>
                                         </a>
                                     </h4>
                                     <div class="all-btn all-category d-flex align-items-center mt-3">
