@@ -74,7 +74,7 @@ JS
                                                             <a href="/uploads/pagepdf/<?= $pdf->filename ?>"
                                                                class="mt-3 d-flex align-items-center justify-content-between"
                                                                target="_blank"
-                                                               style="background-color: #C6D936; color: white; font-size: 18px; padding: 10px 15px; border-radius: 5px; text-decoration: none;">
+                                                               style="background-color: #1A4137; color: white; font-size: 18px; padding: 10px 15px; border-radius: 5px; text-decoration: none;">
                                                                 <span class="me-2"><?= $pdf->TitleTranslate ?></span>
                                                                 <i class="fa fa-download" aria-hidden="true"></i>
                                                             </a>
