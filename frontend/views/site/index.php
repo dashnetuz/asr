@@ -125,7 +125,7 @@ Thanks to the newly established International Qualifications and Assessment Cent
                                         </a>
                                     </h4>
                                     <div class="all-btn all-category d-flex align-items-center mt-3">
-                                        <a href="<?= Url::to(['/site/news', 'url' => $news->url1]) ?>" class="btn btn-primary">
+                                        <a href="<?= Url::to(['/site/news', 'url' => $news->url1]) ?>" class="btn text-white" style="background-color: #1A4137;">
                                             <?= Yii::t('app', 'Ko`proq o`qish') ?>
                                         </a>
                                     </div>
