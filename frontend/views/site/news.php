@@ -5,6 +5,7 @@ use yii\helpers\Url;
 use yii\helpers\StringHelper;
 
 /** @var $news \common\models\News */
+/** @var $latestNews \common\models\News */
 
 $this->title = $news->getTitleTranslate();
 $this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Yangiliklar'), 'url' => ['/site/news']];
@@ -87,7 +88,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                     <div class="sidebar__post-content">
                                         <h3>
                         <span class="sidebar__post-content-meta">
-                            <i class="fas fa-calendar-alt"></i> <?= date('d.m.Y', strtotime($item->created_at)) ?>
+                            <i class="fas fa-calendar-alt"></i> <?= Yii::$app->formatter->asDate($news->created_at, 'php:d.m.Y') ?>
                         </span>
                                             <a href="<?= Url::to(['/news/' . $item->getUrlTranslate()]) ?>">
                                                 <?= \yii\helpers\StringHelper::truncate($item->getTitleTranslate(), 60, '...') ?>
