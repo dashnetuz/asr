@@ -18,7 +18,12 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="title-outer">
             <h1 class="title"><?= Html::encode($this->title) ?></h1>
             <ul class="page-breadcrumb">
-                <li><a href="<?= Url::to(['/']) ?>"><?= Yii::t('app', 'Bosh sahifa') ?></a></li>
+                <li>
+                    <a href="<?= Url::to(['/']) ?>">
+                        <i class="fas fa-home"></i>
+                    </a>
+                </li>
+
                 <li><?= Yii::t('app', 'Yangiliklar') ?></li>
             </ul>
         </div>
