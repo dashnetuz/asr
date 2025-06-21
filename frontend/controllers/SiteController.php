@@ -252,7 +252,7 @@ class SiteController extends Controller
 
     public function actionNews($url)
     {
-        $news = News::findOne(['url1' => $url, 'status' => 1]);
+        $news = News::findOne(['url' => $url, 'status' => 1]);
         if (!$news) {
             throw new NotFoundHttpException("Yangilik topilmadi");
         }
