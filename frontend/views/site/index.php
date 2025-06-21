@@ -95,10 +95,10 @@ Thanks to the newly established International Qualifications and Assessment Cent
     <div class="container">
         <div class="sec-title mb-50">
             <h6 class="sub-title wow fadeInUp"><?= Yii::t('app', 'Yangiliklar') ?></h6>
-            <div class="flex-content">
-                <h2 class="title wow splt-txt" data-splitting><?= Yii::t('app', 'Oxirgi yangiliklar') ?></h2>
-                <a href="<?= Url::to(['/site/news']) ?>" class="btn-two wow fadeInUp"><?= Yii::t('app', 'Barcha yangiliklar') ?></a>
-            </div>
+<!--            <div class="flex-content">-->
+<!--                <h2 class="title wow splt-txt" data-splitting>--><?php //= Yii::t('app', 'Oxirgi yangiliklar') ?><!--</h2>-->
+<!--                <a href="--><?php //= Url::to(['/site/news']) ?><!--" class="btn-two wow fadeInUp">--><?php //= Yii::t('app', 'Barcha yangiliklar') ?><!--</a>-->
+<!--            </div>-->
         </div>
 
         <div class="swiper blog-slider">
