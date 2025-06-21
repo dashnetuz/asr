@@ -90,7 +90,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             <i class="fas fa-calendar-alt"></i> <?= date('d.m.Y', strtotime($item->created_at)) ?>
                         </span>
                                             <a href="<?= Url::to(['/news/' . $item->getUrlTranslate()]) ?>">
-                                                <?= Html::encode($item->getTitleTranslate()) ?>
+                                                <?= \yii\helpers\StringHelper::truncate($item->getTitleTranslate(), 60, '...') ?>
                                             </a>
                                         </h3>
                                     </div>

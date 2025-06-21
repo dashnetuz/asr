@@ -274,7 +274,7 @@ class SiteController extends Controller
             ->where(['status' => 1])
             ->andWhere(['not', ['id' => $news->id]])
             ->orderBy(['created_at' => SORT_DESC])
-            ->limit(5)
+            ->limit(10)
             ->all();
 
         return $this->render('news', [
