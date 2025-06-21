@@ -69,6 +69,7 @@ JS
                                             <?php foreach ($pdfFiles as $pdf): ?>
                                                 <div class="col-md-6 col-lg-6 mb-3">
                                                     <div class="card shadow-sm border-0 h-100">
+
                                                         <div class="card-body d-flex flex-column justify-content-between">
                                                             <a href="/uploads/pagepdf/<?= $pdf->filename ?>"
                                                                class="btn btn-primary mt-3 d-flex align-items-center justify-content-between"
