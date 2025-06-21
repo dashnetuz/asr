@@ -46,7 +46,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
                         <h3 class="blog-details__title"><?= Html::encode($news->getTitleTranslate()) ?></h3>
                         <div class="blog-details__text-2">
-                            <?= $news->getBodyTranslate() ?>
+                            <?= $news->getDescriptionTranslate() ?>
                         </div>
                     </div>
 
