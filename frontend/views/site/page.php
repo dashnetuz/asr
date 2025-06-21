@@ -72,13 +72,14 @@ JS
 
                                                         <div class="card-body d-flex flex-column justify-content-between">
                                                             <a href="/uploads/pagepdf/<?= $pdf->filename ?>"
-                                                               class="btn btn-primary mt-3 d-flex align-items-center justify-content-between"
+                                                               class="mt-3 d-flex align-items-center justify-content-between"
                                                                target="_blank"
-                                                               style="font-size: 18px;">
+                                                               style="background-color: #C6D936; color: white; font-size: 18px; padding: 10px 15px; border-radius: 5px; text-decoration: none;">
                                                                 <span class="me-2"><?= $pdf->TitleTranslate ?></span>
                                                                 <i class="fa fa-download" aria-hidden="true"></i>
                                                             </a>
                                                         </div>
+
 
 
                                                     </div>
