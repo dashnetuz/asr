@@ -93,7 +93,7 @@ Thanks to the newly established International Qualifications and Assessment Cent
 <!-- Blog area start here -->
 <section class="blog-section pb-2">
     <div class="container">
-        <div class="sec-title mb-50 mt-50">
+        <div class="sec-title center mb-50 mt-50">
 <!--            <h6 class="sub-title wow fadeInUp">--><?php //= Yii::t('app', 'Yangiliklar') ?><!--</h6>-->
             <div class="flex-content">
                 <h2 class="title wow splt-txt" data-splitting><?= Yii::t('app', 'Yangiliklar') ?></h2>
