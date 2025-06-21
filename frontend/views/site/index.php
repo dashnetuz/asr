@@ -116,7 +116,7 @@ Thanks to the newly established International Qualifications and Assessment Cent
                                     <ul class="info">
                                         <li>
                                             <svg width="19" height="19" fill="none"><circle cx="9.5" cy="9.5" r="9.5" fill="#C6D936"/></svg>
-                                            <a href="#0"><?= date('d.m.Y', strtotime($news->created_at)) ?></a>
+                                            <a href="#0"><?= Yii::$app->formatter->asDate($news->created_at, 'php:d.m.Y') ?></a>
                                         </li>
                                     </ul>
                                     <h4 class="title">
