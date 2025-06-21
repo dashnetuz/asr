@@ -230,7 +230,16 @@ class News extends \yii\db\ActiveRecord
             return false;
         }
     }
-    
+
+    public function getUrlTranslate()
+    {
+        switch (Yii::$app->language) {
+            case 'ru': return $this->url_ru;
+            case 'en': return $this->url_en;
+            default: return $this->url;
+        }
+    }
+
     public function Deletes(){
         $this->status = 0;
     	$this->eye = 0;

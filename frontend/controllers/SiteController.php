@@ -252,13 +252,29 @@ class SiteController extends Controller
 
     public function actionNews($url)
     {
-        $news = News::findOne(['url' => $url, 'status' => 1]);
+        $lang = Yii::$app->language;
+
+        // Default so‘rov
+        $query = News::find()->where(['status' => 1]);
+
+        // Tilga qarab qaysi ustunni filterlash
+        if ($lang === 'ru') {
+            $query->andWhere(['url_ru' => $url]);
+        } elseif ($lang === 'en') {
+            $query->andWhere(['url_en' => $url]);
+        } else {
+            $query->andWhere(['url' => $url]); // default: 'uz'
+        }
+
+        $news = $query->one();
+
         if (!$news) {
-            throw new NotFoundHttpException("Yangilik topilmadi");
+            throw new \yii\web\NotFoundHttpException("Yangilik topilmadi");
         }
 
         return $this->render('news', ['news' => $news]);
     }
+
 
     /**
      * Displays about page.

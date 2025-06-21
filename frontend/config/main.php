@@ -64,6 +64,7 @@ return [
                 'contact' => 'site/contact',
                 '/<url:[a-zA-Z0-9-]+>/'=>'site/page',
                 'page' => 'site/page',
+                '/news/<url:[\w\-]+>' => 'site/news',
                 'dashboard/<type:(category|course|lesson|part)>/<action:(index|create|update|delete)>' => 'dashboard/<type><action>',
                 # role:
                 'dashboard/admin-user/manage-roles/<id:\d+>' => 'dashboard/admin-user-manage-roles',
