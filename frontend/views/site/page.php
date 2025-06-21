@@ -75,8 +75,9 @@ JS
                                                                class="btn btn-primary mt-3"
                                                                target="_blank"
                                                                style="font-size: 18px;">
-                                                                <?= Yii::t('app', 'Yuklab olish') ?>
+                                                                <i class="fa fa-download" aria-hidden="true"></i>
                                                             </a>
+
                                                         </div>
                                                     </div>
                                                 </div>
