@@ -1,7 +1,7 @@
 <?php
 return[
     'Bizning hamkorlarimiz' => 'Our Partners',
-    'British Educational Standards in Uzbekistan' => 'British Educational Standards in Uzbekistan',
+    'British Education Standards in Uzbekistan' => 'British Educational Standards in Uzbekistan',
     'INHA University in Tashkent in Business Management/Information Technologies' => 'INHA University in Tashkent in Business Management / Information Technologies',
     'Tashkent University of Architecture and Civil Engineering in Architecture' => 'Tashkent University of Architecture and Civil Engineering in Architecture',
     'Tashkent State University of Oriental Studies in Tourism and Hospitality' => 'Tashkent State University of Oriental Studies in Tourism and Hospitality',
