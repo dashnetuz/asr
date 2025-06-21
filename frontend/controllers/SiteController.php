@@ -254,26 +254,35 @@ class SiteController extends Controller
     {
         $lang = Yii::$app->language;
 
-        // Default so‘rov
-        $query = News::find()->where(['status' => 1]);
+        $query = \common\models\News::find()->where(['status' => 1]);
 
-        // Tilga qarab qaysi ustunni filterlash
         if ($lang === 'ru') {
             $query->andWhere(['url_ru' => $url]);
         } elseif ($lang === 'en') {
             $query->andWhere(['url_en' => $url]);
         } else {
-            $query->andWhere(['url' => $url]); // default: 'uz'
+            $query->andWhere(['url' => $url]);
         }
 
         $news = $query->one();
-
         if (!$news) {
-            throw new \yii\web\NotFoundHttpException("Yangilik topilmadi");
+            throw new NotFoundHttpException("Yangilik topilmadi");
         }
 
-        return $this->render('news', ['news' => $news]);
+        // So'nggi yangiliklar
+        $latestNews = \common\models\News::find()
+            ->where(['status' => 1])
+            ->andWhere(['not', ['id' => $news->id]])
+            ->orderBy(['created_at' => SORT_DESC])
+            ->limit(5)
+            ->all();
+
+        return $this->render('news', [
+            'news' => $news,
+            'latestNews' => $latestNews,
+        ]);
     }
+
 
 
     /**

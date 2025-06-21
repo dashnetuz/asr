@@ -76,8 +76,29 @@ $this->params['breadcrumbs'][] = $this->title;
             <!-- Sidebar -->
             <div class="col-xl-4 col-lg-5">
                 <div class="sidebar">
-                    <!-- Optional: search, recent posts, categories, tags -->
-                    <!-- Siz xohlasangiz bu qismlar ham dinamik qilinadi -->
+                    <div class="sidebar__single sidebar__post">
+                        <h3 class="sidebar__title"><?= Yii::t('app', 'So‘nggi yangiliklar') ?></h3>
+                        <ul class="sidebar__post-list list-unstyled">
+                            <?php foreach ($latestNews as $item): ?>
+                                <li>
+                                    <div class="sidebar__post-image">
+                                        <img src="/uploads/news/<?= Html::encode($item->filename) ?>" alt="<?= Html::encode($item->getTitleTranslate()) ?>">
+                                    </div>
+                                    <div class="sidebar__post-content">
+                                        <h3>
+                        <span class="sidebar__post-content-meta">
+                            <i class="fas fa-calendar-alt"></i> <?= date('d.m.Y', strtotime($item->created_at)) ?>
+                        </span>
+                                            <a href="<?= Url::to(['/news/' . $item->getUrlTranslate()]) ?>">
+                                                <?= Html::encode($item->getTitleTranslate()) ?>
+                                            </a>
+                                        </h3>
+                                    </div>
+                                </li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
         </div>
