@@ -70,15 +70,15 @@ JS
                                                 <div class="col-md-6 col-lg-6 mb-3">
                                                     <div class="card shadow-sm border-0 h-100">
                                                         <div class="card-body d-flex flex-column justify-content-between">
-                                                            <h5 class="card-title" style="font-size: 20px;"><?= $pdf->TitleTranslate ?></h5>
                                                             <a href="/uploads/pagepdf/<?= $pdf->filename ?>"
-                                                               class="btn btn-primary mt-3"
+                                                               class="btn btn-primary mt-3 d-flex align-items-center justify-content-between"
                                                                target="_blank"
                                                                style="font-size: 18px;">
+                                                                <span class="me-2"><?= $pdf->TitleTranslate ?></span>
                                                                 <i class="fa fa-download" aria-hidden="true"></i>
                                                             </a>
-
                                                         </div>
+
                                                     </div>
                                                 </div>
                                             <?php endforeach; ?>
