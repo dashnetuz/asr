@@ -20,7 +20,7 @@ return [
             //
             // and configure a transport for the mailer to send real emails.
             'transport' => [
-                'dsn' => 'smtp://admin@iqac.asr.gov.uz:D*Z9799dd@smtp.gmail.com:587?encryption=tls',
+                'dsn' => 'smtp://davlatbek.abduvoxidov97@gmail.com:D*Z9799d@smtp.gmail.com:587?encryption=tls',
             ],
             //
             // SMTP server example:
