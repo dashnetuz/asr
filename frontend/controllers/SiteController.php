@@ -26,6 +26,9 @@ use frontend\models\SignupForm;
 use frontend\models\ContactForm;
 use yii\web\NotFoundHttpException;
 
+use frontend\models\UploadForm;
+use yii\web\UploadedFile;
+
 /**
  * Site controller
  */
@@ -414,6 +417,37 @@ class SiteController extends Controller
 
         return $this->render('resendVerificationEmail', [
             'model' => $model
+        ]);
+    }
+
+
+    public function actionUploadForm()
+    {
+        $model = new UploadForm();
+
+        if (Yii::$app->request->isPost) {
+            $model->file = UploadedFile::getInstance($model, 'file');
+
+            if ($model->validate()) {
+                $filePath = Yii::getAlias('@runtime/uploads/') . $model->file->baseName . '.' . $model->file->extension;
+                $model->file->saveAs($filePath);
+
+                // Email yuborish
+                Yii::$app->mailer->compose()
+                    ->setFrom('davlatbek.abduvoxidov97@gmail.com')
+                    ->setTo('dashnetuz@gmail.com')
+                    ->setSubject('Fayl yuborildi')
+                    ->setTextBody('Yangi fayl ilova qilingan.')
+                    ->attach($filePath)
+                    ->send();
+
+                Yii::$app->session->setFlash('success', 'Fayl muvaffaqiyatli yuborildi!');
+                return $this->refresh();
+            }
+        }
+
+        return $this->render('upload-form', [
+            'model' => $model,
         ]);
     }
 }
