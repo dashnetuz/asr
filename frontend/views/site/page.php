@@ -11,6 +11,9 @@ use common\models\Pagepdf;
 use common\models\Pageteam;
 use common\models\News;
 
+//use yii\widgets\ActiveForm;
+use yii\helpers\Html;
+
 $setting = Setting::findOne(1);
 $this->title = $pageOne->titleTranslate;
 
@@ -88,7 +91,32 @@ JS
                                         </div>
                                     </div>
                                 <?php endif; ?>
-                                
+
+                                <?php if ($pageOne->id == 11 && $model): ?>
+                                    <div class="mt-5 pt-4 border-top">
+                                        <h4><?= Yii::t('app', 'Fayl yuborish') ?></h4>
+
+                                        <?php if (Yii::$app->session->hasFlash('success')): ?>
+                                            <div class="alert alert-success">
+                                                <?= Yii::$app->session->getFlash('success') ?>
+                                            </div>
+                                        <?php endif; ?>
+
+                                        <?php $form = ActiveForm::begin([
+                                            'options' => ['enctype' => 'multipart/form-data']
+                                        ]); ?>
+
+                                        <?= $form->field($model, 'file')->fileInput() ?>
+
+                                        <div class="form-group">
+                                            <?= Html::submitButton(Yii::t('app', 'Yuborish'), ['class' => 'btn btn-primary']) ?>
+                                        </div>
+
+                                        <?php ActiveForm::end(); ?>
+                                    </div>
+                                <?php endif; ?>
+
+
                             </div>
                         </div>
                     </div>

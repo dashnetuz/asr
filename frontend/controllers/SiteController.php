@@ -164,6 +164,37 @@ class SiteController extends Controller
         Yii::$app->params['og_image']['content'] = Yii::$app->request->hostInfo.'/backend/web/uploads/page/icon/'.$pageOne->filename;
 
 
+        // upload model
+        $model = ($pageOne->id == 11) ? new UploadForm() : null;
+
+//        if (in_array($pageOne->id, [11, 17, 42])) {
+            // forma ko‘rsatiladi
+//        }
+
+        if ($model && Yii::$app->request->isPost) {
+            $model->file = UploadedFile::getInstance($model, 'file');
+            if ($model->validate()) {
+                $uploadPath = Yii::getAlias('@runtime/uploads/');
+                if (!is_dir($uploadPath)) {
+                    mkdir($uploadPath, 0777, true);
+                }
+                $filePath = $uploadPath . $model->file->baseName . '.' . $model->file->extension;
+                $model->file->saveAs($filePath);
+
+                Yii::$app->mailer->compose()
+                    ->setFrom('davlatbek.abduvoxidov97@gmail.com')
+                    ->setTo(['dashnetuz@gmail.com', 'admin@iqac.asr.gov.uz'])
+                    ->setSubject('Sahifa orqali fayl yuborildi')
+                    ->setTextBody('Foydalanuvchi sahifa: "' . $pageOne->getTitleTranslate() . '" orqali fayl yubordi.')
+                    ->attach($filePath)
+                    ->send();
+
+                Yii::$app->session->setFlash('success', 'Fayl yuborildi!');
+                return $this->refresh();
+            }
+        }
+
+
         $query = Page::find()->where(['pages_id' => $pageOne->id, 'status' => 10])->orderBy(['id' => SORT_DESC]);
 
         if ($pageOne->id == 1000){
@@ -182,6 +213,7 @@ class SiteController extends Controller
             return $this->render('page',[
                 'counts' => $query->count(),
                 'pageOne' => $pageOne,
+                'model' => $model,
             ]);
         }
 
@@ -435,7 +467,10 @@ class SiteController extends Controller
                 // Email yuborish
                 Yii::$app->mailer->compose()
                     ->setFrom('davlatbek.abduvoxidov97@gmail.com')
-                    ->setTo('dashnetuz@gmail.com')
+                    ->setTo([
+                        'dashnetuz@gmail.com',
+                        'admin@iqac.asr.gov.uz',
+                    ])
                     ->setSubject('Fayl yuborildi')
                     ->setTextBody('Yangi fayl ilova qilingan.')
                     ->attach($filePath)
