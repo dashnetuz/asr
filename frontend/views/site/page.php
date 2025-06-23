@@ -1,7 +1,6 @@
 <?php
 use common\models\Setting;
 use yii\widgets\LinkPager;
-use yii\bootstrap\ActiveForm;
 use yii\helpers\Url;
 use frontend\widget\standart\StandartWidget;
 use common\models\Page;
@@ -11,7 +10,7 @@ use common\models\Pagepdf;
 use common\models\Pageteam;
 use common\models\News;
 
-//use yii\widgets\ActiveForm;
+use yii\widgets\ActiveForm;
 use yii\helpers\Html;
 
 $setting = Setting::findOne(1);
