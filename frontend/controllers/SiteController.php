@@ -182,7 +182,7 @@ class SiteController extends Controller
                 $model->file->saveAs($filePath);
 
                 Yii::$app->mailer->compose()
-                    ->setFrom('davlatbek.abduvoxidov97@gmail.com')
+                    ->setFrom('admin@iqac.asr.gov.uz')
                     ->setTo(['dashnetuz@gmail.com', 'admin@iqac.asr.gov.uz', 'aliabdusamadov2711@gmail.com'])
                     ->setSubject('Sahifa orqali fayl yuborildi')
                     ->setTextBody('Foydalanuvchi sahifa: "' . $pageOne->getTitleTranslate() . '" orqali fayl yubordi.')
@@ -321,7 +321,7 @@ class SiteController extends Controller
     public function actionTestMail()
     {
         Yii::$app->mailer->compose()
-            ->setFrom('davlatbek.abduvoxidov97@gmail.com') // Gmail bilan mos bo'lishi shart
+            ->setFrom('admin@iqac.asr.gov.uz') // Gmail bilan mos bo'lishi shart
             ->setTo('dashnetuz@gmail.com')                 // Qabul qiluvchi
             ->setSubject('Sinov xabari')
             ->setTextBody('Bu test email xabari.')

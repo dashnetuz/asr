@@ -14,7 +14,7 @@ return [
             'viewPath' => '@common/mail',
             'useFileTransport' => false,
             'transport' => [
-                'dsn' => 'smtp://davlatbek.abduvoxidov97@gmail.com:pmlfucottwbxgybb@smtp.gmail.com:587?encryption=tls',
+                'dsn' => 'smtp://admin@iqac.asr.gov.uz:geznvbunvbjnyvmw@smtp.gmail.com:587?encryption=tls',
             ],
         ],
     ],
