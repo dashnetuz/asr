@@ -92,28 +92,43 @@ JS
                                 <?php endif; ?>
 
                                 <?php if ($pageOne->id == 11 && $model): ?>
-                                    <div class="mt-5 pt-4 border-top">
-                                        <h4><?= Yii::t('app', 'Fayl yuborish') ?></h4>
-
-                                        <?php if (Yii::$app->session->hasFlash('success')): ?>
-                                            <div class="alert alert-success">
-                                                <?= Yii::$app->session->getFlash('success') ?>
+                                    <div class="mt-5 pt-5 border-top">
+                                        <div class="card shadow border-0">
+                                            <div class="card-header bg-primary text-white">
+                                                <h5 class="mb-0"><?= Yii::t('app', 'Fayl yuborish') ?></h5>
                                             </div>
-                                        <?php endif; ?>
+                                            <div class="card-body">
 
-                                        <?php $form = ActiveForm::begin([
-                                            'options' => ['enctype' => 'multipart/form-data']
-                                        ]); ?>
+                                                <?php if (Yii::$app->session->hasFlash('success')): ?>
+                                                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                                        <?= Yii::$app->session->getFlash('success') ?>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                                    </div>
+                                                <?php endif; ?>
 
-                                        <?= $form->field($model, 'file')->fileInput() ?>
+                                                <?php $form = ActiveForm::begin([
+                                                    'options' => ['enctype' => 'multipart/form-data', 'class' => 'needs-validation'],
+                                                ]); ?>
 
-                                        <div class="form-group">
-                                            <?= Html::submitButton(Yii::t('app', 'Yuborish'), ['class' => 'btn btn-primary']) ?>
+                                                <div class="mb-3">
+                                                    <?= $form->field($model, 'file', [
+                                                        'template' => '<label class="form-label">{label}</label><div class="custom-file">{input}{error}</div>',
+                                                        'labelOptions' => ['class' => 'form-label'],
+                                                    ])->fileInput(['class' => 'form-control']) ?>
+                                                </div>
+
+                                                <div class="d-grid">
+                                                    <?= Html::submitButton('<i class="fa fa-paper-plane me-1"></i> ' . Yii::t('app', 'Yuborish'), [
+                                                        'class' => 'btn btn-success btn-lg',
+                                                    ]) ?>
+                                                </div>
+
+                                                <?php ActiveForm::end(); ?>
+                                            </div>
                                         </div>
-
-                                        <?php ActiveForm::end(); ?>
                                     </div>
                                 <?php endif; ?>
+
 
 
                             </div>
