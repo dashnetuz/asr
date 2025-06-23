@@ -283,6 +283,17 @@ class SiteController extends Controller
         ]);
     }
 
+    public function actionTestMail()
+    {
+        Yii::$app->mailer->compose()
+            ->setFrom('admin@iqac.asr.gov.uz')
+            ->setTo('dashnetuz@gmail.com')
+            ->setSubject('Sinov xabari')
+            ->setTextBody('Bu test email xabari.')
+            ->send();
+
+        return 'Email yuborildi!';
+    }
 
 
     /**
