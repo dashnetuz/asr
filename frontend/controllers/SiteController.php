@@ -286,8 +286,8 @@ class SiteController extends Controller
     public function actionTestMail()
     {
         Yii::$app->mailer->compose()
-            ->setFrom('davlatbek.abduvoxidov97@gmail.com')
-            ->setTo('dashnetuz@gmail.com')
+            ->setFrom('davlatbek.abduvoxidov97@gmail.com') // Gmail bilan mos bo'lishi shart
+            ->setTo('dashnetuz@gmail.com')                 // Qabul qiluvchi
             ->setSubject('Sinov xabari')
             ->setTextBody('Bu test email xabari.')
             ->send();
