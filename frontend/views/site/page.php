@@ -94,9 +94,10 @@ JS
                                 <?php if ($pageOne->id == 11 && $model): ?>
                                     <div class="mt-5 pt-5 border-top">
                                         <div class="card shadow border-0">
-                                            <div class="card-header bg-primary text-white">
+                                            <div class="card-header text-white" style="background-color: #1A4137;">
                                                 <h5 class="mb-0"><?= Yii::t('app', 'Fayl yuborish') ?></h5>
                                             </div>
+
                                             <div class="card-body">
 
                                                 <?php if (Yii::$app->session->hasFlash('success')): ?>

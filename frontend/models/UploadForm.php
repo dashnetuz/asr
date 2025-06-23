@@ -15,4 +15,10 @@ class UploadForm extends Model
             [['file'], 'file', 'extensions' => 'pdf,doc,docx,jpg,png,zip', 'skipOnEmpty' => false],
         ];
     }
+    public function attributeLabels()
+    {
+        return [
+            'file' => \Yii::t('app', 'Imzolangan fayl'),
+        ];
+    }
 }

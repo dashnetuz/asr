@@ -1,5 +1,7 @@
 <?php
 return[
+    'Fayl yuborish' => 'Send File',
+    'Imzolangan fayl' => 'Signed File',
     'So‘nggi yangiliklar' => 'Latest News',
     'Yangiliklar' => 'News',
     'Ko`proq o`qish' => 'Read More',

@@ -1,5 +1,7 @@
 <?php
 return[
+    'Fayl yuborish' => 'Отправить файл',
+    'Imzolangan fayl' => 'Подписанный файл',
     'So‘nggi yangiliklar' => 'Последние новости',
     'Yangiliklar' => 'Новости',
     'Ko`proq o`qish' => 'Читать далее',
