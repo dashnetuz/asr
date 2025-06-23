@@ -183,7 +183,7 @@ class SiteController extends Controller
 
                 Yii::$app->mailer->compose()
                     ->setFrom('davlatbek.abduvoxidov97@gmail.com')
-                    ->setTo(['dashnetuz@gmail.com', 'admin@iqac.asr.gov.uz'])
+                    ->setTo(['dashnetuz@gmail.com', 'admin@iqac.asr.gov.uz', 'aliabdusamadov2711@gmail.com'])
                     ->setSubject('Sahifa orqali fayl yuborildi')
                     ->setTextBody('Foydalanuvchi sahifa: "' . $pageOne->getTitleTranslate() . '" orqali fayl yubordi.')
                     ->attach($filePath)
