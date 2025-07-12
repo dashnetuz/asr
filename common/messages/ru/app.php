@@ -1,5 +1,19 @@
 <?php
 return[
+    "Savollaringiz bormi?" => "У вас есть вопросы?",
+    "Biz bilan aloqa" => "Связаться с нами",
+    "Men o`qishni xohlayman" => "Я хочу учиться",
+    "To`liq Ism-Familyangiz" => "Полное имя и фамилия",
+    "Yosh" => "Возраст",
+    "O‘qishni istagan yo‘nalishingizni tanlang " => "Выберите желаемое направление обучения",
+    "Biznes boshqaruv (Business Management)" => "Управление бизнесом (Business Management)",
+    "IT (Information Technologies)" => "Информационные технологии (IT)",
+    "Arxitektura (Architecture)" => "Архитектура (Architecture)",
+    "Turizm va mehmonxona boshqaruvi (Tourism and Hospitality Management)" => "Туризм и гостиничный менеджмент (Tourism and Hospitality Management)",
+    "MBA (Master’s in Business Administration)" => "MBA (Магистр делового администрирования)",
+    "Sizning xatingiz" => "Ваше сообщение",
+    "Ma`lumot jo`natish" => "Отправить информацию",
+
     'Bizning hamkorlarimiz' => 'Наши партнёры',
     'British Educational Standards in Uzbekistan' => 'Британские образовательные стандарты в Узбекистане',
     'INHA University in Tashkent in Business Management/Information Technologies' => 'Университет INHA в Ташкенте — Бизнес-менеджмент / Информационные технологии',
