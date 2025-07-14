@@ -1,5 +1,19 @@
 <?php
 return array(
+    "Savollaringiz bormi?" => "Savollaringiz bormi?",
+    "Biz bilan aloqa" => "Biz bilan aloqa",
+    "Men o`qishni xohlayman" => "Men o‘qishni xohlayman",
+    "To`liq Ism-Familyangiz" => "To‘liq ism-familyangiz",
+    "Yosh" => "Yosh",
+    "O‘qishni istagan yo‘nalishingizni tanlang " => "O‘qishni istagan yo‘nalishingizni tanlang ",
+    "Biznes boshqaruv (Business Management)" => "Biznes boshqaruv (Business Management)",
+    "IT (Information Technologies)" => "IT (Information Technologies)",
+    "Arxitektura (Architecture)" => "Arxitektura (Architecture)",
+    "Turizm va mehmonxona boshqaruvi (Tourism and Hospitality Management)" => "Turizm va mehmonxona boshqaruvi (Tourism and Hospitality Management)",
+    "MBA (Master’s in Business Administration)" => "MBA (Biznes boshqaruv magistraturasi)",
+    "Sizning xatingiz" => "Sizning xatingiz",
+    "Ma`lumot jo`natish" => "Ma’lumot jo‘natish",
+
     'Bizning hamkorlarimiz' => 'Bizning hamkorlarimiz',
     'British Educational Standards in Uzbekistan' => 'O‘zbekistonda Britaniya ta’lim standartlari',
     'INHA University in Tashkent in Business Management/Information Technologies' => 'Toshkentdagi INHA universiteti — Biznes boshqaruvi / Axborot texnologiyalari',

@@ -1,13 +1,21 @@
 <?php
 return[
-    'Fayl yuborish' => 'Send File',
-    'Imzolangan fayl' => 'Signed File',
-    'So‘nggi yangiliklar' => 'Latest News',
-    'Yangiliklar' => 'News',
-    'Ko`proq o`qish' => 'Read More',
+    "Savollaringiz bormi?" => "Do you have any questions?",
+    "Biz bilan aloqa" => "Contact us",
+    "Men o`qishni xohlayman" => "I want to study",
+    "To`liq Ism-Familyangiz" => "Full Name",
+    "Yosh" => "Age",
+    "O‘qishni istagan yo‘nalishingizni tanlang " => "Select your preferred study program",
+    "Biznes boshqaruv (Business Management)" => "Business Management",
+    "IT (Information Technologies)" => "Information Technologies (IT)",
+    "Arxitektura (Architecture)" => "Architecture",
+    "Turizm va mehmonxona boshqaruvi (Tourism and Hospitality Management)" => "Tourism and Hospitality Management",
+    "MBA (Master’s in Business Administration)" => "MBA (Master’s in Business Administration)",
+    "Sizning xatingiz" => "Your message",
+    "Ma`lumot jo`natish" => "Submit Information",
 
     'Bizning hamkorlarimiz' => 'Our Partners',
-    'British Educational Standards in Uzbekistan' => 'British Education Standards in Uzbekistan',
+    'British Educational Standards in Uzbekistan' => 'British Educational Standards in Uzbekistan',
     'INHA University in Tashkent in Business Management/Information Technologies' => 'INHA University in Tashkent in Business Management / Information Technologies',
     'Tashkent University of Architecture and Civil Engineering in Architecture' => 'Tashkent University of Architecture and Civil Engineering in Architecture',
     'Tashkent State University of Oriental Studies in Tourism and Hospitality' => 'Tashkent State University of Oriental Studies in Tourism and Hospitality',
@@ -43,11 +51,12 @@ Thanks to the newly established International Qualifications and Assessment Cent
 
 
     "Uzbek" => "Uzbek",
-		"Russian" => "Russian",
-		"English" => "English",
+    "Russian" => "Russian",
+    "English" => "English",
     "Bizning loyihalarimiz" => "Our projects",
     "Language" => "Language",
     "Boshlash" => "Get Started",
+    "Bizning hamkorlarimiz" => "Our partners",
 
 
     'Britaniya Taʼlim Standartlari Oʻzbekistonda' => 'British Education Standards in Uzbekistan',
@@ -75,14 +84,14 @@ Thanks to the newly established International Qualifications and Assessment Cent
 
 
 
-    
+
     "Men o`qishni hohlayman" => "I want to study",
     "<strong>UniEducation</strong> bilan akademik sayohatingizni boshlang va yorqin kelajak sari yo‘l oching!" => "Begin your academic journey with <strong>UniEducation</strong> and open doors to a future filled with opportunities. ",
-    
-		"Ta`lim yo`nalishlari" => "Home",
+
+    "Ta`lim yo`nalishlari" => "Home",
     "Bu sahifa biror joyga koʻchirilgan boʻlishi mumkin..." => "This page has been probably moved somewhere...",
-    
-		"Ariza topshirish" => "Application for admission",
+
+    "Ariza topshirish" => "Application for admission",
 
     "Avval ta'lim darajani tanlang!" => "First select the education level!",
     "DTM sertifikati (Agar mavjud bo`lsa)" => "DTM certificate (optional)",
@@ -96,16 +105,17 @@ Thanks to the newly established International Qualifications and Assessment Cent
     "Umumiy bino maydoni" => "The total building area",
     "m²" => "m²",
     "Umumiy maydon" => "Total area",
-		"Muvaffaqqiyatli jo`natildi. Arizangiz tez orada ko`rib chiqiladi!" => "Successfully shipped. Your application will be considered soon!",
+    "Muvaffaqqiyatli jo`natildi. Arizangiz tez orada ko`rib chiqiladi!" => "Successfully shipped. Your application will be considered soon!",
 
-    
+
     "Universitet" => "University",
-    
+
+    "Yangiliklar" => "News",
     "Kirish" => "Enter",
     "Home" => "Home",
-    
+
     "Talabalar" => "Students",
-    
+
     "Fakultetlar" => "Faculties",
     "Kafedralar" => "Chairs",
     "Universitet online platformalari" => "University online platforms",
@@ -116,7 +126,7 @@ Thanks to the newly established International Qualifications and Assessment Cent
     "Foydali havolalar" => "Useful links",
     "Kontaktlar" => "Contacts",
     "Universitet xodimlari" => "University staff",
-    
+
     "Aloqa" =>"Communication",
     "Bizning hamkorlar" => "Our partners",
     "Sayt xaritasi" => "Site map",
@@ -129,18 +139,18 @@ Thanks to the newly established International Qualifications and Assessment Cent
     "BRM" => "SDG",
 
 
-	
-	"Xalqaro hamkorlik" => "International cooperation",
-	"Erkak" => "Male",
-	"Ayol" => "Female",
-	"Bakalavriat" => "Bachelor's degree",
-	"Magistratura" => "Master's degree",
-	"Doktorantura" => "Doctoral programs",
-	"Kunduzgi" => "Full-time",
-	"Sirtqi" => "Correspondence education",
-	"Kechki" => "Evening classes",
-	
- 	"Ariza berish" => "Submit application",
+
+    "Xalqaro hamkorlik" => "International cooperation",
+    "Erkak" => "Male",
+    "Ayol" => "Female",
+    "Bakalavriat" => "Bachelor's degree",
+    "Magistratura" => "Master's degree",
+    "Doktorantura" => "Doctoral programs",
+    "Kunduzgi" => "Full-time",
+    "Sirtqi" => "Correspondence education",
+    "Kechki" => "Evening classes",
+
+    "Ariza berish" => "Submit application",
     "Ism" => "First Name",
     "Familya" => "Last Name",
     "Sharif" => "Patronymic",
@@ -149,41 +159,41 @@ Thanks to the newly established International Qualifications and Assessment Cent
     "Fakultetni tanlang" => "Select Faculty",
     "Ta’lim shaklini tanlang" => "Select Form of Education",
     "Ta’lim darajani tanlang" => "Select Level of Education",
-	"Ta’lim yo`nalishini tanlang" => "Choose the major of Education",
+    "Ta’lim yo`nalishini tanlang" => "Choose the major of Education",
     "Tanlangmagan" => "Not Selected",
     "Yuborish" => "Send",
 
 
-"Ismingizni kiriting!"=> "Enter your name!",
-"Familyangizni kiriting!"=> "Enter your surname!",
-"Sharifingizni kiriting!"=> "Enter your patronymic!",
-"Maydon bo`sh!"=> "Field is empty!",
-"Iltimos, jinsingizni tanlang!"=> "Please select your gender!",
-"Ta’lim darajasini tanlang!"=> "Select your education level!",
-"Ta’lim shaklini tanlang!"=> "Select your education form!",
-"Fakultetni tanlang!"=> "Select your faculty!", 
-"Ta’lim yo’nalishini kiriting!"=> "Enter your education major!", 
-"Passport faylini yuklang!"=> "Upload your passport file!", 
-"Diplom faylini yuklang!"=> "Upload your diploma file!", 
-"Rasmingizni yuklang!"=> "Upload your photo!", 
-"Passport seriya"=> "Passport series", 
-"Passport nomer"=> "Passport number", 
-"Passport"=> "Passport", 
-"Sertifikat yoki diplom"=> "Certificate or diploma", 
-"3x4 rasm"=> "3x4 photo", 
-"3x4 rasmingiz" => "Your 3x4 photo",
-"Passport file"=> "Passport file", 
-"Jinsingiz"=> "Your gender", 
-"Ta’lim daraja"=> "Education level", 
-"Ta’lim shakli"=> "Education form", 
-"Fakultet"=> "Faculty", 
-"Talim yonalishi"=> "Education major", 
-"Yuklangan sana"=> "Uploaded date", 
-"Muvaffaqqiyatli jonatildi. Arizangiz tez orada ko`rib chiqiladi!"=> "Successfully submitted. Your application will be reviewed shortly!",
-"Iltimos, filelarni yuklang!"=> "Please upload files!",
-"Iltimos, passport fileni yuklang!"=> "Please upload your passport file!",
-"Iltimos, sertifikat yoki diplom yuklang!"=> "Please upload your certificate or diploma!",
-"Iltimos, 3x4 rasmingizni yuklang!"=> "Please upload your 3x4 photo!",
+    "Ismingizni kiriting!"=> "Enter your name!",
+    "Familyangizni kiriting!"=> "Enter your surname!",
+    "Sharifingizni kiriting!"=> "Enter your patronymic!",
+    "Maydon bo`sh!"=> "Field is empty!",
+    "Iltimos, jinsingizni tanlang!"=> "Please select your gender!",
+    "Ta’lim darajasini tanlang!"=> "Select your education level!",
+    "Ta’lim shaklini tanlang!"=> "Select your education form!",
+    "Fakultetni tanlang!"=> "Select your faculty!",
+    "Ta’lim yo’nalishini kiriting!"=> "Enter your education major!",
+    "Passport faylini yuklang!"=> "Upload your passport file!",
+    "Diplom faylini yuklang!"=> "Upload your diploma file!",
+    "Rasmingizni yuklang!"=> "Upload your photo!",
+    "Passport seriya"=> "Passport series",
+    "Passport nomer"=> "Passport number",
+    "Passport"=> "Passport",
+    "Sertifikat yoki diplom"=> "Certificate or diploma",
+    "3x4 rasm"=> "3x4 photo",
+    "3x4 rasmingiz" => "Your 3x4 photo",
+    "Passport file"=> "Passport file",
+    "Jinsingiz"=> "Your gender",
+    "Ta’lim daraja"=> "Education level",
+    "Ta’lim shakli"=> "Education form",
+    "Fakultet"=> "Faculty",
+    "Talim yonalishi"=> "Education major",
+    "Yuklangan sana"=> "Uploaded date",
+    "Muvaffaqqiyatli jonatildi. Arizangiz tez orada ko`rib chiqiladi!"=> "Successfully submitted. Your application will be reviewed shortly!",
+    "Iltimos, filelarni yuklang!"=> "Please upload files!",
+    "Iltimos, passport fileni yuklang!"=> "Please upload your passport file!",
+    "Iltimos, sertifikat yoki diplom yuklang!"=> "Please upload your certificate or diploma!",
+    "Iltimos, 3x4 rasmingizni yuklang!"=> "Please upload your 3x4 photo!",
 
 ]
 

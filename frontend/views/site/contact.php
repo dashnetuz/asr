@@ -1,3 +1,4 @@
+
 <?php
 /* @var $models common\models\Pages */
 
@@ -9,22 +10,18 @@ use frontend\widget\standart\StandartWidget;
 use common\models\Page;
 use common\models\Pages;
 
-$this->title = "Contact";
+$this->title = Yii::t('app', 'Contact');
 
 $this->registerJs(<<<JS
 $(document).on('input', '#model-tell', function () {
-    // Input faqat raqamlarni qabul qiladi, va +998 bilan boshlanadi
-    let value = this.value.replace(/\D/g, ''); // Faqat raqamlarni qoldiramiz
-    if (!value.startsWith('998')) { // Agar 998 yo'q bo'lsa, oldiga qo'shamiz
+    let value = this.value.replace(/\D/g, '');
+    if (!value.startsWith('998')) {
         value = '998' + value;
     }
-    this.value = '+' + value.substring(0, 12); // Maksimal uzunlik 12 belgi
+    this.value = '+' + value.substring(0, 12);
 });
-
 JS
     , 3);
-
-
 ?>
 <div data-elementor-type="wp-page" data-elementor-id="543" class="elementor elementor-543">
     <div class="elementor-element elementor-element-be17373 e-con-full e-flex e-con e-parent"
@@ -39,30 +36,25 @@ JS
                         <div class="row align-center">
                             <div class="contact-stye-one col-lg-5 mb-md-50 mb-xs-40">
                                 <div class="contact-style-one-info">
-                                    <h4 class="sub-title">Savollaringiz bormi?</h4>
-                                    <h2>Biz bilan aloqa</h2>
+                                    <h4 class="sub-title"><?= Yii::t('app', 'Savollaringiz bormi?') ?></h4>
+                                    <h2><?= Yii::t('app', 'Biz bilan aloqa') ?></h2>
                                     <ul>
-                                        <!-- Telefon -->
                                         <li class="wow fadeInUp" data-wow-delay="0ms">
                                             <div class="icon"><i class="fas fa-phone-alt"></i></div>
                                             <div class="content">
                                                 <h5 class="title"><a href="tel:+998712002024">+998-71-200-2024</a></h5>
                                             </div>
                                         </li>
-
-                                        <!-- Manzil -->
                                         <li class="wow fadeInUp" data-wow-delay="100ms">
                                             <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
                                             <div class="content">
                                                 <h5 class="title">
                                                     <a href="https://www.google.com/maps/place/Davlat+Boshqaruv+Akademiyasi/@41.3106434,69.2548674,17z" target="_blank">
-                                                        O'zbekiston shoh ko'chasi 45, Toshkent
+                                                        <?= Yii::t('app', "O'zbekiston shoh ko'chasi 45, Toshkent") ?>
                                                     </a>
                                                 </h5>
                                             </div>
                                         </li>
-
-                                        <!-- Email - Cooperation -->
                                         <li class="wow fadeInUp" data-wow-delay="200ms">
                                             <div class="icon"><i class="fas fa-envelope"></i></div>
                                             <div class="content">
@@ -70,8 +62,6 @@ JS
                                                 <h5 class="title"><a href="mailto:info@iqac.asr.gov.uz">info@iqac.asr.gov.uz</a></h5>
                                             </div>
                                         </li>
-
-                                        <!-- Telegram / Instagram / Web -->
                                         <li class="wow fadeInUp" data-wow-delay="300ms">
                                             <div class="content">
                                                 <h5 class="title">
@@ -92,20 +82,18 @@ JS
                                                 </h5>
                                             </div>
                                         </li>
-
-                                        <!-- Xodimlar -->
                                         <li class="wow fadeInUp" data-wow-delay="400ms">
                                             <div class="content">
                                                 <h5 class="title">
-                                                    <i class="fas fa-user-tie"></i> Director:
+                                                    <i class="fas fa-user-tie"></i> <?= Yii::t('app', 'Director') ?>:
                                                     <a href="mailto:k.khomidov@iqac.asr.gov.uz">k.khomidov@iqac.asr.gov.uz</a>
                                                 </h5>
                                                 <h5 class="title">
-                                                    <i class="fas fa-user-graduate"></i> Academic Director:
+                                                    <i class="fas fa-user-graduate"></i> <?= Yii::t('app', 'Academic Director') ?>:
                                                     <a href="mailto:u.azizov@iqac.asr.gov.uz">u.azizov@iqac.asr.gov.uz</a>
                                                 </h5>
                                                 <h5 class="title">
-                                                    <i class="fas fa-user-cog"></i> Office Manager:
+                                                    <i class="fas fa-user-cog"></i> <?= Yii::t('app', 'Office Manager') ?>:
                                                     <a href="mailto:t.abdusamadov@iqac.asr.gov.uz">t.abdusamadov@iqac.asr.gov.uz</a>
                                                 </h5>
                                             </div>
@@ -116,7 +104,7 @@ JS
 
                             <div class="contact-stye-one col-lg-7 pl-60 pl-md-15 pl-xs-15">
                                 <div class="contact-form-style-one">
-                                    <h2 class="heading">Men o`qishni xohlayman</h2>
+                                    <h2 class="heading"><?= Yii::t('app', 'Men o`qishni xohlayman') ?></h2>
 
                                     <?php $form = ActiveForm::begin([
                                         'id' => 'contact-form',
@@ -141,12 +129,11 @@ JS
                                             <div class="form-group">
                                                 <?= $form->field($model, 'tell')->textInput([
                                                     'id' => 'model-tell',
-                                                    'placeholder' => '+998911234567', // Placeholder to'liq ko'rinishda bo'ladi
-                                                    'maxlength' => 13, // Maksimal uzunlik: +998 bilan birga 13 belgidan oshmaydi
+                                                    'placeholder' => '+998911234567',
+                                                    'maxlength' => 13,
                                                     'class' => 'form-control',
                                                 ])->label(false); ?>
                                             </div>
-
                                         </div>
                                         <div class="col-lg-6">
                                             <div class="form-group">
@@ -169,7 +156,6 @@ JS
                                                     'tourism' => Yii::t('app', 'Turizm va mehmonxona boshqaruvi (Tourism and Hospitality Management)'),
                                                     'mba' => Yii::t('app', 'MBA (Master’s in Business Administration)'),
                                                 ];
-
                                                 echo $form->field($model, 'project')->dropDownList(
                                                     $options,
                                                     [
@@ -179,7 +165,6 @@ JS
                                                 )->label(false);
                                                 ?>
                                             </div>
-
                                         </div>
                                     </div>
                                     <div class="row">
