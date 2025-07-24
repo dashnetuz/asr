@@ -89,7 +89,7 @@ $this->beginBody() ?>
                     <ul class="navigation">
                         <?php
                         // Asosiy menyu: parent_id = null, lekin 1 ta (id=1) elementni tashlab ketamiz
-                        $mainPages = Pages::find()->andWhere(['parent_id' => null])->limit(5)->offset(1)->all();
+                        $mainPages = Pages::find()->andWhere(['parent_id' => null])->limit(6)->offset(1)->all();
                         foreach ($mainPages as $pages):
                             $subPages = Page::find()->andWhere(['parent_id' => null, 'pages_id' => $pages->id])->all();
                             if ($subPages): ?>
@@ -115,25 +115,7 @@ $this->beginBody() ?>
                         endforeach;
                         ?>
 
-                        <?php
-                        // Maxsus menyu: id = 14 bo'lgan sahifani alohida ko‘rsatamiz
-                        $extraPages = Pages::find()->andWhere(['parent_id' => null])->andWhere(['id' => 14])->all();
-                        foreach ($extraPages as $pages): ?>
-                            <li class="dropdown">
-                                <a href="#"><?= $pages->TitleTranslate ?></a>
-                                <ul>
-                                    <?php
-                                    $subPages = Page::find()->andWhere(['parent_id' => null, 'pages_id' => $pages->id])->all();
-                                    foreach ($subPages as $subPage): ?>
-                                        <li>
-                                            <a href="<?= Url::to(['/site/page', 'url' => $subPage->url1]) ?>">
-                                                <?= $subPage->TitleTranslate ?>
-                                            </a>
-                                        </li>
-                                    <?php endforeach; ?>
-                                </ul>
-                            </li>
-                        <?php endforeach; ?>
+
 
                         <!-- Til tanlash menyusi -->
                         <li class="dropdown">
@@ -164,9 +146,8 @@ $this->beginBody() ?>
 
                 <!-- Main Menu End-->
             </div>
-
-<!--            <div class="outer-box">-->
-<!--                <div class="info-box">-->
+            <div class="outer-box">
+                <div class="info-box">
 <!--                    <div class="call-info">-->
 <!--                        <i class="fa-solid fa-phone ring__animation"></i>-->
 <!--                        <div>-->
@@ -174,11 +155,11 @@ $this->beginBody() ?>
 <!--                            <a href="tel:+998712002024">+998(71)-200-20-24</a>-->
 <!--                        </div>-->
 <!--                    </div>-->
-<!--                    <a class="btn-two" href="--><?php //= Url::to(['/contact']) ?><!--">--><?php //= Yii::t('app', 'Contact Now') ?><!--</a>-->
-<!--                </div>-->
-<!--                <div class="mobile-nav-toggler d-block d-lg-none"><i class="icon lnr-icon-bars"></i></div>-->
-<!--            </div>-->
-
+                    <a class="btn-two" href="<?= Url::to(['/contact']) ?>"><?= Yii::t('app', 'Contact Now') ?></a>
+                </div>
+                <div class="mobile-nav-toggler d-block d-lg-none"><i class="icon lnr-icon-bars"></i></div>
+                <!-- Mobile Nav toggler -->
+            </div>
         </div>
         <div class="auto-container">
             <!-- Mobile Menu  -->
