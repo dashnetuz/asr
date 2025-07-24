@@ -3818,7 +3818,7 @@ Main Header
   }
 }
 .header-style-one .main-box .nav-outer .nav .navigation li, .header-style-four .main-box .nav-outer .nav .navigation li, .header-style-three .main-box .nav-outer .nav .navigation li, .header-style-two .main-box .nav-outer .nav .navigation li {
-  margin-right: 50px;
+  margin-right: 35px;
 }
 .header-style-one .main-box .nav-outer .nav .navigation li:last-child, .header-style-four .main-box .nav-outer .nav .navigation li:last-child, .header-style-three .main-box .nav-outer .nav .navigation li:last-child, .header-style-two .main-box .nav-outer .nav .navigation li:last-child {
   margin-right: 0;
