@@ -11,7 +11,7 @@ class AppAsset extends AssetBundle
     public $css = [
         '/iqac/css/bootstrap.min.css',
         '/iqac/css/flatpickr.min.css',
-        '/iqac/css/style.css',
+        '/iqac/css/style.css?ver=1.2',
         '/iqac/css/slick-theme.css',
         '/iqac/css/slick.css',
 
