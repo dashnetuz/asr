@@ -89,7 +89,7 @@ $this->beginBody() ?>
                     <ul class="navigation">
                         <?php
                         // Asosiy menyu: parent_id = null, lekin 1 ta (id=1) elementni tashlab ketamiz
-                        $mainPages = Pages::find()->andWhere(['parent_id' => null])->limit(3)->offset(1)->all();
+                        $mainPages = Pages::find()->andWhere(['parent_id' => null])->limit(5)->offset(1)->all();
                         foreach ($mainPages as $pages):
                             $subPages = Page::find()->andWhere(['parent_id' => null, 'pages_id' => $pages->id])->all();
                             if ($subPages): ?>
@@ -164,20 +164,21 @@ $this->beginBody() ?>
 
                 <!-- Main Menu End-->
             </div>
-            <div class="outer-box">
-                <div class="info-box">
-                    <div class="call-info">
-                        <i class="fa-solid fa-phone ring__animation"></i>
-                        <div>
-                            <h6 class="title"><?= Yii::t('app', 'Phone:') ?></h6>
-                            <a href="tel:+998712002024">+998(71)-200-20-24</a>
-                        </div>
-                    </div>
-                    <a class="btn-two" href="<?= Url::to(['/contact']) ?>"><?= Yii::t('app', 'Contact Now') ?></a>
-                </div>
-                <div class="mobile-nav-toggler d-block d-lg-none"><i class="icon lnr-icon-bars"></i></div>
-                <!-- Mobile Nav toggler -->
-            </div>
+
+<!--            <div class="outer-box">-->
+<!--                <div class="info-box">-->
+<!--                    <div class="call-info">-->
+<!--                        <i class="fa-solid fa-phone ring__animation"></i>-->
+<!--                        <div>-->
+<!--                            <h6 class="title">--><?php //= Yii::t('app', 'Phone:') ?><!--</h6>-->
+<!--                            <a href="tel:+998712002024">+998(71)-200-20-24</a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <a class="btn-two" href="--><?php //= Url::to(['/contact']) ?><!--">--><?php //= Yii::t('app', 'Contact Now') ?><!--</a>-->
+<!--                </div>-->
+<!--                <div class="mobile-nav-toggler d-block d-lg-none"><i class="icon lnr-icon-bars"></i></div>-->
+<!--            </div>-->
+
         </div>
         <div class="auto-container">
             <!-- Mobile Menu  -->
