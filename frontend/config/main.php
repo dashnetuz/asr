@@ -62,6 +62,8 @@ return [
             'enableDefaultLanguageUrlCode' => true,
             'rules' => [
                 'bot/orders-bot' => 'telegram-bot/orders-bot',
+                '<language>/bot/orders-bot' => 'telegram-bot/orders-bot',
+
 
                 'contact' => 'site/contact',
                 '/<url:[a-zA-Z0-9-]+>/'=>'site/page',
