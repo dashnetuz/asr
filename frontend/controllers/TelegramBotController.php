@@ -62,7 +62,7 @@ class TelegramBotController extends Controller
         if (isset($fields[$step])) {
             $field = $fields[$step];
 
-            // 👉 tell bosqichi bo‘lsa, text yuborishni to‘xtatamiz
+            // 👉 tell bosqichi bo‘lsa, faqat tugma bilan yuborish kerak
             if ($field === 'tell') {
                 $this->sendMessage($chat_id, "📲 Telefon raqamingizni quyidagi tugma orqali yuboring:", [
                     'keyboard' => [[[
@@ -72,46 +72,35 @@ class TelegramBotController extends Controller
                     'resize_keyboard' => true,
                     'one_time_keyboard' => true
                 ]);
-                return ['ok' => true];
+                return ['ok' => true]; // 👈 bu joy muhim!
             }
 
-            // 🟢 Faqat boshqa bosqichlarda text qabul qilinadi
+            // 🔵 Faqat boshqa bosqichlar uchun labelni chiqarish kerak
             $data[$field] = $text;
             $session->set("tg_contact_data_$chat_id", $data);
             $step++;
             $session->set("tg_contact_step_$chat_id", $step);
 
-
             if (isset($fields[$step])) {
                 $nextField = $fields[$step];
-                $label = (new Contact())->getAttributeLabel($nextField);
-                $this->sendMessage($chat_id, "✏️ $label ni yuboring:");
-            } else {
-                // Barcha ma'lumotlar to‘plandi — saqlaymiz
-                $contact = new Contact();
-                foreach ($data as $k => $v) {
-                    $contact->$k = $v;
-                }
 
-                $contact->project = 'telegram';
-                $contact->age = '-';
-                $contact->created_at = time();
-                $contact->status = 1;
-
-                if ($contact->validate()) {
-                    $contact->save(false);
-                    $contact->SendTelegram();
-                    $this->sendMessage($chat_id, "✅ Arizangiz qabul qilindi! Tez orada javob beramiz.");
+                // ✅ Agar keyingi bosqich `tell` bo‘lsa, faqat tugma chiqar
+                if ($nextField === 'tell') {
+                    $this->sendMessage($chat_id, "📲 Telefon raqamingizni quyidagi tugma orqali yuboring:", [
+                        'keyboard' => [[[
+                            'text' => '📱 Telefon raqamni yuborish',
+                            'request_contact' => true
+                        ]]],
+                        'resize_keyboard' => true,
+                        'one_time_keyboard' => true
+                    ]);
                 } else {
-                    Yii::error("Telegram orqali yuborilgan contactda xatolik:\n" . print_r($contact->getErrors(), true));
-                    $this->sendMessage($chat_id, "❌ Xatolik: ma'lumotni saqlab bo‘lmadi.");
+                    $label = (new Contact())->getAttributeLabel($nextField);
+                    $this->sendMessage($chat_id, "✏️ $label ni yuboring:");
                 }
-
-                $session->delete("tg_contact_fields_$chat_id");
-                $session->delete("tg_contact_step_$chat_id");
-                $session->delete("tg_contact_data_$chat_id");
             }
         }
+
 
         return ['ok' => true];
     }
