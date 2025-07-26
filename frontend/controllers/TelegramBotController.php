@@ -87,6 +87,8 @@ class TelegramBotController extends Controller
                 foreach ($data as $k => $v) {
                     $contact->$k = $v;
                 }
+                $contact->project = 0; // yoki null
+                $contact->age = '-';   // yoki 0, yoki 99 yoki "nomaʼlum"
                 $contact->created_at = time();
                 $contact->status = 1;
 
