@@ -25,7 +25,7 @@ class TelegramBotController extends Controller
 
         $session = Yii::$app->cache;
 
-        // /start bosilganda
+        // Boshlanish
         if ($text === '/start') {
             $session->set("tg_contact_step_$chat_id", 0);
             $session->set("tg_contact_data_$chat_id", []);
@@ -40,7 +40,7 @@ class TelegramBotController extends Controller
         $step = $session->get("tg_contact_step_$chat_id");
         $data = $session->get("tg_contact_data_$chat_id");
 
-        // Contact tugmasi bosilganda
+        // Telefon raqamni tugma orqali yuborgan bo‘lsa
         if ($contactData && isset($fields[$step]) && $fields[$step] === 'tell') {
             $data['tell'] = $contactData['phone_number'] ?? 'no-phone';
             $session->set("tg_contact_data_$chat_id", $data);
@@ -51,18 +51,21 @@ class TelegramBotController extends Controller
                 $nextField = $fields[$step];
                 $label = (new Contact())->getAttributeLabel($nextField);
                 $this->sendMessage($chat_id, "✏️ $label ni yuboring:", [
-                    'remove_keyboard' => true // 🔥 klaviaturani yashirish
+                    'remove_keyboard' => true
                 ]);
+            } else {
+                // Barcha ma'lumotlar to‘plandi
+                return $this->saveContactAndFinish($chat_id, $data, $session);
             }
+
             return ['ok' => true];
         }
 
-        // Keyingi bosqich
-
+        // Bosqich mavjud bo‘lsa, davom etamiz
         if (isset($fields[$step])) {
             $field = $fields[$step];
 
-            // 👉 tell bosqichi bo‘lsa, faqat tugma bilan yuborish kerak
+            // Telefon raqami bosqichida tugma chiqaramiz
             if ($field === 'tell') {
                 $this->sendMessage($chat_id, "📲 Telefon raqamingizni quyidagi tugma orqali yuboring:", [
                     'keyboard' => [[[
@@ -72,10 +75,10 @@ class TelegramBotController extends Controller
                     'resize_keyboard' => true,
                     'one_time_keyboard' => true
                 ]);
-                return ['ok' => true]; // 👈 bu joy muhim!
+                return ['ok' => true];
             }
 
-            // 🔵 Faqat boshqa bosqichlar uchun labelni chiqarish kerak
+            // Oddiy text fieldlar
             $data[$field] = $text;
             $session->set("tg_contact_data_$chat_id", $data);
             $step++;
@@ -83,8 +86,6 @@ class TelegramBotController extends Controller
 
             if (isset($fields[$step])) {
                 $nextField = $fields[$step];
-
-                // ✅ Agar keyingi bosqich `tell` bo‘lsa, faqat tugma chiqar
                 if ($nextField === 'tell') {
                     $this->sendMessage($chat_id, "📲 Telefon raqamingizni quyidagi tugma orqali yuboring:", [
                         'keyboard' => [[[
@@ -98,9 +99,41 @@ class TelegramBotController extends Controller
                     $label = (new Contact())->getAttributeLabel($nextField);
                     $this->sendMessage($chat_id, "✏️ $label ni yuboring:");
                 }
+            } else {
+                // Barcha ma'lumotlar to‘plandi
+                return $this->saveContactAndFinish($chat_id, $data, $session);
             }
         }
 
+        return ['ok' => true];
+    }
+
+    private function saveContactAndFinish($chat_id, $data, $session)
+    {
+        $contact = new Contact();
+        foreach ($data as $key => $value) {
+            $contact->$key = $value;
+        }
+
+        // Qo‘shimcha maydonlar
+        $contact->project = 'telegram';
+        $contact->age = '-';
+        $contact->created_at = time();
+        $contact->status = 1;
+
+        if ($contact->save()) {
+            if (method_exists($contact, 'SendTelegram')) {
+                $contact->SendTelegram();
+            }
+            $this->sendMessage($chat_id, "✅ Arizangiz qabul qilindi! Tez orada javob beramiz.");
+        } else {
+            $this->sendMessage($chat_id, "❌ Xatolik! Ma'lumotni saqlab bo‘lmadi.");
+        }
+
+        // Sessionlarni tozalaymiz
+        $session->delete("tg_contact_fields_$chat_id");
+        $session->delete("tg_contact_step_$chat_id");
+        $session->delete("tg_contact_data_$chat_id");
 
         return ['ok' => true];
     }
