@@ -74,7 +74,7 @@ class Contact extends \yii\db\ActiveRecord
             'tell' => Yii::t('app', 'Telefon raqamingiz'),
             'project' => Yii::t('app', 'Dastur'),
             'age' => Yii::t('app', 'Yosh'),
-            'text' => Yii::t('app', 'Sizning xatingiz'),
+            'text' => Yii::t('app', 'Xabaringiz'),
             'user_id' => Yii::t('app', 'User'),
             'status' => Yii::t('app', 'Status'),
             'created_at' => Yii::t('app', 'Yuklangan sana'),
