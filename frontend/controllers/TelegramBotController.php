@@ -58,10 +58,11 @@ class TelegramBotController extends Controller
         }
 
         // Keyingi bosqich
+
         if (isset($fields[$step])) {
             $field = $fields[$step];
 
-            // Telefon raqam bosqichi
+            // 👉 tell bosqichi bo‘lsa, text yuborishni to‘xtatamiz
             if ($field === 'tell') {
                 $this->sendMessage($chat_id, "📲 Telefon raqamingizni quyidagi tugma orqali yuboring:", [
                     'keyboard' => [[[
@@ -74,10 +75,12 @@ class TelegramBotController extends Controller
                 return ['ok' => true];
             }
 
+            // 🟢 Faqat boshqa bosqichlarda text qabul qilinadi
             $data[$field] = $text;
             $session->set("tg_contact_data_$chat_id", $data);
             $step++;
             $session->set("tg_contact_step_$chat_id", $step);
+
 
             if (isset($fields[$step])) {
                 $nextField = $fields[$step];
