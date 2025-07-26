@@ -6,6 +6,7 @@ use Yii;
 use yii\web\Controller;
 use yii\web\Response;
 use common\models\Contact;
+use common\models\Setting;
 
 class TelegramBotController extends Controller
 {
