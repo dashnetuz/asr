@@ -25,7 +25,7 @@ class TelegramBotController extends Controller
 
         $session = Yii::$app->cache;
 
-        // Boshlanish: /start
+        // /start bosilganda
         if ($text === '/start') {
             $session->set("tg_contact_step_$chat_id", 0);
             $session->set("tg_contact_data_$chat_id", []);
@@ -40,7 +40,7 @@ class TelegramBotController extends Controller
         $step = $session->get("tg_contact_step_$chat_id");
         $data = $session->get("tg_contact_data_$chat_id");
 
-        // Bosqich: telefon raqami contact orqali yuborildi
+        // Contact tugmasi bosilganda
         if ($contactData && isset($fields[$step]) && $fields[$step] === 'tell') {
             $data['tell'] = $contactData['phone_number'] ?? 'no-phone';
             $session->set("tg_contact_data_$chat_id", $data);
@@ -50,16 +50,18 @@ class TelegramBotController extends Controller
             if (isset($fields[$step])) {
                 $nextField = $fields[$step];
                 $label = (new Contact())->getAttributeLabel($nextField);
-                $this->sendMessage($chat_id, "✏️ $label ni yuboring:");
+                $this->sendMessage($chat_id, "✏️ $label ni yuboring:", [
+                    'remove_keyboard' => true // 🔥 klaviaturani yashirish
+                ]);
             }
             return ['ok' => true];
         }
 
-        // Bosqich: text orqali yuboriladigan qiymatlar
+        // Keyingi bosqich
         if (isset($fields[$step])) {
             $field = $fields[$step];
 
-            // tell maydoni uchun faqat contact qabul qilinadi
+            // Telefon raqam bosqichi
             if ($field === 'tell') {
                 $this->sendMessage($chat_id, "📲 Telefon raqamingizni quyidagi tugma orqali yuboring:", [
                     'keyboard' => [[[
@@ -82,21 +84,24 @@ class TelegramBotController extends Controller
                 $label = (new Contact())->getAttributeLabel($nextField);
                 $this->sendMessage($chat_id, "✏️ $label ni yuboring:");
             } else {
-                // barchasi tayyor
+                // Barcha ma'lumotlar to‘plandi — saqlaymiz
                 $contact = new Contact();
                 foreach ($data as $k => $v) {
                     $contact->$k = $v;
                 }
-                $contact->project = 0; // yoki null
-                $contact->age = '-';   // yoki 0, yoki 99 yoki "nomaʼlum"
+
+                $contact->project = 'telegram';
+                $contact->age = '-';
                 $contact->created_at = time();
                 $contact->status = 1;
 
-                if ($contact->save()) {
+                if ($contact->validate()) {
+                    $contact->save(false);
                     $contact->SendTelegram();
                     $this->sendMessage($chat_id, "✅ Arizangiz qabul qilindi! Tez orada javob beramiz.");
                 } else {
-                    $this->sendMessage($chat_id, "❌ Xatolik! Ma'lumotni saqlab bo‘lmadi.");
+                    Yii::error("Telegram orqali yuborilgan contactda xatolik:\n" . print_r($contact->getErrors(), true));
+                    $this->sendMessage($chat_id, "❌ Xatolik: ma'lumotni saqlab bo‘lmadi.");
                 }
 
                 $session->delete("tg_contact_fields_$chat_id");
