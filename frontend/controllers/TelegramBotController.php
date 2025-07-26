@@ -19,8 +19,9 @@ class TelegramBotController extends Controller
         $input = json_decode(Yii::$app->request->getRawBody(), true);
         $chat_id = $input['message']['chat']['id'] ?? null;
         $text = $input['message']['text'] ?? null;
+        $contactData = $input['message']['contact'] ?? null;
 
-        if (!$chat_id || !$text) return ['ok' => true];
+        if (!$chat_id) return ['ok' => true];
 
         $session = Yii::$app->cache;
 
@@ -28,29 +29,49 @@ class TelegramBotController extends Controller
         if ($text === '/start') {
             $session->set("tg_contact_step_$chat_id", 0);
             $session->set("tg_contact_data_$chat_id", []);
-            $session->set("tg_contact_fields_$chat_id", $this->getRequiredFields());
+            $session->set("tg_contact_fields_$chat_id", ['full_name', 'tell', 'text']);
 
-            $firstField = $this->getRequiredFields()[0];
-            $label = (new Contact())->getAttributeLabel($firstField);
-            Yii::$app->bot->bot(
-                Setting::findOne(1)->orders_bot_token,
-                'sendMessage',
-                [
-                    'chat_id' => $chat_id,
-                    'text' => "👋 Salom! Iltimos, $label ni kiriting:",
-                    'parse_mode' => 'markdown'
-                ]
-            );
+            $label = (new Contact())->getAttributeLabel('full_name');
+            $this->sendMessage($chat_id, "👋 Salom! Iltimos, $label ni kiriting:");
             return ['ok' => true];
         }
 
-        // Step davom ettirish
         $fields = $session->get("tg_contact_fields_$chat_id");
         $step = $session->get("tg_contact_step_$chat_id");
         $data = $session->get("tg_contact_data_$chat_id");
 
+        // Bosqich: telefon raqami contact orqali yuborildi
+        if ($contactData && isset($fields[$step]) && $fields[$step] === 'tell') {
+            $data['tell'] = $contactData['phone_number'] ?? 'no-phone';
+            $session->set("tg_contact_data_$chat_id", $data);
+            $step++;
+            $session->set("tg_contact_step_$chat_id", $step);
+
+            if (isset($fields[$step])) {
+                $nextField = $fields[$step];
+                $label = (new Contact())->getAttributeLabel($nextField);
+                $this->sendMessage($chat_id, "✏️ $label ni yuboring:");
+            }
+            return ['ok' => true];
+        }
+
+        // Bosqich: text orqali yuboriladigan qiymatlar
         if (isset($fields[$step])) {
             $field = $fields[$step];
+
+            // tell maydoni uchun faqat contact qabul qilinadi
+            if ($field === 'tell') {
+                $this->sendMessage($chat_id, "📲 Telefon raqamingizni quyidagi tugma orqali yuboring:", [
+                    'keyboard' => [[[
+                        'text' => '📱 Telefon raqamni yuborish',
+                        'request_contact' => true
+                    ]]],
+                    'resize_keyboard' => true,
+                    'one_time_keyboard' => true
+                ]);
+                return ['ok' => true];
+            }
+
             $data[$field] = $text;
             $session->set("tg_contact_data_$chat_id", $data);
             $step++;
@@ -59,17 +80,9 @@ class TelegramBotController extends Controller
             if (isset($fields[$step])) {
                 $nextField = $fields[$step];
                 $label = (new Contact())->getAttributeLabel($nextField);
-                Yii::$app->bot->bot(
-                    Setting::findOne(1)->orders_bot_token,
-                    'sendMessage',
-                    [
-                        'chat_id' => $chat_id,
-                        'text' => "✏️ $label ni yuboring:",
-                        'parse_mode' => 'markdown'
-                    ]
-                );
+                $this->sendMessage($chat_id, "✏️ $label ni yuboring:");
             } else {
-                // barchasi tayyor, Contact modelga saqlash
+                // barchasi tayyor
                 $contact = new Contact();
                 foreach ($data as $k => $v) {
                     $contact->$k = $v;
@@ -78,31 +91,12 @@ class TelegramBotController extends Controller
                 $contact->status = 1;
 
                 if ($contact->save()) {
-                    $contact->SendTelegram(); // bu adminlarga yuboradi
-
-                    // foydalanuvchining o‘ziga javob
-                    Yii::$app->bot->bot(
-                        Setting::findOne(1)->orders_bot_token,
-                        'sendMessage',
-                        [
-                            'chat_id' => $chat_id,
-                            'text' => "✅ Arizangiz qabul qilindi! Tez orada javob beramiz.",
-                            'parse_mode' => 'markdown'
-                        ]
-                    );
+                    $contact->SendTelegram();
+                    $this->sendMessage($chat_id, "✅ Arizangiz qabul qilindi! Tez orada javob beramiz.");
                 } else {
-                    Yii::$app->bot->bot(
-                        Setting::findOne(1)->orders_bot_token,
-                        'sendMessage',
-                        [
-                            'chat_id' => $chat_id,
-                            'text' => "❌ Xatolik! Ma'lumotni saqlab bo‘lmadi.",
-                            'parse_mode' => 'markdown'
-                        ]
-                    );
+                    $this->sendMessage($chat_id, "❌ Xatolik! Ma'lumotni saqlab bo‘lmadi.");
                 }
 
-                // sessionni tozalash
                 $session->delete("tg_contact_fields_$chat_id");
                 $session->delete("tg_contact_step_$chat_id");
                 $session->delete("tg_contact_data_$chat_id");
@@ -112,21 +106,21 @@ class TelegramBotController extends Controller
         return ['ok' => true];
     }
 
-    private function getRequiredFields()
+    private function sendMessage($chat_id, $text, $replyMarkup = null)
     {
-        $model = new Contact();
-        $fields = [];
-
-        foreach ($model->rules() as $rule) {
-            if (in_array('required', $rule)) {
-                if (is_array($rule[0])) {
-                    $fields = array_merge($fields, $rule[0]);
-                } else {
-                    $fields[] = $rule[0];
-                }
-            }
+        $data = [
+            'chat_id' => $chat_id,
+            'text' => $text,
+            'parse_mode' => 'markdown'
+        ];
+        if ($replyMarkup) {
+            $data['reply_markup'] = json_encode($replyMarkup);
         }
 
-        return $fields;
+        Yii::$app->bot->bot(
+            Setting::findOne(1)->orders_bot_token,
+            'sendMessage',
+            $data
+        );
     }
 }
