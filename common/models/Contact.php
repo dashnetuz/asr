@@ -27,6 +27,8 @@ class Contact extends \yii\db\ActiveRecord
             [['age'], 'string', 'max' => 255],
             [['text'], 'string', 'max' => 5000],
             [['status', 'created_at', 'user_id'], 'integer'],
+            ['project', 'required', 'skipOnEmpty' => true],
+            ['age', 'required', 'skipOnEmpty' => true],
 
         ];
     }
