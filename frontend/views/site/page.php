@@ -65,33 +65,32 @@ JS
                                     ->all();
 
                                 if (!empty($pdfFiles)): ?>
-                                <div class="page-pdf-section mt-5">
-                                    <div class="row">
-                                        <?php foreach ($pdfFiles as $pdf): ?>
-                                            <div class="col-md-6 col-lg-6 mb-3">
-                                                <div class="card shadow-sm border-0 h-100">
-                                                    <div class="card-body d-flex flex-column justify-content-between">
-                                                        <?php
-                                                        // maxsus page_id'lar
-                                                        $specialPageIds = [21, 22, 23, 24];
-                                                        // agar shu idlardan biri bo‘lsa, link boshqasayt.uz bo‘ladi
-                                                        $href = in_array($pageOne->id, $specialPageIds)
-                                                            ? 'https://iqac.asr.gov.uz'
-                                                            : '/uploads/pagepdf/' . $pdf->filename;
-                                                        ?>
-                                                        <a href="<?= $href ?>"
-                                                           class="mt-3 d-flex align-items-center justify-content-between"
-                                                           target="_blank"
-                                                           style="background-color: #1A4137; color: white; font-size: 18px; padding: 10px 15px; border-radius: 5px; text-decoration: none;">
-                                                            <span class="me-2"><?= $pdf->TitleTranslate ?></span>
-                                                            <i class="fa fa-download" aria-hidden="true"></i>
-                                                        </a>
+                                    <div class="page-pdf-section mt-5">
+                                        <div class="row">
+                                            <?php foreach ($pdfFiles as $pdf): ?>
+                                                <div class="col-md-6 col-lg-6 mb-3">
+                                                    <div class="card shadow-sm border-0 h-100">
+                                                        <div class="card-body d-flex flex-column justify-content-between">
+                                                            <?php
+                                                            // maxsus page_id'lar uchun alohida URL
+                                                            $specialPageIds = [21, 22, 23, 24];
+                                                            $href = in_array($pageOne->id, $specialPageIds)
+                                                                ? 'https://boshqasayt.uz'
+                                                                : $pdf->url;
+                                                            ?>
+                                                            <a href="<?= htmlspecialchars($href) ?>"
+                                                               class="mt-3 d-flex align-items-center justify-content-between"
+                                                               target="_blank"
+                                                               style="background-color: #1A4137; color: white; font-size: 18px; padding: 10px 15px; border-radius: 5px; text-decoration: none;">
+                                                                <span class="me-2"><?= htmlspecialchars($pdf->TitleTranslate) ?></span>
+                                                                <i class="fa fa-download" aria-hidden="true"></i>
+                                                            </a>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        <?php endforeach; ?>
+                                            <?php endforeach; ?>
+                                        </div>
                                     </div>
-                                </div>
                                 <?php endif; ?>
 
 
