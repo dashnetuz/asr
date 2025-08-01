@@ -72,11 +72,13 @@ JS
                                                     <div class="card shadow-sm border-0 h-100">
                                                         <div class="card-body d-flex flex-column justify-content-between">
                                                             <?php
-                                                            // maxsus page_id'lar uchun alohida URL
+                                                            // maxsus page_id'lar
                                                             $specialPageIds = [21, 22, 23, 24];
+
+                                                            // page_id ga qarab linkni aniqlaymiz
                                                             $href = in_array($pageOne->id, $specialPageIds)
-                                                                ? 'https://boshqasayt.uz'
-                                                                : $pdf->url;
+                                                                ? $pdf->url
+                                                                : '/uploads/pagepdf/' . $pdf->filename;
                                                             ?>
                                                             <a href="<?= htmlspecialchars($href) ?>"
                                                                class="mt-3 d-flex align-items-center justify-content-between"
@@ -92,6 +94,7 @@ JS
                                         </div>
                                     </div>
                                 <?php endif; ?>
+
 
 
                                 <?php if ($pageOne->id == 11 && $model): ?>
