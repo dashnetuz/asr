@@ -73,7 +73,7 @@ JS
                                                         <div class="card-body d-flex flex-column justify-content-between">
                                                             <?php
                                                             // maxsus page_id'lar
-                                                            $specialPageIds = [21, 22, 23, 24];
+                                                            $specialPageIds = [20, 21, 22, 23, 24];
 
                                                             // page_id ga qarab linkni aniqlaymiz
                                                             $href = in_array($pageOne->id, $specialPageIds)
