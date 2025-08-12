@@ -15,14 +15,12 @@ return array(
     "Ma`lumot jo`natish" => "Ma’lumot jo‘natish",
 
     'Bizning hamkorlarimiz' => 'Bizning hamkorlarimiz',
-    'British Educational Standards in Uzbekistan' => 'O‘zbekistonda Britaniya ta’lim standartlari',
+    'Empowering your institution with British standards' => 'Biz sizning ta’lim muassasangizda Britaniya standartlarini joriy etamiz',
     'INHA University in Tashkent in Business Management/Information Technologies' => 'Toshkentdagi INHA universiteti — Biznes boshqaruvi / Axborot texnologiyalari',
     'Tashkent University of Architecture and Civil Engineering in Architecture' => 'Toshkent arxitektura va qurilish universiteti — Arxitektura',
     'Tashkent State University of Oriental Studies in Tourism and Hospitality' => 'Toshkent davlat sharqshunoslik universiteti — Turizm va mehmondo‘stlik',
-    'Now you can obtain a British university degree without leaving Uzbekistan.
-Thanks to the newly established International Qualifications and Assessment Centre (IQAC), world-class education is more accessible than ever before.' =>
-        'Endi siz O‘zbekistonni tark etmasdan turib, Britaniya universitetining diplomini olishingiz mumkin.
-Yangi tashkil etilgan Xalqaro Malaka va Baholash Markazi (IQAC) orqali dunyo darajasidagi ta’lim har qachongidan ham yaqinlashdi.',
+    'We accredit and support Uzbekistani universities in delivering Regulated Qualifications Framework (RQF) programmes that meet rigorous UK benchmarks.' =>
+        'Biz O‘zbekistondagi universitetlarni Buyuk Britaniyaning Regulated Qualifications Framework (RQF) ta’lim standartlariga muvofiq o‘quv jarayonlarini tashkil etishda akkreditatsiyadan o’tkazamiz.',
 
     "45, Islam Karimov Street, Chilanzar Distrcit, Tashkent, Uzbekistan, 100066" => "45, Islam Karimov ko‘chasi, Chilonzor tumani, Toshkent, O‘zbekiston, 100066",
     "Contact" => "Aloqa",

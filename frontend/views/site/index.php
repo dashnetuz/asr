@@ -56,11 +56,10 @@ JS
                                     <h6 class="sub-title" data-animation="fadeInUp" data-delay=".3s">iqac.asr.gov.uz
                                     </h6>
                                     <h1 class="title" data-animation="fadeInUp" data-delay=".5s">
-                                        <?= Yii::t("app", "British Educational Standards in Uzbekistan") ?>
+                                        <?= Yii::t("app", "Empowering your institution with British standards") ?>
                                     </h1>
                                     <h3 class="title" data-animation="fadeInUp" data-delay=".5s">
-                                        <?= Yii::t("app", "Now you can obtain a British university degree without leaving Uzbekistan.
-Thanks to the newly established International Qualifications and Assessment Centre (IQAC), world-class education is more accessible than ever before.") ?>
+                                        <?= Yii::t("app", "We accredit and support Uzbekistani universities in delivering Regulated Qualifications Framework (RQF) programmes that meet rigorous UK benchmarks.") ?>
                                     </h3>
                                     <a class="btn-one" data-animation="fadeInUp" data-delay=".8s" href="<?= Url::to(['/contact']) ?>">
                                         <?= Yii::t("app", "INHA University in Tashkent in Business Management/Information Technologies") ?>
