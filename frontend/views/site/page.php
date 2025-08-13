@@ -95,6 +95,49 @@ JS
                                     </div>
                                 <?php endif; ?>
 
+                                <?php if ((int)$pageOne->id === 19): ?>
+                                    <div class="mt-5">
+                                        <div class="row g-4">
+                                            <!-- 1 -->
+                                            <div class="col-12">
+                                                <div class="card h-100 shadow-sm text-center">
+                                                    <div class="card-body d-flex flex-column align-items-center">
+                                                        <div class="bg-light rounded mb-3 d-flex align-items-center justify-content-center" style="width:100px; height:100px;">
+                                                            <img src="/uploads/accreditation/inha.png" class="img-fluid" alt="Universitet logotipi">
+                                                        </div>
+                                                        <h5 class="fw-semibold mb-3">
+                                                            Toshkent shahridagi INHA universiteti
+                                                        </h5>
+                                                        <a class="btn btn-success" href="/uploads/accreditation/certs/inha-cert.pdf" target="_blank">
+                                                            <i class="fa fa-file-pdf-o me-1"></i>
+                                                            <?= Yii::t('app','Sertifikatni ko‘rish') ?>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- 2 -->
+                                            <div class="col-12">
+                                                <div class="card h-100 shadow-sm text-center">
+                                                    <div class="card-body d-flex flex-column align-items-center">
+                                                        <div class="bg-light rounded mb-3 d-flex align-items-center justify-content-center" style="width:100px; height:100px;">
+                                                            <img src="/uploads/accreditation/taqu.png" class="img-fluid" alt="Universitet logotipi">
+                                                        </div>
+                                                        <h5 class="fw-semibold mb-3">
+                                                            Toshkent arxitektura-qurilish universiteti (TAQU)
+                                                        </h5>
+                                                        <a class="btn btn-success" href="https://example.com/cert-taqu.pdf" target="_blank">
+                                                            <i class="fa fa-file-pdf-o me-1"></i>
+                                                            <?= Yii::t('app','Sertifikatni ko‘rish') ?>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                <?php endif; ?>
+
 
 
                                 <?php if ($pageOne->id == 11 && $model): ?>
