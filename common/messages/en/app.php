@@ -15,12 +15,12 @@ return[
     "Ma`lumot jo`natish" => "Submit Information",
 
     'Bizning hamkorlarimiz' => 'Our Partners',
-    'Empowering your institution with British standards' => 'Empowering your institution with British standards',
+    'Empowering your institution with British standards' => 'Empowering your institution with British education standards',
     'INHA University in Tashkent in Business Management/Information Technologies' => 'INHA University in Tashkent in Business Management / Information Technologies',
     'Tashkent University of Architecture and Civil Engineering in Architecture' => 'Tashkent University of Architecture and Civil Engineering in Architecture',
     'Tashkent State University of Oriental Studies in Tourism and Hospitality' => 'Tashkent State University of Oriental Studies in Tourism and Hospitality',
     'We accredit and support Uzbekistani universities in delivering Regulated Qualifications Framework (RQF) programmes that meet rigorous UK benchmarks.' =>
-        'We accredit and support Uzbekistani universities in delivering Regulated Qualifications Framework (RQF) programmes that meet rigorous UK benchmarks.',
+        'We support and accredit education providers internationally in delivering qualifications aligned with the Regulated Qualifications Framework (RQF).',
 
     "45, Islam Karimov Street, Chilanzar Distrcit, Tashkent, Uzbekistan, 100066" => "45 Islam Karimov Street, Chilanzar District, Tashkent, Uzbekistan, 100066",
     "Contact" => "Contact",
