@@ -104,11 +104,16 @@ JS
                                                 <div class="card shadow-sm">
                                                     <div class="card-body">
                                                         <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+
                                                             <!-- Logo + Nomi -->
-                                                            <div class="d-flex align-items-center text-center text-md-start">
-                                                                <img src="/uploads/accreditation/inha.png"
-                                                                     class="img-fluid rounded me-md-3 mb-2 mb-md-0"
-                                                                     alt="Universitet logotipi">
+                                                            <div class="d-flex align-items-center text-center text-md-start gap-3">
+                                                                <div class="bg-light rounded d-flex align-items-center justify-content-center flex-shrink-0"
+                                                                     style="width:80px; height:80px;">
+                                                                    <img src="/uploads/accreditation/inha.png"
+                                                                         alt="Universitet logotipi"
+                                                                         class="img-fluid"
+                                                                         style="max-width:70%; max-height:70%;">
+                                                                </div>
                                                                 <h5 class="fw-semibold mb-0">
                                                                     Toshkent shahridagi INHA universiteti
                                                                 </h5>
@@ -133,11 +138,16 @@ JS
                                                 <div class="card shadow-sm">
                                                     <div class="card-body">
                                                         <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+
                                                             <!-- Logo + Nomi -->
-                                                            <div class="d-flex align-items-center text-center text-md-start">
-                                                                <img src="/uploads/accreditation/taqu.png"
-                                                                     class="img-fluid rounded me-md-3 mb-2 mb-md-0"
-                                                                     alt="Universitet logotipi">
+                                                            <div class="d-flex align-items-center text-center text-md-start gap-3">
+                                                                <div class="bg-light rounded d-flex align-items-center justify-content-center flex-shrink-0"
+                                                                     style="width:80px; height:80px;">
+                                                                    <img src="/uploads/accreditation/taqu.png"
+                                                                         alt="Universitet logotipi"
+                                                                         class="img-fluid"
+                                                                         style="max-width:70%; max-height:70%;">
+                                                                </div>
                                                                 <h5 class="fw-semibold mb-0">
                                                                     Toshkent arxitektura-qurilish universiteti (TAQU)
                                                                 </h5>
@@ -157,11 +167,9 @@ JS
                                                 </div>
                                             </div>
 
-                                            <!-- Yana kartalar shu struktura bilan qo‘shiladi -->
                                         </div>
                                     </div>
                                 <?php endif; ?>
-
 
 
 
