@@ -98,45 +98,70 @@ JS
                                 <?php if ((int)$pageOne->id === 19): ?>
                                     <div class="mt-5">
                                         <div class="row g-4">
+
                                             <!-- 1 -->
                                             <div class="col-12">
-                                                <div class="card h-100 shadow-sm text-center">
-                                                    <div class="card-body d-flex flex-column align-items-center">
-                                                        <div class="bg-light rounded mb-3 d-flex align-items-center justify-content-center" style="width:100px; height:100px;">
-                                                            <img src="/uploads/accreditation/inha.png" class="img-fluid" alt="Universitet logotipi">
+                                                <div class="card shadow-sm">
+                                                    <div class="card-body">
+                                                        <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+                                                            <!-- Logo + Nomi -->
+                                                            <div class="d-flex align-items-center text-center text-md-start">
+                                                                <img src="/uploads/accreditation/inha.png"
+                                                                     class="img-fluid rounded me-md-3 mb-2 mb-md-0"
+                                                                     alt="Universitet logotipi">
+                                                                <h5 class="fw-semibold mb-0">
+                                                                    Toshkent shahridagi INHA universiteti
+                                                                </h5>
+                                                            </div>
+
+                                                            <!-- Tugma -->
+                                                            <div class="text-center text-md-end">
+                                                                <a class="btn btn-success"
+                                                                   href="/uploads/accreditation/certs/inha-cert.pdf"
+                                                                   target="_blank" rel="noopener">
+                                                                    <i class="fa fa-file-pdf-o me-1"></i>
+                                                                    <?= Yii::t('app','Sertifikatni ko‘rish') ?>
+                                                                </a>
+                                                            </div>
                                                         </div>
-                                                        <h5 class="fw-semibold mb-3">
-                                                            Toshkent shahridagi INHA universiteti
-                                                        </h5>
-                                                        <a class="btn btn-success" href="/uploads/accreditation/certs/inha-cert.pdf" target="_blank">
-                                                            <i class="fa fa-file-pdf-o me-1"></i>
-                                                            <?= Yii::t('app','Sertifikatni ko‘rish') ?>
-                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
 
                                             <!-- 2 -->
                                             <div class="col-12">
-                                                <div class="card h-100 shadow-sm text-center">
-                                                    <div class="card-body d-flex flex-column align-items-center">
-                                                        <div class="bg-light rounded mb-3 d-flex align-items-center justify-content-center" style="width:100px; height:100px;">
-                                                            <img src="/uploads/accreditation/taqu.png" class="img-fluid" alt="Universitet logotipi">
+                                                <div class="card shadow-sm">
+                                                    <div class="card-body">
+                                                        <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+                                                            <!-- Logo + Nomi -->
+                                                            <div class="d-flex align-items-center text-center text-md-start">
+                                                                <img src="/uploads/accreditation/taqu.png"
+                                                                     class="img-fluid rounded me-md-3 mb-2 mb-md-0"
+                                                                     alt="Universitet logotipi">
+                                                                <h5 class="fw-semibold mb-0">
+                                                                    Toshkent arxitektura-qurilish universiteti (TAQU)
+                                                                </h5>
+                                                            </div>
+
+                                                            <!-- Tugma -->
+                                                            <div class="text-center text-md-end">
+                                                                <a class="btn btn-success"
+                                                                   href="https://example.com/cert-taqu.pdf"
+                                                                   target="_blank" rel="noopener">
+                                                                    <i class="fa fa-file-pdf-o me-1"></i>
+                                                                    <?= Yii::t('app','Sertifikatni ko‘rish') ?>
+                                                                </a>
+                                                            </div>
                                                         </div>
-                                                        <h5 class="fw-semibold mb-3">
-                                                            Toshkent arxitektura-qurilish universiteti (TAQU)
-                                                        </h5>
-                                                        <a class="btn btn-success" href="https://example.com/cert-taqu.pdf" target="_blank">
-                                                            <i class="fa fa-file-pdf-o me-1"></i>
-                                                            <?= Yii::t('app','Sertifikatni ko‘rish') ?>
-                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
 
+                                            <!-- Yana kartalar shu struktura bilan qo‘shiladi -->
                                         </div>
                                     </div>
                                 <?php endif; ?>
+
 
 
 
