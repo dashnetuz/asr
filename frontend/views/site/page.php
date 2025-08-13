@@ -155,7 +155,7 @@ JS
 
                                                             <!-- Tugma -->
                                                             <div class="text-center text-md-end">
-                                                                <a class="btn btn-brand px-4 py-2 rounded-pill fw-semibold"
+                                                                <a class="btn btn-brand px-4 py-2 fw-semibold"
                                                                    href="https://example.com/cert-taqu.pdf"
                                                                    target="_blank" rel="noopener">
                                                                     <i class="fa-sharp fa-solid fa-file-pdf me-1"></i>
