@@ -101,27 +101,27 @@ JS
 
                                             <!-- 1 -->
                                             <div class="col-12">
-                                                <div class="card shadow-sm">
-                                                    <div class="card-body">
+                                                <div class="card border-0 shadow-sm h-100 rounded-3">
+                                                    <div class="card-body py-3 px-4">
                                                         <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
 
                                                             <!-- Logo + Nomi -->
-                                                            <div class="d-flex align-items-center text-center text-md-start gap-3">
-                                                                <div class="bg-light rounded d-flex align-items-center justify-content-center flex-shrink-0"
-                                                                     style="width:80px; height:80px;">
+                                                            <div class="d-flex align-items-center gap-3 text-center text-md-start w-100">
+                                                                <div class="bg-white border rounded-3 shadow-sm d-flex align-items-center justify-content-center flex-shrink-0"
+                                                                     style="width:80px; height:80px; border-color:#1A4137 !important;">
                                                                     <img src="/uploads/accreditation/inha.png"
                                                                          alt="Universitet logotipi"
                                                                          class="img-fluid"
-                                                                         style="max-width:70%; max-height:70%;">
+                                                                         style="max-width:65%; max-height:65%;">
                                                                 </div>
-                                                                <h5 class="fw-semibold mb-0">
+                                                                <h5 class="fw-semibold mb-0 flex-grow-1">
                                                                     Toshkent shahridagi INHA universiteti
                                                                 </h5>
                                                             </div>
 
                                                             <!-- Tugma -->
                                                             <div class="text-center text-md-end">
-                                                                <a class="btn btn-success"
+                                                                <a class="btn btn-brand px-4 py-2 rounded-pill fw-semibold"
                                                                    href="/uploads/accreditation/certs/inha-cert.pdf"
                                                                    target="_blank" rel="noopener">
                                                                     <i class="fa fa-file-pdf-o me-1"></i>
@@ -135,27 +135,27 @@ JS
 
                                             <!-- 2 -->
                                             <div class="col-12">
-                                                <div class="card shadow-sm">
-                                                    <div class="card-body">
+                                                <div class="card border-0 shadow-sm h-100 rounded-3">
+                                                    <div class="card-body py-3 px-4">
                                                         <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
 
                                                             <!-- Logo + Nomi -->
-                                                            <div class="d-flex align-items-center text-center text-md-start gap-3">
-                                                                <div class="bg-light rounded d-flex align-items-center justify-content-center flex-shrink-0"
-                                                                     style="width:80px; height:80px;">
+                                                            <div class="d-flex align-items-center gap-3 text-center text-md-start w-100">
+                                                                <div class="bg-white border rounded-3 shadow-sm d-flex align-items-center justify-content-center flex-shrink-0"
+                                                                     style="width:80px; height:80px; border-color:#1A4137 !important;">
                                                                     <img src="/uploads/accreditation/taqu.png"
                                                                          alt="Universitet logotipi"
                                                                          class="img-fluid"
-                                                                         style="max-width:70%; max-height:70%;">
+                                                                         style="max-width:65%; max-height:65%;">
                                                                 </div>
-                                                                <h5 class="fw-semibold mb-0">
+                                                                <h5 class="fw-semibold mb-0 flex-grow-1">
                                                                     Toshkent arxitektura-qurilish universiteti (TAQU)
                                                                 </h5>
                                                             </div>
 
                                                             <!-- Tugma -->
                                                             <div class="text-center text-md-end">
-                                                                <a class="btn btn-success"
+                                                                <a class="btn btn-brand px-4 py-2 rounded-pill fw-semibold"
                                                                    href="https://example.com/cert-taqu.pdf"
                                                                    target="_blank" rel="noopener">
                                                                     <i class="fa fa-file-pdf-o me-1"></i>
@@ -169,7 +169,28 @@ JS
 
                                         </div>
                                     </div>
+
+                                    <style>
+                                        .btn-brand {
+                                            background-color: #1A4137;
+                                            border: 1px solid #1A4137;
+                                            color: #fff;
+                                        }
+                                        .btn-brand:hover {
+                                            background-color: #16352D;
+                                            border-color: #16352D;
+                                            color: #fff;
+                                        }
+                                        .card {
+                                            transition: all 0.2s ease-in-out;
+                                        }
+                                        .card:hover {
+                                            transform: translateY(-3px);
+                                            box-shadow: 0 0.75rem 1.5rem rgba(26, 65, 55, 0.25);
+                                        }
+                                    </style>
                                 <?php endif; ?>
+
 
 
 
