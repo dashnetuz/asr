@@ -69,9 +69,9 @@ JS
                                         <?= Yii::t("app", "Tashkent University of Architecture and Civil Engineering in Architecture") ?>
                                     </a>
 
-                                    <a class="btn-one" data-animation="fadeInUp" data-delay=".8s" href="<?= Url::to(['/contact']) ?>">
-                                        <?= Yii::t("app", "Tashkent State University of Oriental Studies in Tourism and Hospitality") ?>
-                                    </a>
+<!--                                    <a class="btn-one" data-animation="fadeInUp" data-delay=".8s" href="--><?php //= Url::to(['/contact']) ?><!--">-->
+<!--                                        --><?php //= Yii::t("app", "Tashkent State University of Oriental Studies in Tourism and Hospitality") ?>
+<!--                                    </a>-->
                                 </div>
                             </div>
 
