@@ -122,7 +122,7 @@ JS
                                                             <!-- Tugma -->
                                                             <div class="text-center text-md-end">
                                                                 <a class="btn btn-brand px-4 py-2 fw-semibold"
-                                                                   href="/uploads/accreditation/certs/inha-cert.pdf"
+                                                                   href="https://drive.google.com/file/d/1stlO2dUqpzwdk7k63RyDiTCDkr7GFiFZ/view?usp=drive_link"
                                                                    target="_blank" rel="noopener">
                                                                     <i class="fa-sharp fa-solid fa-file-pdf me-1"></i>
                                                                     <?= Yii::t('app','Sertifikatni ko‘rish') ?>
@@ -156,7 +156,7 @@ JS
                                                             <!-- Tugma -->
                                                             <div class="text-center text-md-end">
                                                                 <a class="btn btn-brand px-4 py-2 fw-semibold"
-                                                                   href="https://example.com/cert-taqu.pdf"
+                                                                   href="https://drive.google.com/file/d/1_exIj4d1qOsswWEDVlkwV_wNy6cYwI9h/view?usp=drive_link"
                                                                    target="_blank" rel="noopener">
                                                                     <i class="fa-sharp fa-solid fa-file-pdf me-1"></i>
                                                                     <?= Yii::t('app','Sertifikatni ko‘rish') ?>
