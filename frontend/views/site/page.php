@@ -115,7 +115,7 @@ JS
                                                                          style="max-width:65%; max-height:65%;">
                                                                 </div>
                                                                 <h5 class="fw-semibold mb-0 flex-grow-1">
-                                                                    Toshkent shahridagi INHA universiteti
+                                                                    <?= Yii::t('app','Toshkent shahridagi INHA universiteti') ?>
                                                                 </h5>
                                                             </div>
 
@@ -149,7 +149,7 @@ JS
                                                                          style="max-width:65%; max-height:65%;">
                                                                 </div>
                                                                 <h5 class="fw-semibold mb-0 flex-grow-1">
-                                                                    Toshkent arxitektura-qurilish universiteti (TAQU)
+                                                                    <?= Yii::t('app','Toshkent arxitektura-qurilish universiteti (TAQU)') ?>
                                                                 </h5>
                                                             </div>
 

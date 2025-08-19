@@ -1,5 +1,9 @@
 <?php
 return[
+    "Toshkent shahridagi INHA universiteti" => "INHA University in Tashkent (IUT)",
+    "Toshkent arxitektura-qurilish universiteti (TAQU)" => "Tashkent University of Architecture and Civil Engineering (TUACE)",
+    "Sertifikatni ko‘rish" => "View Certificate",
+
     "Savollaringiz bormi?" => "Do you have any questions?",
     "Biz bilan aloqa" => "Contact us",
     "Men o`qishni xohlayman" => "I want to study",
@@ -54,7 +58,6 @@ return[
     "Bizning loyihalarimiz" => "Our projects",
     "Language" => "Language",
     "Boshlash" => "Get Started",
-    "Bizning hamkorlarimiz" => "Our partners",
 
 
     'Britaniya Taʼlim Standartlari Oʻzbekistonda' => 'British Education Standards in Uzbekistan',
@@ -153,7 +156,6 @@ return[
     "Familya" => "Last Name",
     "Sharif" => "Patronymic",
     "Tanlang..." => "Select...",
-    "Jinsingiz" => "Gender",
     "Fakultetni tanlang" => "Select Faculty",
     "Ta’lim shaklini tanlang" => "Select Form of Education",
     "Ta’lim darajani tanlang" => "Select Level of Education",

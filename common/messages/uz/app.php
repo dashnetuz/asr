@@ -1,5 +1,9 @@
 <?php
 return array(
+    "Toshkent shahridagi INHA universiteti" => "Toshkent shahridagi INHA universiteti",
+    "Toshkent arxitektura-qurilish universiteti (TAQU)" => "Toshkent arxitektura-qurilish universiteti (TAQU)",
+    "Sertifikatni ko‘rish" => "Sertifikatni ko‘rish",
+
     "Savollaringiz bormi?" => "Savollaringiz bormi?",
     "Biz bilan aloqa" => "Biz bilan aloqa",
     "Men o`qishni xohlayman" => "Men o‘qishni xohlayman",

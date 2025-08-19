@@ -1,5 +1,9 @@
 <?php
 return[
+    "Toshkent shahridagi INHA universiteti" => "Инха университет в Ташкенте (IUT)",
+    "Toshkent arxitektura-qurilish universiteti (TAQU)" => "Ташкентский архитектурно-строительный университет (ТАСУ)",
+    "Sertifikatni ko‘rish" => "Просмотр сертификата",
+
     "Savollaringiz bormi?" => "У вас есть вопросы?",
     "Biz bilan aloqa" => "Связаться с нами",
     "Men o`qishni xohlayman" => "Я хочу учиться",
@@ -54,7 +58,6 @@ return[
     "Language" => "Язык",
     "Boshlash" => "Начать",
     "Men o`qishni hohlayman" => "Я хочу учиться",
-    "Bizning hamkorlarimiz" => "Наши партнеры",
 
     'Britaniya Taʼlim Standartlari Oʻzbekistonda' => 'Британские стандарты образования в Узбекистане',
     'Endi Britaniya universiteti diplomini Oʻzbekistonda qoʻlga kiriting' => 'Теперь вы можете получить диплом британского университета в Узбекистане',
@@ -120,7 +123,6 @@ return[
     "Hammasi" => "Все",
     "Universitetning ijtimoiy tarmoqlardagi rasmiy sahifalari" => "Официальные страницы университета в социальных сетях",
     "Foydali havolalar" => "Полезные ссылки",
-    "Kontaktlar" => "Контакты",
     "Universitet xodimlari" => "Сотрудники yниверситета",
 
     "Aloqa" =>"Связь",
@@ -174,13 +176,11 @@ return[
     "3x4 rasm"=> "Фото 3x4",
     "3x4 rasmingiz" => "Фото 3x4",
     "Passport file"=> "Файл паспорта",
-    "Jinsingiz"=> "Пол",
     "Ta’lim daraja"=> "Уровень образования",
     "Ta’lim shakli"=> "Форма обучения",
     "Fakultet"=> "Факультет",
     "Ta`lim yo`nalishi"=> "Направление обучения",
     "Yuklangan sana"=> "Дата загрузки",
-    "Muvaffaqqiyatli jo`natildi. Arizangiz tez orada ko`rib chiqiladi!"=> "Успешно отправлено. Ваш запрос скоро будет просмотрен!",
     "Iltimos, filelarni yuklang!"=> "Пожалуйста, загрузите файлы!",
     "Iltimos, passport fileni yuklang!"=> "Пожалуйста, загрузите файл паспорта!",
     "Iltimos, sertifikat yoki diplom yuklang!"=> "Пожалуйста, загрузите сертификат или диплом!",
