@@ -1,8 +1,17 @@
 <?php
 return[
-    "Toshkent shahridagi INHA universiteti" => "Инха университет в Ташкенте (IUT)",
     "Toshkent arxitektura-qurilish universiteti (TAQU)" => "Ташкентский архитектурно-строительный университет (ТАСУ)",
     "Sertifikatni ko‘rish" => "Просмотр сертификата",
+
+    'Bizning hamkorlarimiz' => 'Наши партнёры',
+    'Hamkor' => 'Партнёр',
+
+    "O'zbekiston Respublikasi Oliy ta'lim, fan va innovatsiyalar vazirligi" => 'Министерство высшего образования, науки и инноваций Республики Узбекистан',
+    "O'zbekiston Respublikasi Kambag'allikni qisqartirish va bandlik vazirligi" => 'Министерство по сокращению бедности и занятости Республики Узбекистан',
+    "O'zbekiston Respublikasining Buyuk Britaniya va Shimoliy Irlandiya Birlashgan Qirolligidagi elchixonasi" => 'Посольство Республики Узбекистан в Соединённом Королевстве Великобритании и Северной Ирландии',
+    "O'zbekiston Respublikasi Prezidenti huzuridagi Davlat va jamiyat boshqaruvi akademiyasi" => 'Академия государственного управления при Президенте Республики Узбекистан',
+    "Toshkent shahridagi INHA universiteti" => 'Университет INHA в Ташкенте',
+    "Toshkent arxitektura-qurilish universiteti" => 'Ташкентский архитектурно-строительный университет',
 
     "Savollaringiz bormi?" => "У вас есть вопросы?",
     "Biz bilan aloqa" => "Связаться с нами",
@@ -18,7 +27,6 @@ return[
     "Sizning xatingiz" => "Ваше сообщение",
     "Ma`lumot jo`natish" => "Отправить информацию",
 
-    'Bizning hamkorlarimiz' => 'Наши партнёры',
     'Empowering your institution with British standards' => 'Расширяем возможности вашего учебного заведения с помощью британских образовательных стандартов',
     'INHA University in Tashkent in Business Management/Information Technologies' => 'Университет INHA в Ташкенте — Бизнес-менеджмент / Информационные технологии',
     'Tashkent University of Architecture and Civil Engineering in Architecture' => 'Ташкентский архитектурно-строительный университет — Архитектура',

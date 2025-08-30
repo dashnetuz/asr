@@ -146,29 +146,11 @@ JS
 <section class="case-section have-combine pt-120 pb-120">
     <div class="outer-box">
         <div class="sec-title center mb-50">
-<!--            <h6 class="sub-title wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">Case study</h6>-->
-            <h2 class="title wow splt-txt"><?=Yii::t('app', 'Bizning hamkorlarimiz')?></h2>
+            <h2 class="title wow splt-txt"><?= Yii::t('app', 'Bizning hamkorlarimiz') ?></h2>
         </div>
         <div class="swiper case-slider">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="case-block">
-                        <div class="inner-box">
-                            <figure class="image">
-                                <img src="/unieducation/wp-content/uploads/1.png" alt="Image">
-                            </figure>
-                            <div class="content-box">
-                                <span class="sub-title">Partner</span>
-                                <h4 class="title"><a href="#">Integrated Qualifications Framework (IQF)</a></h4>
-                            </div>
-                            <a class="arry-btn" href="#"><i class="fa-regular fa-arrow-up-right"></i></a>
-                            <div class="hover-content">
-                                <span class="sub-title">Partner</span>
-                                <h4 class="title"><a href="#">Integrated Qualifications Framework (IQF)</a></h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
                 <div class="swiper-slide">
                     <div class="case-block">
                         <div class="inner-box">
@@ -176,75 +158,18 @@ JS
                                 <img src="/unieducation/wp-content/uploads/2.jpg" alt="Image">
                             </figure>
                             <div class="content-box">
-                                <span class="sub-title">Partner</span>
-                                <h4 class="title"><a href="#">University of West London (via IQF)</a></h4>
+                                <span class="sub-title"><?= Yii::t('app', 'Hamkor') ?></span>
+                                <h4 class="title"><a href="#"><?= Yii::t('app', "O'zbekiston Respublikasi Oliy ta'lim, fan va innovatsiyalar vazirligi") ?></a></h4>
                             </div>
                             <a class="arry-btn" href="#"><i class="fa-regular fa-arrow-up-right"></i></a>
                             <div class="hover-content">
-                                <span class="sub-title">Partner</span>
-                                <h4 class="title"><a href="#">University of West London (via IQF)</a></h4>
+                                <span class="sub-title"><?= Yii::t('app', 'Hamkor') ?></span>
+                                <h4 class="title"><a href="#"><?= Yii::t('app', "O'zbekiston Respublikasi Oliy ta'lim, fan va innovatsiyalar vazirligi") ?></a></h4>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="swiper-slide">
-                    <div class="case-block">
-                        <div class="inner-box">
-                            <figure class="image">
-                                <img src="/unieducation/wp-content/uploads/3.jpg" alt="Image">
-                            </figure>
-                            <div class="content-box">
-                                <span class="sub-title">Partner</span>
-                                <h4 class="title"><a href="#">University of Hertfordshire (via IQF)</a></h4>
-                            </div>
-                            <a class="arry-btn" href="#"><i class="fa-regular fa-arrow-up-right"></i></a>
-                            <div class="hover-content">
-                                <span class="sub-title">Partner</span>
-                                <h4 class="title"><a href="#">University of Hertfordshire (via IQF)</a></h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-<!--                <div class="swiper-slide">-->
-<!--                    <div class="case-block">-->
-<!--                        <div class="inner-box">-->
-<!--                            <figure class="image">-->
-<!--                                <img src="/unieducation/wp-content/uploads/4.jpg" alt="Image">-->
-<!--                            </figure>-->
-<!--                            <div class="content-box">-->
-<!--                                <span class="sub-title">Partner</span>-->
-<!--                                <h4 class="title"><a href="#">University of Gloucestershire (via IQF)</a></h4>-->
-<!--                            </div>-->
-<!--                            <a class="arry-btn" href="#"><i class="fa-regular fa-arrow-up-right"></i></a>-->
-<!--                            <div class="hover-content">-->
-<!--                                <span class="sub-title">Partner</span>-->
-<!--                                <h4 class="title"><a href="#">University of Gloucestershire (via IQF)</a></h4>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-
-
-                <div class="swiper-slide">
-                    <div class="case-block">
-                        <div class="inner-box">
-                            <figure class="image">
-                                <img src="/unieducation/wp-content/uploads/1.png" alt="Image">
-                            </figure>
-                            <div class="content-box">
-                                <span class="sub-title">Partner</span>
-                                <h4 class="title"><a href="#">Integrated Qualifications Framework (IQF)</a></h4>
-                            </div>
-                            <a class="arry-btn" href="#"><i class="fa-regular fa-arrow-up-right"></i></a>
-                            <div class="hover-content">
-                                <span class="sub-title">Partner</span>
-                                <h4 class="title"><a href="#">Integrated Qualifications Framework (IQF)</a></h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="swiper-slide">
                     <div class="case-block">
                         <div class="inner-box">
@@ -252,13 +177,13 @@ JS
                                 <img src="/unieducation/wp-content/uploads/2.jpg" alt="Image">
                             </figure>
                             <div class="content-box">
-                                <span class="sub-title">Partner</span>
-                                <h4 class="title"><a href="#">University of West London (via IQF)</a></h4>
+                                <span class="sub-title"><?= Yii::t('app', 'Hamkor') ?></span>
+                                <h4 class="title"><a href="#"><?= Yii::t('app', "O'zbekiston Respublikasi Kambag'allikni qisqartirish va bandlik vazirligi") ?></a></h4>
                             </div>
                             <a class="arry-btn" href="#"><i class="fa-regular fa-arrow-up-right"></i></a>
                             <div class="hover-content">
-                                <span class="sub-title">Partner</span>
-                                <h4 class="title"><a href="#">University of West London (via IQF)</a></h4>
+                                <span class="sub-title"><?= Yii::t('app', 'Hamkor') ?></span>
+                                <h4 class="title"><a href="#"><?= Yii::t('app', "O'zbekiston Respublikasi Kambag'allikni qisqartirish va bandlik vazirligi") ?></a></h4>
                             </div>
                         </div>
                     </div>
@@ -268,39 +193,78 @@ JS
                     <div class="case-block">
                         <div class="inner-box">
                             <figure class="image">
-                                <img src="/unieducation/wp-content/uploads/3.jpg" alt="Image">
+                                <img src="/unieducation/wp-content/uploads/2.jpg" alt="Image">
                             </figure>
                             <div class="content-box">
-                                <span class="sub-title">Partner</span>
-                                <h4 class="title"><a href="#">University of Hertfordshire (via IQF)</a></h4>
+                                <span class="sub-title"><?= Yii::t('app', 'Hamkor') ?></span>
+                                <h4 class="title"><a href="#"><?= Yii::t('app', "O'zbekiston Respublikasining Buyuk Britaniya va Shimoliy Irlandiya Birlashgan Qirolligidagi elchixonasi") ?></a></h4>
                             </div>
                             <a class="arry-btn" href="#"><i class="fa-regular fa-arrow-up-right"></i></a>
                             <div class="hover-content">
-                                <span class="sub-title">Partner</span>
-                                <h4 class="title"><a href="#">University of Hertfordshire (via IQF)</a></h4>
+                                <span class="sub-title"><?= Yii::t('app', 'Hamkor') ?></span>
+                                <h4 class="title"><a href="#"><?= Yii::t('app', "O'zbekiston Respublikasining Buyuk Britaniya va Shimoliy Irlandiya Birlashgan Qirolligidagi elchixonasi") ?></a></h4>
                             </div>
                         </div>
                     </div>
                 </div>
 
-<!--                <div class="swiper-slide">-->
-<!--                    <div class="case-block">-->
-<!--                        <div class="inner-box">-->
-<!--                            <figure class="image">-->
-<!--                                <img src="/unieducation/wp-content/uploads/4.jpg" alt="Image">-->
-<!--                            </figure>-->
-<!--                            <div class="content-box">-->
-<!--                                <span class="sub-title">Partner</span>-->
-<!--                                <h4 class="title"><a href="#">University of Gloucestershire (via IQF)</a></h4>-->
-<!--                            </div>-->
-<!--                            <a class="arry-btn" href="#"><i class="fa-regular fa-arrow-up-right"></i></a>-->
-<!--                            <div class="hover-content">-->
-<!--                                <span class="sub-title">Partner</span>-->
-<!--                                <h4 class="title"><a href="#">University of Gloucestershire (via IQF)</a></h4>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
+                <div class="swiper-slide">
+                    <div class="case-block">
+                        <div class="inner-box">
+                            <figure class="image">
+                                <img src="/unieducation/wp-content/uploads/2.jpg" alt="Image">
+                            </figure>
+                            <div class="content-box">
+                                <span class="sub-title"><?= Yii::t('app', 'Hamkor') ?></span>
+                                <h4 class="title"><a href="#"><?= Yii::t('app', "O'zbekiston Respublikasi Prezidenti huzuridagi Davlat va jamiyat boshqaruvi akademiyasi") ?></a></h4>
+                            </div>
+                            <a class="arry-btn" href="#"><i class="fa-regular fa-arrow-up-right"></i></a>
+                            <div class="hover-content">
+                                <span class="sub-title"><?= Yii::t('app', 'Hamkor') ?></span>
+                                <h4 class="title"><a href="#"><?= Yii::t('app', "O'zbekiston Respublikasi Prezidenti huzuridagi Davlat va jamiyat boshqaruvi akademiyasi") ?></a></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="case-block">
+                        <div class="inner-box">
+                            <figure class="image">
+                                <img src="/unieducation/wp-content/uploads/2.jpg" alt="Image">
+                            </figure>
+                            <div class="content-box">
+                                <span class="sub-title"><?= Yii::t('app', 'Hamkor') ?></span>
+                                <h4 class="title"><a href="#"><?= Yii::t('app', 'Toshkent shahridagi INHA universiteti') ?></a></h4>
+                            </div>
+                            <a class="arry-btn" href="#"><i class="fa-regular fa-arrow-up-right"></i></a>
+                            <div class="hover-content">
+                                <span class="sub-title"><?= Yii::t('app', 'Hamkor') ?></span>
+                                <h4 class="title"><a href="#"><?= Yii::t('app', 'Toshkent shahridagi INHA universiteti') ?></a></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="case-block">
+                        <div class="inner-box">
+                            <figure class="image">
+                                <img src="/unieducation/wp-content/uploads/2.jpg" alt="Image">
+                            </figure>
+                            <div class="content-box">
+                                <span class="sub-title"><?= Yii::t('app', 'Hamkor') ?></span>
+                                <h4 class="title"><a href="#"><?= Yii::t('app', 'Toshkent arxitektura-qurilish universiteti') ?></a></h4>
+                            </div>
+                            <a class="arry-btn" href="#"><i class="fa-regular fa-arrow-up-right"></i></a>
+                            <div class="hover-content">
+                                <span class="sub-title"><?= Yii::t('app', 'Hamkor') ?></span>
+                                <h4 class="title"><a href="#"><?= Yii::t('app', 'Toshkent arxitektura-qurilish universiteti') ?></a></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

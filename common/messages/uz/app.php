@@ -1,8 +1,16 @@
 <?php
 return array(
-    "Toshkent shahridagi INHA universiteti" => "Toshkent shahridagi INHA universiteti",
     "Toshkent arxitektura-qurilish universiteti (TAQU)" => "Toshkent arxitektura-qurilish universiteti (TAQU)",
     "Sertifikatni ko‘rish" => "Sertifikatni ko‘rish",
+
+    'Hamkor' => 'Hamkor',
+
+    "O'zbekiston Respublikasi Oliy ta'lim, fan va innovatsiyalar vazirligi" => "O'zbekiston Respublikasi Oliy ta'lim, fan va innovatsiyalar vazirligi",
+    "O'zbekiston Respublikasi Kambag'allikni qisqartirish va bandlik vazirligi" => "O'zbekiston Respublikasi Kambag'allikni qisqartirish va bandlik vazirligi",
+    "O'zbekiston Respublikasining Buyuk Britaniya va Shimoliy Irlandiya Birlashgan Qirolligidagi elchixonasi" => "O'zbekiston Respublikasining Buyuk Britaniya va Shimoliy Irlandiya Birlashgan Qirolligidagi elchixonasi",
+    "O'zbekiston Respublikasi Prezidenti huzuridagi Davlat va jamiyat boshqaruvi akademiyasi" => "O'zbekiston Respublikasi Prezidenti huzuridagi Davlat va jamiyat boshqaruvi akademiyasi",
+    "Toshkent shahridagi INHA universiteti" => "Toshkent shahridagi INHA universiteti",
+    "Toshkent arxitektura-qurilish universiteti" => "Toshkent arxitektura-qurilish universiteti",
 
     "Savollaringiz bormi?" => "Savollaringiz bormi?",
     "Biz bilan aloqa" => "Biz bilan aloqa",
