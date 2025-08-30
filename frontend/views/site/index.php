@@ -231,7 +231,7 @@ JS
                     <div class="case-block">
                         <div class="inner-box">
                             <figure class="image">
-                                <img src="/unieducation/wp-content/uploads/2.jpg" alt="Image">
+                                <img src="/iqac/partners/inha.jpg" alt="Image">
                             </figure>
                             <div class="content-box">
                                 <span class="sub-title"><?= Yii::t('app', 'Hamkor') ?></span>
@@ -250,7 +250,7 @@ JS
                     <div class="case-block">
                         <div class="inner-box">
                             <figure class="image">
-                                <img src="/unieducation/wp-content/uploads/2.jpg" alt="Image">
+                                <img src="/iqac/partners/taqu.jpg" alt="Image">
                             </figure>
                             <div class="content-box">
                                 <span class="sub-title"><?= Yii::t('app', 'Hamkor') ?></span>
