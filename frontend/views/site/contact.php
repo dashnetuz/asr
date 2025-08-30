@@ -81,22 +81,22 @@ JS
                                                 </h5>
                                             </div>
                                         </li>
-                                        <li class="wow fadeInUp" data-wow-delay="400ms">
-                                            <div class="content">
-                                                <h5 class="title">
-                                                    <i class="fas fa-user-tie"></i> <?= Yii::t('app', 'Director') ?>:
-                                                    <a href="mailto:k.khomidov@iqac.asr.gov.uz">k.khomidov@iqac.asr.gov.uz</a>
-                                                </h5>
-                                                <h5 class="title">
-                                                    <i class="fas fa-user-graduate"></i> <?= Yii::t('app', 'Academic Director') ?>:
-                                                    <a href="mailto:u.azizov@iqac.asr.gov.uz">u.azizov@iqac.asr.gov.uz</a>
-                                                </h5>
-                                                <h5 class="title">
-                                                    <i class="fas fa-user-cog"></i> <?= Yii::t('app', 'Office Manager') ?>:
-                                                    <a href="mailto:t.abdusamadov@iqac.asr.gov.uz">t.abdusamadov@iqac.asr.gov.uz</a>
-                                                </h5>
-                                            </div>
-                                        </li>
+<!--                                        <li class="wow fadeInUp" data-wow-delay="400ms">-->
+<!--                                            <div class="content">-->
+<!--                                                <h5 class="title">-->
+<!--                                                    <i class="fas fa-user-tie"></i> --><?php //= Yii::t('app', 'Director') ?><!--:-->
+<!--                                                    <a href="mailto:k.khomidov@iqac.asr.gov.uz">k.khomidov@iqac.asr.gov.uz</a>-->
+<!--                                                </h5>-->
+<!--                                                <h5 class="title">-->
+<!--                                                    <i class="fas fa-user-graduate"></i> --><?php //= Yii::t('app', 'Academic Director') ?><!--:-->
+<!--                                                    <a href="mailto:u.azizov@iqac.asr.gov.uz">u.azizov@iqac.asr.gov.uz</a>-->
+<!--                                                </h5>-->
+<!--                                                <h5 class="title">-->
+<!--                                                    <i class="fas fa-user-cog"></i> --><?php //= Yii::t('app', 'Office Manager') ?><!--:-->
+<!--                                                    <a href="mailto:t.abdusamadov@iqac.asr.gov.uz">t.abdusamadov@iqac.asr.gov.uz</a>-->
+<!--                                                </h5>-->
+<!--                                            </div>-->
+<!--                                        </li>-->
                                     </ul>
                                 </div>
                             </div>
